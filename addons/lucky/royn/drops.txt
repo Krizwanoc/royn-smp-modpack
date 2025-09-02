@@ -11,7 +11,7 @@ group(
     ID=vivis_atrocities:roasted_marshmallow, amount=#rand(1,8)
 )@luck=0
 group:1:(
-    ID=vivis_atrocities:roynshouse, amount=1;
+    ID=vivis_atrocities:royns_house, amount=1;
     ID=vivis_atrocities:hero_then, amount=1
 )@luck=0
 
@@ -20,9 +20,22 @@ ID=milk_bucket,amount=#randList(1,1,1,2)@luck=0
 / rediscovered jumpscare
 type=entity, ID=#randList(rediscovered:rana,rediscovered:beast_boy,rediscovered:steve,rediscovered:black_steve), amount=#rand(2,5), posOffset=#circleOffset(3)@luck=0
 
-/ free gunpowder
-type=item, ID=alexscaves:sulfur_dust, amount=#rand(4,16)@luck=0
-type=item, ID=gunpowder, amount=#rand(8,24)@luck=0
+/ free dust
+group(
+    type=message, ID=snort;
+    group:#rand(1,4):(
+        type=item, ID=alexscaves:sulfur_dust, amount=#rand(4,16);
+        type=item, ID=alexscaves:moth_dust, amount=#rand(4,16);
+        type=item, ID=alexscaves:peppermint_powder, amount=#rand(4,16);
+        type=item, ID=enderio:powdered_coal, amount=#rand(4,16);
+        type=item, ID=gunpowder, amount=#rand(4,16);
+        type=item, ID=sugar, amount=#rand(4,16);
+        type=item, ID=glowstone_dust, amount=#rand(4,16);
+        type=item, ID=redstone, amount=#rand(4,16);
+        type=item, ID=mtao45086:salt, amount=#rand(4,16);
+        type=item, ID=mtao45086:protein_powder, amount=#rand(4,16)
+    )
+)@luck=0
 
 / The Cursed Seeds
 type=item, ID=#randList(
@@ -34,7 +47,7 @@ type=item, ID=#randList(
 type=item, ID=#randList(
     pitcher_pod, torchflower_seeds, flowering_azalea,
     mowziesmobs:foliaath_seed
-), amount=#rand(1,5)@luck=0@chance=0.45
+), amount=#rand(1,5)@luck=0@chance=0.3
 
 / Saplings
 type=item, ID=#randList(
@@ -43,6 +56,7 @@ type=item, ID=#randList(
     mtao45086:mesquite_sapling, mtao45086:tropical_sapling,
     quark:ancient_sapling,
     alexscaves:pewen_sapling, alexscaves:thornwood_sapling, alexscaves:ancient_sapling,
+    biomesoplenty:mahogany_sapling, biomesoplenty:maple_sapling, biomesoplenty:fir_sapling, biomesoplenty:palm_sapling, biomesoplenty:willow_sapling, biomesoplenty:redwood_sapling,
     red_mushroom, brown_mushroom, crimson_fungus, warped_fungus, quark:glow_shroom
 ), amount=#rand(2,12)@luck=0
 
@@ -50,17 +64,52 @@ type=item, ID=#randList(
 group:1:(
     ID=#randList(
         tconstruct:earth_slime_grass_seeds, tconstruct:earth_slime_sapling, slime_ball
-    ), amount=#rand(1,3);
+    ), amount=#rand(1,2);
     ID=#randList(
         tconstruct:sky_slime_grass_seeds, tconstruct:sky_slime_sapling, tconstruct:sky_slime_ball
-    ), amount=#rand(1,3);
+    ), amount=#rand(1,2);
     ID=#randList(
         tconstruct:blood_slime_grass_seeds, tconstruct:blood_slime_sapling, tconstruct:ichor_slime_ball
-    ), amount=#rand(1,3);
+    ), amount=#rand(1,2);
     ID=#randList(
         tconstruct:ender_slime_grass_seeds, tconstruct:ender_slime_sapling, tconstruct:ender_slime_ball
-    ), amount=#rand(1,3)
-)@luck=0@chance=0.75
+    ), amount=#rand(1,2)
+)@luck=0@chance=0.6
+
+/ MTAO gear
+group(ID=mtao45086:tin_sword;ID=mtao45086:tin_shovel;ID=mtao45086:tin_pickaxe;ID=mtao45086:tin_axe)@luck=0
+group(ID=mtao45086:tin_helmet;ID=mtao45086:tin_chestplate;ID=mtao45086:tin_leggings;ID=mtao45086:tin_boots)@luck=0
+
+group(ID=mtao45086:tourmaline_helmet;ID=mtao45086:tourmaline_chestplate;ID=mtao45086:tourmaline_leggings;ID=mtao45086:tourmaline_boots)@luck=0
+
+group:#rand(2,3):(ID=mtao45086:zirconium_sword;ID=mtao45086:zirconium_shovel;ID=mtao45086:zirconium_pickaxe;ID=mtao45086:zirconium_axe;ID=mtao45086:zirconium_hoe)@luck=1
+group:#rand(2,3):(ID=mtao45086:zirconium_helmet;ID=mtao45086:zirconium_chestplate;ID=mtao45086:zirconium_leggings;ID=mtao45086:zirconium_boots)@luck=1
+
+group:#rand(2,3):(ID=mtao45086:amber_sword;ID=mtao45086:amber_shovel;ID=mtao45086:amber_pickaxe;ID=mtao45086:amber_axe;ID=mtao45086:amber_hoe)@luck=1
+group:#rand(2,3):(ID=mtao45086:amber_helmet;ID=mtao45086:amber_chestplate;ID=mtao45086:amber_leggings;ID=mtao45086:amber_boots)@luck=1
+
+group:#rand(2,3):(ID=mtao45086:tigers_eye_sword;ID=mtao45086:tigers_eye_shovel;ID=mtao45086:tigers_eye_pickaxe;ID=mtao45086:tigers_eye_axe;ID=mtao45086:tigers_eye_hoe)@luck=1
+group:#rand(2,3):(ID=mtao45086:tigers_eye_helmet;ID=mtao45086:tigers_eye_chestplate;ID=mtao45086:tigers_eye_leggings;ID=mtao45086:tigers_eye_boots)@luck=1
+
+group:#rand(1,2):(ID=mtao45086:strebillium_sword;ID=mtao45086:strebillium_shovel;ID=mtao45086:strebillium_pickaxe;ID=mtao45086:strebillium_axe;ID=mtao45086:strebillium_hoe)@luck=1
+group:#rand(1,2):(ID=mtao45086:strebillium_helmet;ID=mtao45086:strebillium_chestplate;ID=mtao45086:strebillium_leggings;ID=mtao45086:strebillium_boots)@luck=1
+
+group:#rand(1,2):(ID=mtao45086:heliodor_sword;ID=mtao45086:heliodor_shovel;ID=mtao45086:heliodor_pickaxe;ID=mtao45086:heliodor_axe;ID=mtao45086:heliodor_hoe)@luck=2
+group:#rand(1,2):(ID=mtao45086:heliodor_helmet;ID=mtao45086:heliodor_chestplate;ID=mtao45086:heliodor_leggings;ID=mtao45086:heliodor_boots)@luck=2
+
+group:#rand(1,2):(ID=mtao45086:peridot_sword_blaze;ID=mtao45086:peridot_hammer_blaze;ID=mtao45086:peridot_mattock;ID=mtao45086:peridot_halberd)@luck=2
+group:#rand(1,2):(ID=mtao45086:peridot_helmet;ID=mtao45086:peridot_chestplate;ID=mtao45086:peridot_leggings;ID=mtao45086:peridot_boots)@luck=2
+
+group:#rand(1,2):(ID=mtao45086:hawks_eye_sword_blaze;ID=mtao45086:hawks_eye_hammer_blaze;ID=mtao45086:hawks_eye_mattock;ID=mtao45086:hawks_eye_halberd)@luck=2@chance=0.3
+group:#rand(1,2):(ID=mtao45086:hawks_eye_helmet;ID=mtao45086:hawks_eye_chestplate;ID=mtao45086:hawks_eye_leggings;ID=mtao45086:hawks_eye_boots)@luck=2@chance=0.3
+
+group:#rand(1,2):(ID=mtao45086:tungsten_sword_blaze;ID=mtao45086:tungsten_hammer_blaze;ID=mtao45086:tungsten_mattock;ID=mtao45086:tungsten_halberd)@luck=2@chance=0.3
+group:#rand(1,2):(ID=mtao45086:tungsten_helmet;ID=mtao45086:tungsten_chestplate;ID=mtao45086:tungsten_leggings;ID=mtao45086:tungsten_boots)@luck=2@chance=0.3
+
+group:#rand(1,2):(ID=mtao45086:malachite_sword_blaze;ID=mtao45086:malachite_hammer_blaze;ID=mtao45086:malachite_mattock;ID=mtao45086:malachite_halberd)@luck=2@chance=0.3
+group:#rand(1,2):(ID=mtao45086:malachite_helmet;ID=mtao45086:malachite_chestplate;ID=mtao45086:malachite_leggings;ID=mtao45086:malachite_boots)@luck=2@chance=0.3
+
+ID=mtao45086:maporb, amount=#rand(1,4)@luck=1
 
 // Rewards!
 / XP rain
@@ -70,12 +119,12 @@ type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(
 // ROYN mobs (single)
 / Regular
 group(
-    type=message, ID="$bYeah, we Wee$r";
+    type=message, ID="$bIt’s… T-That person that’s everywhere!$r";
     type=entity, ID=minecraft:enderman, NBTTag=(CustomName=#jsonStr(text="Regular",color="#67b6bd",bold=true),CustomNameVisible=true)
-)@luck=0
+)@luck=0@chance=0.5
 / Algae Man
 group(
-    type=message, ID="$2Algae time$r"
+    type=message, ID="$2Algae time!$r";
     type=entity, ID=minecraft:zombie, NBTTag=(
         ArmorItems=[
             (id=minecraft:leather_boots,Count=1,tag=(display=(color=5611593))),
@@ -84,15 +133,73 @@ group(
             (id=minecraft:slime_block,Count=1)
         ],ArmorDropChances=[0.0f,0.0f,0.0f,0.0f],
         CustomName=#jsonStr(text="Algae Man",color="#55a049",bold=true),CustomNameVisible=true,
-        ActiveEffects=[(Id=5, Amplifier=3, Duration=199980, ShowParticles=false)]
+        ActiveEffects=[(Id=5, Amplifier=3, Duration=199980)]
     )
-)@luck=-1
+)@luck=-1@chance=0.5
 / a singular fish
-type=entity, ID=#randList(cod,salmon,rediscovered:fish), NBTTag=(CustomName=#jsonStr(text="Herring"),CustomNameVisible=True)@luck=0
+type=entity, ID=#randList(cod,salmon,rediscovered:fish), NBTTag=(CustomName=#jsonStr(text="Herring"),CustomNameVisible=True)@luck=0@chance=0.5
 / Gelatinous Cube
-type=entity, ID=minecraft:slime, NBTTag=(Size=3,CustomName=#jsonStr(text="Gelatinous Cube",color="#94E089",bold=true),CustomNameVisible=true)@luck=0
+group(
+    type=message, ID="$2Gelatinous Cube Attacks!$r";
+    type=entity, ID=minecraft:slime, NBTTag=(
+        Size=3,CustomName=#jsonStr(text="Gelatinous Cube",color="#94E089",bold=true),CustomNameVisible=true,
+        ActiveEffects=[(Id=10, Amplifier=2, Duration=199980)]
+    )
+)@luck=0@chance=0.7
 / Expectant Chicken
 group(
     type=message, ID="$2Quock!$r";
-    type=entity, ID=minecraft:chicken, NBTTag=(CustomName=#jsonStr(text="Expectant Chicken",color="#55a049",bold=true),CustomNameVisible=true)
+    type=entity, ID=minecraft:chicken, NBTTag=(
+        CustomName=#jsonStr(text="Expectant Chicken",color="#55a049",bold=true),CustomNameVisible=true,
+        ActiveEffects=[(Id=90, Amplifier=1, Duration=199980)]
+    )
+)@luck=0@chance=0.5
+/ Rack (fakeout)
+group(
+    type=message, ID="$8WARNING: Beware Of Racks$r";
+    type=entity, ID=minecraft:armor_stand, NBTTag=(
+        ShowArms=true, NoBasePlate=true,
+        HandItems=[(id=minecraft:iron_sword, Count=1),()],
+        ArmorItems=[
+            (id=rediscovered:plate_boots, Count=1),
+            (id=rediscovered:plate_leggings, Count=1),
+            (id=rediscovered:plate_chestplate, Count=1),
+            (id=minecraft:player_head, Count=1, tag=(
+                display=(Name="test"),
+                SkullOwner=(
+                    Id=-1939885844:-2114035840:-1475201932:-428303273,
+                    Properties=(
+                        textures=[
+                            (Value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FlYmIwOWM3ZDI3MzA2OGZkNTUyN2I4OTNlYTRmZmE4NDEyNzBlYTY0ZDRjY2U2N2JmYjFkZmQ5MDc3MTdmZCJ9fX0=")
+                        ]
+                    )
+                )
+            ))
+        ],Rotation=[#pYaw+180f,0f],
+        CustomName=#jsonStr(text="Rack",color="#505050",bold=true),CustomNameVisible=true
+    )
 )@luck=0
+/ Rack (REAL)
+group(
+    type=message, ID="$8WARNING: Beware Of Racks$r";
+    type=entity, ID=minecraft:skeleton, NBTTag=(
+        HandItems=[(id=minecraft:iron_sword, Count=1),()],
+        ArmorItems=[
+            (id=rediscovered:plate_boots, Count=1),
+            (id=rediscovered:plate_leggings, Count=1),
+            (id=rediscovered:plate_chestplate, Count=1),
+            (id=minecraft:player_head, Count=1, tag=(
+                display=(Name="test"),
+                SkullOwner=(
+                    Id=-1939885844:-2114035840:-1475201932:-428303273,
+                    Properties=(
+                        textures=[
+                            (Value="eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvN2FlYmIwOWM3ZDI3MzA2OGZkNTUyN2I4OTNlYTRmZmE4NDEyNzBlYTY0ZDRjY2U2N2JmYjFkZmQ5MDc3MTdmZCJ9fX0=")
+                        ]
+                    )
+                )
+            ))
+        ],Rotation=[#pYaw+180f,0f],
+        CustomName=#jsonStr(text="Rack",color="#505050",bold=true),CustomNameVisible=true
+    )
+)luck=0
