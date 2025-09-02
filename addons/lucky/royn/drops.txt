@@ -1,1 +1,5 @@
-type=item, ID=lucky:amongus_lucky_block, NBTTag=(Luck=-100,display=(Name=#jsonStr("GammaRaul", color=dark_red)))@luck=0
+// type=item,ID=lucky:amongus_lucky_block,NBTTag=(Luck=-100,display=(Name=#jsonStr("GammaRaul",color=dark_red)))
+// ID=milk_bucket,amount=#randList(1,1,1,2)
+// type=item,ID=brick,NBTTag=(Luck=-100,display=(Name=#jsonStr("GammaRaul",color=dark_red)))
+// type=nothing
+type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(1,128)@luck=1
