@@ -77,37 +77,45 @@ group:1:(
 )@luck=0@chance=0.6
 
 / MTAO gear
-group(ID=mtao45086:tin_sword;ID=mtao45086:tin_shovel;ID=mtao45086:tin_pickaxe;ID=mtao45086:tin_axe)@luck=0
-group(ID=mtao45086:tin_helmet;ID=mtao45086:tin_chestplate;ID=mtao45086:tin_leggings;ID=mtao45086:tin_boots)@luck=0
+group:1:(
+    group(ID=mtao45086:tin_sword;ID=mtao45086:tin_shovel;ID=mtao45086:tin_pickaxe;ID=mtao45086:tin_axe)@luck=0;
+    group(ID=mtao45086:tin_helmet;ID=mtao45086:tin_chestplate;ID=mtao45086:tin_leggings;ID=mtao45086:tin_boots)@luck=0;
 
-group(ID=mtao45086:tourmaline_helmet;ID=mtao45086:tourmaline_chestplate;ID=mtao45086:tourmaline_leggings;ID=mtao45086:tourmaline_boots)@luck=0
+    group(ID=mtao45086:tourmaline_armor_helmet;ID=mtao45086:tourmaline_armor_chestplate;ID=mtao45086:tourmaline_armor_leggings;ID=mtao45086:tourmaline_armor_boots)@luck=0;
 
-group:#rand(2,3):(ID=mtao45086:zirconium_sword;ID=mtao45086:zirconium_shovel;ID=mtao45086:zirconium_pickaxe;ID=mtao45086:zirconium_axe;ID=mtao45086:zirconium_hoe)@luck=1
-group:#rand(2,3):(ID=mtao45086:zirconium_helmet;ID=mtao45086:zirconium_chestplate;ID=mtao45086:zirconium_leggings;ID=mtao45086:zirconium_boots)@luck=1
+    group:#rand(2,3):(ID=mtao45086:zirconium_sword;ID=mtao45086:zirconium_shovel;ID=mtao45086:zirconium_pickaxe;ID=mtao45086:zirconium_axe;ID=mtao45086:zirconium_hoe)@luck=1@chance=0.75;
+    group:#rand(2,3):(ID=mtao45086:zirconium_armor_helmet;ID=mtao45086:zirconium_armor_chestplate;ID=mtao45086:zirconium_armor_leggings;ID=mtao45086:zirconium_armor_boots)@luck=1@chance=0.75
+)@luck=0
 
-group:#rand(2,3):(ID=mtao45086:amber_sword;ID=mtao45086:amber_shovel;ID=mtao45086:amber_pickaxe;ID=mtao45086:amber_axe;ID=mtao45086:amber_hoe)@luck=1
-group:#rand(2,3):(ID=mtao45086:amber_helmet;ID=mtao45086:amber_chestplate;ID=mtao45086:amber_leggings;ID=mtao45086:amber_boots)@luck=1
+group:1:(
+    group:#rand(2,3):(ID=mtao45086:amber_sword;ID=mtao45086:amber_shovel;ID=mtao45086:amber_pickaxe;ID=mtao45086:amber_axe;ID=mtao45086:amber_hoe)@luck=1;
+    group:#rand(2,3):(ID=mtao45086:amber_armor_helmet;ID=mtao45086:amber_armor_chestplate;ID=mtao45086:amber_armor_leggings;ID=mtao45086:amber_armor_boots)@luck=1;
 
-group:#rand(2,3):(ID=mtao45086:tigers_eye_sword;ID=mtao45086:tigers_eye_shovel;ID=mtao45086:tigers_eye_pickaxe;ID=mtao45086:tigers_eye_axe;ID=mtao45086:tigers_eye_hoe)@luck=1
-group:#rand(2,3):(ID=mtao45086:tigers_eye_helmet;ID=mtao45086:tigers_eye_chestplate;ID=mtao45086:tigers_eye_leggings;ID=mtao45086:tigers_eye_boots)@luck=1
+    group:#rand(2,3):(ID=mtao45086:tigers_eye_sword;ID=mtao45086:tigers_eye_shovel;ID=mtao45086:tigers_eye_pickaxe;ID=mtao45086:tigers_eye_axe;ID=mtao45086:tigers_eye_hoe)@luck=1;
+    group:#rand(2,3):(ID=mtao45086:tigers_eye_armor_helmet;ID=mtao45086:tigers_eye_armor_chestplate;ID=mtao45086:tigers_eye_armor_leggings;ID=mtao45086:tigers_eye_armor_boots)@luck=1;
 
-group:#rand(1,2):(ID=mtao45086:strebillium_sword;ID=mtao45086:strebillium_shovel;ID=mtao45086:strebillium_pickaxe;ID=mtao45086:strebillium_axe;ID=mtao45086:strebillium_hoe)@luck=1
-group:#rand(1,2):(ID=mtao45086:strebillium_helmet;ID=mtao45086:strebillium_chestplate;ID=mtao45086:strebillium_leggings;ID=mtao45086:strebillium_boots)@luck=1
+    group:#rand(1,2):(ID=mtao45086:strebillium_sword;ID=mtao45086:strebillium_shovel;ID=mtao45086:strebillium_pickaxe;ID=mtao45086:strebillium_axe;ID=mtao45086:strebillium_hoe)@luck=1@chance=0.75;
+    group:#rand(1,2):(ID=mtao45086:strebillium_armor_helmet;ID=mtao45086:strebillium_armor_chestplate;ID=mtao45086:strebillium_armor_leggings;ID=mtao45086:strebillium_armor_boots)@luck=1@chance=0.75
+)@luck=1
 
-group:#rand(1,2):(ID=mtao45086:heliodor_sword;ID=mtao45086:heliodor_shovel;ID=mtao45086:heliodor_pickaxe;ID=mtao45086:heliodor_axe;ID=mtao45086:heliodor_hoe)@luck=2
-group:#rand(1,2):(ID=mtao45086:heliodor_helmet;ID=mtao45086:heliodor_chestplate;ID=mtao45086:heliodor_leggings;ID=mtao45086:heliodor_boots)@luck=2
+group:1:(
+    group:#rand(1,2):(ID=mtao45086:heliodor_sword;ID=mtao45086:heliodor_shovel;ID=mtao45086:heliodor_pickaxe;ID=mtao45086:heliodor_axe;ID=mtao45086:heliodor_hoe)@luck=2;
+    group:#rand(1,2):(ID=mtao45086:heliodor_armor_helmet;ID=mtao45086:heliodor_armor_chestplate;ID=mtao45086:heliodor_armor_leggings;ID=mtao45086:heliodor_armor_boots)@luck=2;
 
-group:#rand(1,2):(ID=mtao45086:peridot_sword_blaze;ID=mtao45086:peridot_hammer_blaze;ID=mtao45086:peridot_mattock;ID=mtao45086:peridot_halberd)@luck=2
-group:#rand(1,2):(ID=mtao45086:peridot_helmet;ID=mtao45086:peridot_chestplate;ID=mtao45086:peridot_leggings;ID=mtao45086:peridot_boots)@luck=2
+    group:#rand(1,2):(ID=mtao45086:peridot_sword_blaze;ID=mtao45086:peridot_hammer_blaze;ID=mtao45086:peridot_mattock;ID=mtao45086:peridot_halberd)@luck=2@chance=0.4;
+    group:#rand(1,2):(ID=mtao45086:peridot_armor_helmet;ID=mtao45086:peridot_armor_chestplate;ID=mtao45086:peridot_armor_leggings;ID=mtao45086:peridot_armor_boots)@luck=2@chance=0.4
+)@luck=2@chance=0.5
 
-group:#rand(1,2):(ID=mtao45086:hawks_eye_sword_blaze;ID=mtao45086:hawks_eye_hammer_blaze;ID=mtao45086:hawks_eye_mattock;ID=mtao45086:hawks_eye_halberd)@luck=2@chance=0.3
-group:#rand(1,2):(ID=mtao45086:hawks_eye_helmet;ID=mtao45086:hawks_eye_chestplate;ID=mtao45086:hawks_eye_leggings;ID=mtao45086:hawks_eye_boots)@luck=2@chance=0.3
+group:1:(
+    group:#rand(1,2):(ID=mtao45086:hawks_eye_sword_blaze;ID=mtao45086:hawks_eye_hammer_blaze;ID=mtao45086:hawks_eye_mattock;ID=mtao45086:hawks_eye_halberd)@luck=2@chance=0.3;
+    group:#rand(1,2):(ID=mtao45086:hawks_eye_armor_helmet;ID=mtao45086:hawks_eye_armor_chestplate;ID=mtao45086:hawks_eye_armor_leggings;ID=mtao45086:hawks_eye_armor_boots)@luck=2@chance=0.3;
 
-group:#rand(1,2):(ID=mtao45086:tungsten_sword_blaze;ID=mtao45086:tungsten_hammer_blaze;ID=mtao45086:tungsten_mattock;ID=mtao45086:tungsten_halberd)@luck=2@chance=0.3
-group:#rand(1,2):(ID=mtao45086:tungsten_helmet;ID=mtao45086:tungsten_chestplate;ID=mtao45086:tungsten_leggings;ID=mtao45086:tungsten_boots)@luck=2@chance=0.3
+    group:#rand(1,2):(ID=mtao45086:tungsten_sword_blaze;ID=mtao45086:tungsten_hammer_blaze;ID=mtao45086:tungsten_mattock;ID=mtao45086:tungsten_halberd)@luck=2@chance=0.3;
+    group:#rand(1,2):(ID=mtao45086:tungsten_armor_helmet;ID=mtao45086:tungsten_armor_chestplate;ID=mtao45086:tungsten_armor_leggings;ID=mtao45086:tungsten_armor_boots)@luck=2@chance=0.3;
 
-group:#rand(1,2):(ID=mtao45086:malachite_sword_blaze;ID=mtao45086:malachite_hammer_blaze;ID=mtao45086:malachite_mattock;ID=mtao45086:malachite_halberd)@luck=2@chance=0.3
-group:#rand(1,2):(ID=mtao45086:malachite_helmet;ID=mtao45086:malachite_chestplate;ID=mtao45086:malachite_leggings;ID=mtao45086:malachite_boots)@luck=2@chance=0.3
+    group:#rand(1,2):(ID=mtao45086:malachite_sword_blaze;ID=mtao45086:malachite_hammer_blaze;ID=mtao45086:malachite_mattock;ID=mtao45086:malachite_halberd)@luck=2@chance=0.3;
+    group:#rand(1,2):(ID=mtao45086:malachite_armor_helmet;ID=mtao45086:malachite_armor_chestplate;ID=mtao45086:malachite_armor_leggings;ID=mtao45086:malachite_armor_boots)@luck=2@chance=0.3
+)@luck=2@chance=0.2
 
 ID=mtao45086:maporb, amount=#rand(1,4)@luck=1
 
@@ -135,7 +143,7 @@ group(
         CustomName=#jsonStr(text="Algae Man",color="#55a049",bold=true),CustomNameVisible=true,
         ActiveEffects=[(Id=5, Amplifier=3, Duration=199980)]
     )
-)@luck=-1@chance=0.5
+)@luck=-1@chance=0.7
 / a singular fish
 type=entity, ID=#randList(cod,salmon,rediscovered:fish), NBTTag=(CustomName=#jsonStr(text="Herring"),CustomNameVisible=True)@luck=0@chance=0.5
 / Gelatinous Cube
@@ -148,7 +156,7 @@ group(
 )@luck=0@chance=0.7
 / Expectant Chicken
 group(
-    type=message, ID="$2Quock!$r";
+    type=message, ID="$2Quoluck!$r";
     type=entity, ID=minecraft:chicken, NBTTag=(
         CustomName=#jsonStr(text="Expectant Chicken",color="#55a049",bold=true),CustomNameVisible=true,
         ActiveEffects=[(Id=90, Amplifier=1, Duration=199980)]
