@@ -26,3 +26,6 @@ saves/*
 screenshots/*
 tacz/*
 tacz_backup/*
+
+config/roughlyenoughitems/*
+config/fabric/*
