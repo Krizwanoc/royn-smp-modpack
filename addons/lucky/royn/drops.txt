@@ -4,31 +4,95 @@ type=command, ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\"
 
 
 // Random items
-ID=milk_bucket,amount=#randList(1,1,1,2)@luck=0
-type=item, ID=purple_dye, amount=#rand(6,128)@luck=0
-group( \
+/ ROYN merch
+type=item, ID=purple_dye, amount=#rand(1,64)@luck=0
+group(
     ID=vivis_atrocities:marshmallow, amount=#rand(1,8);
     ID=vivis_atrocities:roasted_marshmallow, amount=#rand(1,8)
 )@luck=0
+group:1:(
+    ID=vivis_atrocities:roynshouse, amount=1;
+    ID=vivis_atrocities:hero_then, amount=1
+)@luck=0
 
+ID=milk_bucket,amount=#randList(1,1,1,2)@luck=0
 
-// Yippee!
+/ rediscovered jumpscare
+type=entity, ID=#randList(rediscovered:rana,rediscovered:beast_boy,rediscovered:steve,rediscovered:black_steve), amount=#rand(2,5), posOffset=#circleOffset(3)@luck=0
+
+/ free gunpowder
+type=item, ID=alexscaves:sulfur_dust, amount=#rand(4,16)@luck=0
+type=item, ID=gunpowder, amount=#rand(8,24)@luck=0
+
+/ The Cursed Seeds
+type=item, ID=#randList(
+    wheat_seeds, pumpkin_seeds, melon_seeds, beetroot_seeds, carrot, potato
+    farmersdelight:tomato_seeds, farmersdelight:cabbage_seeds, supplementaries:flax_seeds, farmersdelight:onion, farmersdelight:rice_panicle
+    mtao45086:pomegranate_seeds
+), amount=#rand(16,48)@luck=0
+/ rarer seeds
+type=item, ID=#randList(
+    pitcher_pod, torchflower_seeds, flowering_azalea,
+    mowziesmobs:foliaath_seed
+), amount=#rand(1,5)@luck=0@chance=0.45
+
+/ Saplings
+type=item, ID=#randList(
+    oak_sapling, birch_sapling, spruce_sapling, jungle_sapling, acacia_sapling, cherry_sapling, dark_oak_sapling, mangrove_propagule,
+    twilightforest:twilight_oak_sapling, twilightforest:canopy_sapling, twilightforest:mangrove_sapling, twilightforest:darkwood_sapling, twilightforest:rainbow_oak_sapling,
+    mtao45086:mesquite_sapling, mtao45086:tropical_sapling,
+    quark:ancient_sapling,
+    alexscaves:pewen_sapling, alexscaves:thornwood_sapling, alexscaves:ancient_sapling,
+    red_mushroom, brown_mushroom, crimson_fungus, warped_fungus, quark:glow_shroom
+), amount=#rand(2,12)@luck=0
+
+/ Oozing on the opposition
+group:1:(
+    ID=#randList(
+        tconstruct:earth_slime_grass_seeds, tconstruct:earth_slime_sapling, slime_ball
+    ), amount=#rand(1,3);
+    ID=#randList(
+        tconstruct:sky_slime_grass_seeds, tconstruct:sky_slime_sapling, tconstruct:sky_slime_ball
+    ), amount=#rand(1,3);
+    ID=#randList(
+        tconstruct:blood_slime_grass_seeds, tconstruct:blood_slime_sapling, tconstruct:ichor_slime_ball
+    ), amount=#rand(1,3);
+    ID=#randList(
+        tconstruct:ender_slime_grass_seeds, tconstruct:ender_slime_sapling, tconstruct:ender_slime_ball
+    ), amount=#rand(1,3)
+)@luck=0@chance=0.75
+
+// Rewards!
+/ XP rain
 type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(1,64)@luck=2@chance=0.4
 
 
-// ROYN mobs
+// ROYN mobs (single)
 / Regular
-type=entity, ID=minecraft:enderman, NBTTag=(CustomName=#jsonStr(text="Regular",color="#67b6bd",bold=true),CustomNameVisible=true)@luck=-1
+group(
+    type=message, ID="$bYeah, we Wee$r";
+    type=entity, ID=minecraft:enderman, NBTTag=(CustomName=#jsonStr(text="Regular",color="#67b6bd",bold=true),CustomNameVisible=true)
+)@luck=0
 / Algae Man
-type=entity, ID=minecraft:zombie, NBTTag=(
-    ArmorItems=[
-        (id=minecraft:leather_boots,Count=1,tag=(display=(color=5611593))),
-        (id=minecraft:leather_leggings,Count=1,tag=(display=(color=5611593))),
-        (id=minecraft:leather_chestplate,Count=1,tag=(display=(color=5611593))),
-        (id=minecraft:slime_block,Count=1)
-    ],ArmorDropChances=[0.0f,0.0f,0.0f,0.0f],
-    CustomName=#jsonStr(text="Algae Man",color="#55a049",bold=true),CustomNameVisible=true,
-    ActiveEffects=[(Id=5, Amplifier=3, Duration=199980, ShowParticles=false)]
+group(
+    type=message, ID="$2Algae time$r"
+    type=entity, ID=minecraft:zombie, NBTTag=(
+        ArmorItems=[
+            (id=minecraft:leather_boots,Count=1,tag=(display=(color=5611593))),
+            (id=minecraft:leather_leggings,Count=1,tag=(display=(color=5611593))),
+            (id=minecraft:leather_chestplate,Count=1,tag=(display=(color=5611593))),
+            (id=minecraft:slime_block,Count=1)
+        ],ArmorDropChances=[0.0f,0.0f,0.0f,0.0f],
+        CustomName=#jsonStr(text="Algae Man",color="#55a049",bold=true),CustomNameVisible=true,
+        ActiveEffects=[(Id=5, Amplifier=3, Duration=199980, ShowParticles=false)]
+    )
 )@luck=-1
 / a singular fish
-type=entity, ID=#randList(cod,salmon), NBTTag=(CustomName=#jsonStr(text="Herring"),CustomNameVisible=True)@luck=0
+type=entity, ID=#randList(cod,salmon,rediscovered:fish), NBTTag=(CustomName=#jsonStr(text="Herring"),CustomNameVisible=True)@luck=0
+/ Gelatinous Cube
+type=entity, ID=minecraft:slime, NBTTag=(Size=3,CustomName=#jsonStr(text="Gelatinous Cube",color="#94E089",bold=true),CustomNameVisible=true)@luck=0
+/ Expectant Chicken
+group(
+    type=message, ID="$2Quock!$r";
+    type=entity, ID=minecraft:chicken, NBTTag=(CustomName=#jsonStr(text="Expectant Chicken",color="#55a049",bold=true),CustomNameVisible=true)
+)@luck=0
