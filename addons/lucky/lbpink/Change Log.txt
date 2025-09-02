@@ -1,0 +1,209 @@
+WARNING: Uses Lucky Block for Minecraft 1.20.1
+WARNING: Translations may not be 100% accurate, please let me know in the comments if a translation is wrong!
+
+Dictionary:
+Drop Type = Counts for final drop total, is randomly selected when a lucky block is broken.
+Possibility = Possible outcome(s) for a drop type.
+Variant = Randomly selected outcome for a possibility which usually all are similarish to each other. (Possibility for a Possibility.)
+
+Additions:
++5 Drop Types
++77 Possibilities
++>133 Variants
++22 Structures
++Reintroduction of the Mini Desert Structure with some changes!
++Reintroduction of the Mini Aquifer Cave Structure with some changes!
+
+File Additions:
++New Texture for Lucky Block Pink!!!
++pink_lucky_block.png.mcmeta for the new Animated Texture!
++Several .luckystruct files to go along with a couple of the new structures!
+
+File Changes:
+*Reorganized the drops file.
+*Reorganized the structures file.
+*Renamed heart structure to lbp_heart.
+*Updated lbp_ruins to have decorated pots.
+*Adjusted placement of the lbp_heart structure.
+*Updated pink_skeleton_trap to include the roof.
+*Updated lbp_beanstalk to have air instead of structure void.
+*Updated lbp_rainbow to have lime wool instead of green wool.
+*Updated pink_lucky_block.png to be now 16x32 instead of 16x16.
+*Updated gamers structure to have air instead of structure void.
+*Updated mini_mushroom_island to have air instead of structure void.
+*Updated lbp_mineshaft structure to have air instead of structure void.
+*Updated donkey_kong_top structure to have air instead of structure void.
+*Updated villager_prison structure to have air instead of structure void.
+*Updated lbp_full_rainbow to have some air instead of only structure void.
+*Updated mini_basalt_delta structure to have air instead of structure void.
+*Updated donkey_kong_bottom structure to have air instead of structure void.
+*Updated mini_warped_forest structure to have air instead of structure void.
+*Updated pink_death_dungeon structure to have air instead of structure void.
+*Updated lbp_end_portal_room structure to have air instead of structure void.
+*Updated mini_crimson_forest structure to have air instead of structure void.
+*Updated villager_prison to have regular pumpkins instead of carved pumpkins.
+*Updated lbp_cloud1 structure to have some air instead of only structure void.
+*Updated lbp_cloud2 structure to have some air instead of only structure void.
+*Updated lbp_grabbit structure to have some air instead of only structure void.
+*Updated lbp_greybow structure to have some air instead of only structure void.
+*Updated lbp_rainbow structure to have some air instead of only structure void.
+*Updated mini_soul_sand_valley structure to have air instead of structure void.
+*Updated pink_dungeon structure to have some air instead of only structure void.
+*Updated lbp_big_dripleaf_parkour structure to have air instead of structure void. 
+*Updated lbp_mega_dungeon structure to have some air instead of only structure void.
+*Updated lbp_pink_dungeon structure to have some air instead of only structure void.
+*Updated lbp_temple to have a 555 chance to spawn naturally instead of a 997 chance.
+*Updated lbp_haunted_house structure to have some air instead of only structure void.
+*Updated lbp_double_dungeon structure to have some air instead of only structure void.
+*Updated mini_dripstone_cave structure to have some air instead of only structure void. 
+*Updated lbp_construction_site structure to have some air instead of only structure void.
+*Updated lbp_blackstone_dungeon structure to have some air instead of only structure void.
+*Updated lbp_temple to have a Pink Lucky Block in it instead of Pink Shulker Box containing the Pink Lucky Block.
+
+File Removals:
+N/A
+
+Drop Changes:
+*Ice now drops 16-64 Ice instead of 8-24 Ice.
+*Coal now drops 12-24 Coal instead of 8-24 Coal.
+*Stick now drops 1-64 Sticks instead of 1 Stick.
+*Chain now drops 12-24 Chain instead of 8-24 Chain.
+*Gold Ore now drops 20 Gold Ore instead of 16 Gold Ore.
+*Iron Ore now drops 16 Iron Ore instead of 12 Iron Ore.
+*Cobweb now drops 12-24 Cobwebs instead of 8-24 Cobwebs.
+*Diamond now drops 6-16 Diamonds instead of 5-11 Diamonds.
+*Sniffers/Bat + Sniffer now only spawns 4 instead of 4-16.
+*Final Wish now drops 100 Primed TNT instead of 50 Primed TNT.
+*Carrot Wish now drops 75-200 Carrots instead of 25-85 Carrots.
+*Metallic Wish now drops 50-100 ingots instead of 44-76 Ingots.
+*Crossbow + Arrows now drop 12-24 Arrows instead of 8-24 Arrows.
+*Dried Kelp now drops 12-36 Dried Kelp instead of 8-24 Dried Kelp.
+*Wish Came True now drops 20-30 Diamonds instead of 4-16 Diamonds.
+*Magma Block now drops 24 Magma Blocks instead of 8-24 Magma Blocks.
+*Glow Ink Sacs now drop 12 Glow Ink Sacs instead of 4-16 Glow Ink Sacs.
+*Ancient Debris drops 4-12 Ancient Debris instead of 4-9 Ancient Debris.
+*Scaffholding now drops 16-32 scaffholding instead of 8-32 scaffholding.
+*Diamond and Emerald Ore now drop 4-12 Diamond/Emerald Ore instead of 4-9.
+*Carrot Wish now drops 15-45 Golden Carrots instead of 5-15 Golden Carrots.
+*Delicious Wish now grants 6-20 Golden Apples instead of 0-8 Golden Apples.
+*Redstone Dust now drops 16-48 Redstone Dust instead of 8-32 Redstone Dust.
+*Gold and Raw Gold Blocks now drop 2 of their respective block instead of 1.
+*Iron and Raw Iron Blocks now drop 2 of their respective block instead of 1.
+*Copper and Raw Copper Blocks now drop 2 of their respective block instead of 1.
+*Obsidian and Crying Obsidian now drop 12 Obsidian/Crying Obsidian instead of 4-16.
+*Diamond and Emerald Blocks now drop 1-2 Diamond or Emerald blocks instead of only 1.
+*Bow + Spectral Arrows now drop 12-24 Spectral Arrows instead of 8-24 Spectral Arrows.
+*Reverted the infinite duration change from Lucky Block Pink 8.1 [Additive Additions].
+*Chrous Flower + End Stone Group Drop now drops 16-32 End Stone instead of 8-32 End Stone.
+*Crossbow + Spectral Arrows now drop 12-18 Spectral Arrows instead of 8-18 Spectral Arrows.
+*Adjusted a lot of duplicate block/items in Wishing Wels by adding them to the non-duplicates.
+*Delicious Wish now grants 1-3 Enchanted Golden Apples instead of 0-2 Enchanted Golden Apples.
+*Random Deepslate Ores now drop 8-16 Random Deepslate Ores instead of 4-12 Random Deepslate Ores.
+*Randomly Dyed Candles now drop 16-32 Randomly Dyed Candles instead of 8-24 Randomly Dyed Candles.
+*Shroomlight or Glowstone now drops 12-24 Shroomlight or Glowstone instead of 8-24 Shroomlight or Glowstone.
+*Bamboo, Sugar Cane, Sea Pickles, and Cactus all now drop 32 of each instead of their respective previous drops.
+*Sweet Berries or Glow Berries now drop 12-32 Sweet Berries or Glow Berries instead of 8-24 Sweet Berries or Glow Berries.
+
+Luck Value Changes:
+*Changed luck value of Falling Dirt Pole (-1 -> -2).
+*Changed luck value of witch drop chest possibility (0 -> -1).
+*Changed luck value of lapis lazuli + eggs possibility (2 -> 1).
+*Changed luck value of Falling Colourful Bedrock Pole (-1 -> -2).
+*Changed luck value of crying obsidian + eggs possibility (1 -> 0).
+*Changed luck value of Eggs + Lucky Blocks or Pink Lucky Blocks drop (2 -> 0).
+*Changed luck value of Eggs + Lucky Potions or Pink Love Potions drop (1 -> 0).
+
+Misc Updates:
+*Cloud 2 now now has a variant.
+*Magma Block now has a variant.
+*Reduced delay for the clone drop.
+*Villager Prison now has a variant.
+*Material Wish now has possibilities.
+*Metallic Wish now has possibilities.
+*Adjusted location for the clone drop.
+*Iron Golem Wish now has Possibilities.
+*-2 Luck Item has another possibilities.
+*Ridable mobs now has more possibilities.
+Cake with Pink Candle's Candle is now lit.
+*Clone command now has another possibility.
+*2 luck dual mobs now has a new possibility.
+*Electrifying Wish now properly spreads out.
+*Added a new possibility for Spider Dual Mobs.
+*Random Named Villagers now has some variants.
+*Misc -2 Luck Structures has a new possibility.
+*Shop Keeper Food  Buyer now has a new variant.
+*Falling Block 2 Luck now has a new possibility.
+*2D Wall Art Pride Flags now has another variant.
+*Your Date Wish Came True? now has possibilities.
+*Reduced delay for the ridable mobs possibilities.
+*There is no more chance 0.5 for Spider Dual Mobs.
+*2D Wall Art Structures now has another possibility.
+*Added new possibilities for mini 0 luck structures.
+*Flying Super Geared Mobs now has new possibilities.
+*Misc 0 luck structures now has another possibility.
+*Parkour Course Structures now has new possibilities.
+*Reduced delay on Zombie Virus Zombies from 1 to 0.15.
+*Updated the design of the Transgender Pride Flag banner.
+*Electrifying/Final Wish now has new possibilities/variants.
+*Changed Netherite Scrap in Metallic Wish to Netherite Ingot.
+*Lightning/Chicken Jokey dual mobs now has new possibilities.
+*Creeper Wish now says Creeper Date Wish instead of Creeper Wish.
+*Flying Mummified Date now rides a Camel rather than a Zombie Horse.
+*Sudden Explosion is now apart of a variant with a new variant drop.
+*Combined Ultimate Wish as a possibility to Delicious and Wish Wishes.
+*Industructable Blocks Pole now has a new Possibility and new Variants.
+*Barrier + Lava Falling Pole nnow uses Glass Blocks instead of Barriers.
+*Don't Like Your Ears and A-Blazing Wish are now variants of each other.
+*Redstone or Sculk Stuff Group Drop now has new Possibility and variants.
+*Combined Final Wish as a possibility to The Death and Electrifying Wishes.
+*Updated Zombified Date to be a Zombie Villaer instead of a regular Zombie.
+*Clone command now only teleports player who activated the pink lucky block.
+*Full Diamond Armour, Armour Stand now has 0.25 chance rather than 0.2 chance.
+*Lowered Price for Pumpkin Shop Keeper Buyer from 12-24 Pumpkins to 12 Pumpkins.
+*Made the Dual Mobs 2 luck animals variants of each other instead of possibilities.
+*Zombified Date and Flying Zombified Date now hold a Poppy instead of a Diamond Sword.
+*Combined Dirt Pole and Colourful Bedrock Pole with Industructable Blocks Falling Pole.
+*Obsidian and Crying Obsidian are now variants of each other rather than possibilities.
+*Primed TNT and Timed Prime TNT are now variants of each other and has another variant.
+*Combined the Geared Mobs to be possibilities of each other rather than individual drops.
+*Combined several Dual Mobs to be possibilities of each other rather than individual drops.
+*Combined several Mob Towers to be possibilities of each other rather than individual drops.
+*Randomly Dyed Blocks are now possibilities of each other and has new possibilities/variants.
+*Updated Witch Wishing Well to say "Witch Wish Came True?" instead of "Witch Wish Came True!"
+*Combined Creeper Wish and A-Stray as a possibility to Don't Like Your Ears and A-Blazing Wishes.
+*Wishing Wells now use a custom wishing well structure instead of the default lucky block structure.
+*Combined all -2 Luck Potion Effect Mobs to be possibilities of each other rather than individual drops.
+*Falling Colourful Bedrock Pole and Bedrock Pole are now variants of each other along with a new variant.
+*Combined Bedrock with Chest on top and Bedrock Pole to be variants instead of possibilities of each other.
+*Falling Dirt Pole and Colourful Bedrock Pole are now possibilities of each other rather than individual drops.
+*Falling TNT Pole and Redstone Block + TNT Pole are now possibilities of each other rather than individual drops.
+*Thrown Egg drops 2 and 1 luck now are possibilities of each other rather than variants except for the ore blocks.
+*Changed imposter message's text from to "There's an imposter among us!" instead of "There's an Imposter among us!"
+*Updated the pride flag structures (Rainbow, Transgender, and Non-Binary) to be variants of each other rather than possibilities.
+*Combined all -2 Non-Flying Horse Super Geared Mobs to be possibilities of each other rather than individual drops between two drops.
+*Iron Block, Raw Iron Block, Gold Block, Raw Gold Block, Copper Block, and Raw Copper Block are now variants each other instead of possibilities.
+*Separated Bats/Sniffers + Sniffers into its own drop instead of being a possibility/variant. As well as being possibilities of each other with new possibilities.
+
+Bug Fixes:
+*FIXED typo for campfire possibility.
+*FIXED lbp_temple structure being accidentally removed.
+*FIXED Skeleton riding Blaze Dual Mob not having a bow.
+*FIXED typo for Baby Zombified Piglin being called a Pigin.
+*FIXED pink dungeon not having the pink lucky block crafting recipe item frames.
+*FIXED Crossbow + Arrows having a duplicate arrows instead of the secondary arrows to be spectral arrows.
+
+Removed:
+
+Notes:
+As of this update every wishing well from the 1.0, 2.0, and 3.0 series are ack.
+This update has the second biggest change log, only being beaten by Lucky Block Pink 8.0 [Re:Start].
+First update since Lucky Block Pink 6.9.1 [The Magic Update] which released October 8th, 2021 to release in October.
+The new texture is a recolouring with some added detail of the original 1.7.10/1.8.2 lucky block pink with hearts texture.
+First update since Lucky Block Pink 6.9.1 [The Magic Update] which released October 8th, 2021 to have the name of "The [Word] Update."
+The next update, Lucky Block Pink 8.3 will be focusing on finally updating the Pink Love Potion, Pink Lucky Sword, and Pink Lucky Bow.
+This is the first update since Lucky Block Pink 2.6 which released August 9th 2015 in which lucky block pink has had an animated texture.
+Lucky Block Pink is now mildly OP as I felt like it fit better to the nature of lucky blocks, its still mostly balanced, but fits in better with the regular lucky blocks.
+This update has introduced the most structures into Lucky Block Pink ever beating Lucky Block Pink 6.4 [The Restructure Update] which released February, 29th, 2020 and introduced 16 structures.
+My main goals for this update was to make lucky block pink's drops better overall, a return to form, focusing on more quality drops + better rewards for good drops and combining several of the bad drops to make them drop less likely.
+This update of Lucky Block Pink reintroduces a lot of drops/simulates drops from before Lucky Block Pink 3.0 which released on November 22nd, 2015 (and a few drops released after, but to a lesser degree) hence the name of the update being, "The Classic Update".
+This update released exactly 6 years after NEO Lucky Block Pink [1.7.10] and Lucky Block Pink 5.3.1 [The Massive Update Pt. 2] both of which released October 7th, 2017 and also marking first time ever on a non-Feb 12th day two updates have released on the same day.

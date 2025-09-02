@@ -1,0 +1,10 @@
+{
+	id: "4D34FE522DEA569C"
+	loot_size: 1
+	order_index: 0
+	rewards: [
+		{ count: 8, item: "minecraft:iron_ingot" }
+		{ count: 8, item: "minecraft:gold_ingot" }
+	]
+	title: "irongold8"
+}

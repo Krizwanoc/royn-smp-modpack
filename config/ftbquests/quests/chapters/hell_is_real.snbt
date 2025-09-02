@@ -1,0 +1,2563 @@
+{
+	autofocus_id: "19E4278A1A1EB2E8"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hell_is_real"
+	group: ""
+	icon: {
+		Count: 1
+		id: "minecraft:leather_boots"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "14293E75F1814CF5"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["I hope you like walking."]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				id: "minecraft:leather_boots"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "19E4278A1A1EB2E8"
+			progression_mode: "flexible"
+			rewards: [{
+				count: 20
+				id: "360291A1F5891944"
+				item: "minecraft:cooked_porkchop"
+				type: "item"
+			}]
+			shape: "gear"
+			size: 2.2d
+			tasks: [{
+				id: "737652FF2724A1F9"
+				title: "Exploration hell"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			description: [
+				"Exactly what it sounds like, we are going to invade a village and make New New Meneseria."
+				""
+				"I know exactly jack shit about how MCA works, but you should probably make sure these villagers don't die. Just a hunch."
+			]
+			icon: "minecraft:emerald"
+			id: "40859389D42B3DF8"
+			rewards: [
+				{
+					count: 10
+					id: "4D50D3067921A221"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					count: 32
+					id: "0661868117ED21A2"
+					item: "minecraft:cobblestone"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				icon: "minecraft:emerald"
+				id: "3BCE073288014DEB"
+				optional_task: true
+				structure: "#minecraft:village"
+				type: "structure"
+			}]
+			title: "FIND THEIR HOME"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["40859389D42B3DF8"]
+			description: [
+				"This is the item you use to designate buildings as buildings, because it's not done automatically. Cry about it."
+				""
+				"To do this, go inside an enclosed area, right click the blueprint, and click \"Add Room\"."
+				""
+				"Special buildings exist too if you're into that sort of thing."
+			]
+			id: "7DF7ED03DC009122"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "116F888E09B5E527"
+					table_id: 5563351068620510876L
+					type: "choice"
+				}
+				{
+					id: "526CB3A03803295C"
+					item: "mca:book_blueprint"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7C65EEB90DC61011"
+				item: "mca:blueprint"
+				type: "item"
+			}]
+			title: "More buildings"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "mca:comb"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "511F02A8903F6C49"
+			optional: true
+			rewards: [
+				{
+					id: "371894C54730937B"
+					item: "mca:potion_of_masculinity"
+					type: "item"
+				}
+				{
+					id: "7195A0D6952FD124"
+					item: "mca:potion_of_feminity"
+					type: "item"
+				}
+				{
+					id: "3329F73258EC3E67"
+					item: {
+						Count: 1
+						id: "mca:comb"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "206285DF10015981"
+					item: {
+						Count: 1
+						id: "mca:needle_and_thread"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			size: 0.7d
+			tasks: [{
+				id: "4484267AA7D3FB1A"
+				title: "I fucked up my character in the character creator..."
+				type: "checkmark"
+			}]
+			x: 0.6999999999999996d
+			y: 2.6999999999999966d
+		}
+		{
+			dependencies: ["40859389D42B3DF8"]
+			description: [
+				"You can fucking revive dead villagers. Holy fucking shit."
+				""
+				"Construct the altar shown in the book in order to summon the Grim Reaper and kill him."
+			]
+			icon: "mca:cross_headstone"
+			id: "0689F20F7D154330"
+			optional: true
+			rewards: [
+				{
+					id: "212EF72218735D03"
+					item: "mca:book_death"
+					type: "item"
+				}
+				{
+					id: "40CA13B1E35E5044"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "780EA343EF13A33C"
+					item: { Count: 9, id: "minecraft:obsidian" }
+					type: "item"
+				}
+				{
+					id: "5DE0DB7EEBEB36BA"
+					item: "minecraft:emerald_block"
+					type: "item"
+				}
+			]
+			title: "Resurrection"
+			x: -6.5d
+			y: 4.0d
+		}
+		{
+			icon: "minecraft:oak_log"
+			id: "2780643247DC4D9B"
+			optional: true
+			rewards: [
+				{
+					count: 8
+					id: "3ACB7B191B82394C"
+					item: "minecraft:oak_log"
+					type: "item"
+				}
+				{
+					id: "47B83FF455449985"
+					item: "minecraft:oak_sapling"
+					type: "item"
+				}
+				{
+					id: "0CDDDAE1BADA466B"
+					item: "minecraft:dirt"
+					type: "item"
+				}
+			]
+			size: 0.7d
+			tasks: [{
+				id: "52BACF10EA6669C1"
+				title: "Free wood!"
+				type: "checkmark"
+			}]
+			x: -0.6999999999999997d
+			y: 2.6999999999999904d
+		}
+		{
+			dependencies: ["0689F20F7D154330"]
+			description: [
+				"Once you have killed the Grim Reaper and gotten its scythe, you need to charge it before using it to ressurrect a villager."
+				""
+				"To do this, kill a different villager with the scythe, then right click the grave of the villager you wanted to ressurrect with the charged scythe."
+				""
+				"Villagers revived with this method will become infected."
+			]
+			id: "4D2E40B6825D3825"
+			rewards: [
+				{
+					id: "514EF3BF707F8363"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 15
+					id: "0F6777BB82F6878A"
+					item: "minecraft:amethyst_shard"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "0D166846CB93673B"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "mca:adventure/scythe_revive"
+				criterion: ""
+				id: "5DAF3DE321ABA04A"
+				type: "advancement"
+			}]
+			x: -7.799999999999999d
+			y: 3.4999999999999982d
+		}
+		{
+			dependencies: [
+				"4E6F49E9144FFFB4"
+				"0689F20F7D154330"
+			]
+			description: ["Lets you revive villagers without giving them infections or requiring you to kill someone. However, it requires a nether star and only has 10 uses."]
+			id: "085FCE9537F68EB1"
+			rewards: [
+				{
+					id: "5DFB28FEDBDFC272"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 15
+					id: "3D2061C095F9AA77"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+				{
+					count: 7
+					id: "0F483D9378289D41"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [{
+				advancement: "mca:adventure/staff_of_life"
+				criterion: ""
+				id: "160D45BB1A2D9320"
+				type: "advancement"
+			}]
+			x: -7.799999999999999d
+			y: 4.4999999999999964d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			id: "7BEB04BFD4CF4F5A"
+			rewards: [
+				{
+					id: "5D099DE3BA069D62"
+					item: "alexscaves:spelunkery_table"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "2A91DDE1D742413C"
+					item: "minecraft:paper"
+					type: "item"
+				}
+				{
+					id: "7555E7B3D17271BF"
+					item: "alexscaves:cave_book"
+					type: "item"
+				}
+				{
+					id: "39DC2D84F2C09D34"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				advancement: "alexscaves:alexscaves/cave_tablet"
+				criterion: ""
+				id: "64FB3EB19C750C9F"
+				type: "advancement"
+			}]
+			title: "As a child, I yearned for the mines"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["7BEB04BFD4CF4F5A"]
+			id: "372060F32F4EC20C"
+			rewards: [
+				{
+					count: 3
+					id: "26028BD15152F39F"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "minecraft:long_water_breathing"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "30EB1F5C405B9085"
+					item: "alexscaves:floater"
+					type: "item"
+				}
+				{
+					id: "49148C6D4D618734"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				biome: "alexscaves:abyssal_chasm"
+				icon: "alexscaves:bioluminesscence"
+				id: "4038BFE8741E007E"
+				type: "biome"
+			}]
+			x: -2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7BEB04BFD4CF4F5A"]
+			id: "0252451AD3A0B2B7"
+			optional: true
+			rewards: [{
+				id: "44E2C01D35170C47"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				biome: "alexscaves:candy_cavity"
+				icon: "alexscaves:chiseled_candy_cane_block"
+				id: "29261E2ED4827F91"
+				type: "biome"
+			}]
+			x: -2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7BEB04BFD4CF4F5A"]
+			description: ["Light, i.e. torches, attract moths, which in turn attract the mob in this cave biome. You will need to use mothballs to drive the moths off."]
+			id: "08D55D0FC76C80DC"
+			optional: true
+			rewards: [
+				{
+					id: "7AE48F5CAD3A6EF6"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "0B4477ADB44D5C8B"
+					item: "alexscaves:moth_ball"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				biome: "alexscaves:forlorn_hollows"
+				icon: "alexscaves:peering_coprolith"
+				id: "368954517AC51F41"
+				type: "biome"
+			}]
+			x: 0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7BEB04BFD4CF4F5A"]
+			id: "15F337780CB9598E"
+			optional: true
+			rewards: [{
+				id: "4285FF0A2734C49F"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				biome: "alexscaves:magnetic_caves"
+				icon: "alexscaves:scarlet_magnet"
+				id: "6B1A9978983414AB"
+				type: "biome"
+			}]
+			x: 2.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["7BEB04BFD4CF4F5A"]
+			id: "09D6CA209D732CA3"
+			rewards: [
+				{
+					count: 16
+					id: "32055F8D51AA92B2"
+					item: "alexscaves:dinosaur_nugget"
+					type: "item"
+				}
+				{
+					id: "5F0F9B1ACFF61C3D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				biome: "alexscaves:primordial_caves"
+				icon: "alexscaves:dinosaur_nugget"
+				id: "3C85318B2EB661A7"
+				type: "biome"
+			}]
+			x: 2.5d
+			y: 11.5d
+		}
+		{
+			dependencies: ["7BEB04BFD4CF4F5A"]
+			description: ["If you get irradiated you can't naturally heal. Instead you need to eat foods like the one in the quest reward that contain sulfur. This is probably not how it works, but I don't care anymore."]
+			id: "230D3F2AFFF65518"
+			rewards: [
+				{
+					count: 16
+					id: "4776616BE50FDB50"
+					item: "alexscaves:slam"
+					type: "item"
+				}
+				{
+					id: "5300B14B67CF83DD"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				biome: "alexscaves:toxic_caves"
+				icon: "alexscaves:waste_drum"
+				id: "436A9EA86493DE47"
+				type: "biome"
+			}]
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["09D6CA209D732CA3"]
+			description: ["Find Amber Curiosities by mining amber and craft this thing. Throw it into a volcano to trigger the next boss fight."]
+			id: "47BE3AEB00A235AE"
+			rewards: [{
+				id: "5CCB5B5CB4406BED"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			shape: "circle"
+			tasks: [{
+				id: "5160F9DA3B634905"
+				item: "alexscaves:ominous_catalyst"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["47BE3AEB00A235AE"]
+			id: "601EBFFF9B94010C"
+			rewards: [
+				{
+					count: 5
+					id: "7E59214858BDEA2C"
+					item: "alexscaves:tectonic_shard"
+					type: "item"
+				}
+				{
+					id: "2B73B7A8B89F40A3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "1765475E0CA25A3F"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				icon: "alexscaves:volcanic_core"
+				id: "0D8806D38C3DCBB2"
+				type: "kill"
+				value: 1L
+			}]
+			x: 4.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["230D3F2AFFF65518"]
+			description: [
+				"Place 8 of these blocks in a 2x2x2 cube an you can make a Nuclear Furnace. It smelts 5 times as fast as a blast furnace, but can only use Uranium Rods as fuel."
+				""
+				"You also need to feed it metal barrels to prevent nuclear waste from building up inside it. If too much nuclear waste is in the furnace it will explode"
+			]
+			id: "2C14652BB89E6831"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "0794748586809FE1"
+					item: "alexscaves:metal_barrel"
+					type: "item"
+				}
+				{
+					id: "6713E61E7FE2173F"
+					item: "alexscaves:nuclear_siren"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "7244ADD800A6D8AF"
+				item: { Count: 8, id: "alexscaves:nuclear_furnace_component" }
+				type: "item"
+			}]
+			title: "CHERNOBYL FUKUSHIMA 100 BILLION DEAD"
+			x: 1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["230D3F2AFFF65518"]
+			id: "07CAF2474E833614"
+			rewards: [{
+				id: "79B2DBB233A1BC29"
+				item: "alexscaves:remote_detonator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0610482C2FB8D3FC"
+				item: "alexscaves:nuclear_bomb"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 13.0d
+		}
+		{
+			dependencies: [
+				"2FC83C8B880B927C"
+				"07CAF2474E833614"
+				"2C4555103E130643"
+				"601EBFFF9B94010C"
+			]
+			description: [
+				"Craft the Tremorzilla Egg with the items from the previous quests, place it down, and then blow it up with a nuke."
+				""
+				"Tremorzilla can be tamed by feeding it nuclear waste."
+			]
+			icon: {
+				Count: 1
+				id: "citadel:icon_item"
+				tag: {
+					IconLocation: "alexscaves:textures/misc/advancement/icon/hatch_tremorzilla.png"
+				}
+			}
+			id: "390E96BB8E601205"
+			rewards: [
+				{
+					id: "1C860D940B275A5D"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 5
+					id: "4C691D4CC0FB8EFD"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				advancement: "alexscaves:alexscaves/hatch_tremorzilla_egg"
+				criterion: ""
+				id: "592F68E03FB9B282"
+				type: "advancement"
+			}]
+			x: 0.0d
+			y: 14.5d
+		}
+		{
+			dependencies: ["372060F32F4EC20C"]
+			description: [
+				"Hullbreakers are normally neutral, but will attack you if you're in a submarine and have your lights on."
+				""
+				"They drop both the Immortal Embryo and the Enigmatic Engine."
+			]
+			id: "2FC83C8B880B927C"
+			rewards: [
+				{
+					count: 6
+					id: "593B82A6D09B3CA2"
+					item: "alexscaves:depth_glass"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "1A3D9FBAEC274701"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "7144C4FBCC1BBD70"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				entity: "alexscaves:hullbreaker"
+				icon: "alexscaves:immortal_embryo"
+				id: "03348CB623DC193D"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["372060F32F4EC20C"]
+			id: "3D101F876B9E6959"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "0AB717067C8F4BB4"
+					item: "alexscaves:abyssal_altar"
+					type: "item"
+				}
+				{
+					id: "34F743B65ECE8EF1"
+					item: "alexscaves:gazing_pearl"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			tasks: [{
+				advancement: "alexscaves:alexscaves/stalked_by_deep_one"
+				criterion: ""
+				id: "16A458B6F9C75B4D"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["372060F32F4EC20C"]
+			description: [
+				"Either find a submarine on the floor of this cave biome, or build one yourself with the Egnimatic Engine dropped by the Hullbreaker."
+				""
+				"Just look at the wiki page for how to build it the description the guidebook gives is shit https://alexscaves.wiki.gg/wiki/Submarine"
+			]
+			id: "5D3DE9EB49F98EAB"
+			optional: true
+			rewards: [{
+				count: 48
+				id: "776CEA06C2E6FF12"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "alexscaves:alexscaves/ride_submarine"
+				criterion: ""
+				id: "003A745DC10CD79D"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 13.0d
+		}
+		{
+			dependencies: ["09D6CA209D732CA3"]
+			description: ["Steal a dinosaur egg. This will have no negative consequences."]
+			id: "2C4555103E130643"
+			rewards: [{
+				id: "29266F249D34436C"
+				item: "alexscavesdelight:honey_glazed_dinosaur_chop_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C9FF3CD40F93F70"
+				item: "alexscaves:tremorsaurus_egg"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["230D3F2AFFF65518"]
+			id: "03A3A5F407C8DFC0"
+			optional: true
+			rewards: [{
+				id: "3E290D7741D5C9C9"
+				item: "alexscaves:uranium_rod"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C338A602967DFB0"
+				item: "alexscaves:raygun"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 12.0d
+		}
+		{
+			dependencies: ["15F337780CB9598E"]
+			description: [
+				"This is probably the only way to automate mining (the Ore Laser doesn't count since it doesn't break blocks) in this pack so it gets a special mention."
+				""
+				"Kill Boundroids (crawling shitheads that try to drop weights on you) and Magnetrons (floating shitheads that steal your iron tools) to obtain Heavyweights and Hearts of Iron in order to craft the two components of the quarry."
+				""
+				"Place down the 4 Magnetic Lights you get for this quest to mark out a square perimeter. Then, place down the Magnetic Quarry block (make sure the side with the three blue dots is facing towards a Magnetic Light). Once the lights activate, you can place the Magnetic Quarry Smasher inside the are you marked out and it will immediately begin mining."
+			]
+			id: "5037522375C51288"
+			rewards: [
+				{
+					count: 4
+					id: "5B5EF0653546B80D"
+					item: "alexscaves:magnetic_light"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "61DB24A3187E3546"
+					table_id: 575590373991928076L
+					type: "choice"
+				}
+				{
+					id: "4237687A5016622E"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "24D2066C39690188"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			tasks: [
+				{
+					id: "270F6632A2C41C81"
+					item: "alexscaves:quarry_smasher"
+					type: "item"
+				}
+				{
+					id: "2D0709E894DD3FC7"
+					item: "alexscaves:quarry"
+					type: "item"
+				}
+			]
+			title: "Magnetic Quarry"
+			x: 4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["0252451AD3A0B2B7"]
+			description: [
+				"The Conversion Crucible can be used to convert biomes."
+				""
+				"Kill Licowitches to get Radiant Essence. Eat a Biome Treat while starving in order to bind it to the biome you are currently standing in. The bound Biome Treat can then be placed in a Conversion Crucible to convert the area surrounding it into the biome."
+				""
+				"The conversion process will require some blocks from the bound biome, as well as a rare item (such as Diamonds)."
+			]
+			id: "1A57F29D2667B735"
+			rewards: [
+				{
+					id: "250C4E089F3682F2"
+					item: "farmersdelight:honey_glazed_ham_block"
+					type: "item"
+				}
+				{
+					id: "2944F28A8F96F048"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3369EBA757558E8F"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "3FBC096FBCC2A1BF"
+					item: "alexscaves:conversion_crucible"
+					type: "item"
+				}
+				{
+					id: "0E6C90660FE5D106"
+					item: "alexscaves:biome_treat"
+					type: "item"
+				}
+			]
+			x: -4.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["08D55D0FC76C80DC"]
+			description: ["Wait for some cultist looking people to grab a moth and kill it, spawning a Watcher."]
+			icon: "alexscaves:occult_gem"
+			id: "052064CBC8F4BC3A"
+			rewards: [{
+				count: 3
+				id: "5FEE6513E61666AE"
+				item: "alexscaves:occult_gem"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "alexscaves:watcher"
+				id: "11A9B2173C49A054"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["08D55D0FC76C80DC"]
+			description: ["Wait for some cultist looking people to grab a giant bat and kill it, spawning a Watcher."]
+			icon: "alexscaves:pure_darkness"
+			id: "7CFA4615858AABB8"
+			rewards: [{
+				count: 2
+				id: "5666E69B0B06F0EC"
+				item: "alexscaves:pure_darkness"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "alexscaves:forsaken"
+				id: "645B351450A2A070"
+				type: "kill"
+				value: 1L
+			}]
+			x: -0.5d
+			y: 10.5d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			id: "4398943EE206A5A0"
+			rewards: [{
+				count: 3
+				id: "2496310DD63E9B2C"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_fire_resistance"
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "495290F43BD23A33"
+				type: "dimension"
+			}]
+			x: 4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["0CC5778E8858DA4C"]
+			description: ["The portal room itself is made out of Large Brick blocks and has a 3x3 square of red Glowing Obsidian at its centre. Right click the Glowing Obsidian to ignite the portal. (The portal needs to be free of obstruction and have a 1-block tall wall of Large Bricks around it)"]
+			id: "2B29286457BD0D04"
+			rewards: [{
+				count: 3
+				id: "2533B18663CE8244"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:long_slow_falling"
+					}
+				}
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				dimension: "rediscovered:skylands"
+				icon: "rediscovered:glowing_obsidian"
+				id: "7947FFE06B5BDEDD"
+				type: "dimension"
+			}]
+			x: 4.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["1280C63A417B3F48"]
+			description: ["imma be real here I don't know enough about Twilight Fortress to write descriptions for all of these. Just ball I guess."]
+			id: "3574E7EB8A9791A7"
+			rewards: [{
+				id: "17F60B8AD5AA0480"
+				item: "twilightforest:magic_map"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				dimension: "twilightforest:twilight_forest"
+				icon: "twilightforest:twilight_portal_miniature_structure"
+				id: "3F3983AC219EAA10"
+				type: "dimension"
+			}]
+			x: 4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			description: ["You need a whole diamond BLOCK in order to activate the portal to the Twilight Forest."]
+			id: "1280C63A417B3F48"
+			optional: true
+			rewards: [{
+				id: "53E5368EA1CCF48B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "0F40C9C663EEB411"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			title: "Inflation hits the Twilight Forest"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			description: [
+				"Find a Trail Ruin containing a Skylands portal."
+				""
+				"Not all Ruins will contain a portal; the Ruby Eye will guide you towards one that specifically has the portal room. If the eye on the item fully opens, you are facing in the right direction."
+				""
+				"You cannot use Nether Rubies to craft the Ruby Eye, you will SPECIFICALLY need Ancient Rubies. Cry about it. You may also need to do a very large amount of excavation in order uncover the entire Ruin."
+			]
+			icon: "rediscovered:ruby_eye"
+			id: "0CC5778E8858DA4C"
+			optional: true
+			rewards: [{
+				count: 3
+				id: "5C99A9997E3D57B9"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "alexscaves:strong_haste"
+					}
+				}
+				type: "item"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "418F1229B140E69F"
+				item: "rediscovered:ruby_eye"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B29286457BD0D04"]
+			description: [
+				"Red Dragon bossfight. Fuck yeah."
+				""
+				"You will need to enter the Pyramid and destroy the four dragon pylons protecting the fifth pylon at the top."
+			]
+			id: "4E96602592ADE2C0"
+			rewards: [{
+				id: "57FA3F73AE703ECD"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				icon: "rediscovered:large_bricks"
+				id: "49985DF0D44D5AFD"
+				structure: "rediscovered:brick_pyramid"
+				type: "structure"
+			}]
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4E96602592ADE2C0"]
+			description: [
+				"Destroying the pylon at the top of the Pyramid makes the Red Dragon vulnerable. Kill it to obtain its egg."
+				""
+				"I wonder what happens if you right click the egg with Dragon's Breath surely nothing out of the ordinary will occur"
+			]
+			id: "686FA01BB8BEE1CA"
+			rewards: [
+				{
+					id: "07F45DBAFCDE3478"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "6AFF46A815DD5586"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				entity: "rediscovered:red_dragon"
+				icon: "rediscovered:red_dragon_egg"
+				id: "08E0A84FE6181BA4"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2B29286457BD0D04"]
+			description: ["You may need to bring your own workstations because sometimes the villages don't spawn with them. The two most important professions are the ones associated with the Brewing Stand and Fletching Table"]
+			id: "23A7442337BE2CAA"
+			rewards: [
+				{
+					count: 16
+					id: "7B9231BE463416B1"
+					item: "rediscovered:ruby"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "2637607D8D84BFE1"
+					item: "minecraft:flint"
+					type: "item"
+				}
+				{
+					id: "1A006AA100AC024A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "diamond"
+			size: 1.0d
+			tasks: [{
+				icon: "minecraft:cherry_planks"
+				id: "03F05B87DCD5FF9E"
+				structure: "rediscovered:pigman_village"
+				type: "structure"
+			}]
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3574E7EB8A9791A7"]
+			id: "5970850589E75093"
+			rewards: [
+				{
+					count: 9
+					id: "224BD156CAF1F962"
+					item: "twilightforest:naga_scale"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "42BDB7FE9E164838"
+					item: "twilightdelight:naga_chip"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "6615E2CB23FB83ED"
+				item: "twilightforest:naga_trophy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5970850589E75093"]
+			id: "60392BF00E81FE85"
+			rewards: [{
+				id: "7B06C3F7B92EC8D2"
+				item: "twilightdelight:glow_venison_rib_with_pasta"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "1329D2280A619645"
+				item: "twilightforest:lich_trophy"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["60392BF00E81FE85"]
+			id: "51998930B9A688F4"
+			rewards: [{
+				id: "344807631C7A5717"
+				item: "twilightdelight:meef_wellington_block"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "4112E5CBB6C57F7A"
+				item: "twilightforest:minoshroom_trophy"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["60392BF00E81FE85"]
+			id: "6D6EC500D7145732"
+			rewards: [
+				{
+					count: 8
+					id: "5D438C48434200D8"
+					item: "twilightforest:alpha_yeti_fur"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "2C3FCB5EE58415AF"
+					item: "twilightdelight:glacier_ice_tea"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "48593D846BF06645"
+				item: "twilightforest:alpha_yeti_trophy"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["60392BF00E81FE85"]
+			id: "26E691C23E346D7F"
+			shape: "hexagon"
+			tasks: [{
+				id: "32EC132822C6E280"
+				item: "twilightforest:knight_phantom_trophy"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["51998930B9A688F4"]
+			id: "085C4ED17767B8D3"
+			rewards: [{
+				count: 3
+				id: "55F4AE7487E4B1E1"
+				item: "twilightdelight:hydra_burger"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "78993A3976977DE9"
+				item: "twilightforest:hydra_trophy"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["26E691C23E346D7F"]
+			id: "572412E33622DE2C"
+			rewards: [{
+				count: 2
+				id: "6D502CED23C8BE7A"
+				item: "twilightdelight:ghast_brain_salad"
+				type: "item"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				id: "5967A63FEFC8EAEB"
+				item: "twilightforest:ur_ghast_trophy"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["6D6EC500D7145732"]
+			id: "43C2EF999C0FC873"
+			shape: "hexagon"
+			tasks: [{
+				id: "2E9918E775669903"
+				item: "twilightforest:snow_queen_trophy"
+				type: "item"
+			}]
+			x: 9.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"43C2EF999C0FC873"
+				"572412E33622DE2C"
+				"085C4ED17767B8D3"
+			]
+			description: [
+				"After defeating ALL OF THE PREVIOUS BOSSES, go into the Troll Caves and look for a small obsidian vault. These beans will be inside."
+				""
+				"Magic Beans can be planted on Uberous Soil to create a beanstalk that leads to the island with the giants on it"
+			]
+			id: "232A7BCCECA3A10A"
+			shape: "diamond"
+			tasks: [{
+				id: "58142B513678DA66"
+				item: "twilightforest:magic_beans"
+				type: "item"
+			}]
+			x: 10.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"43C2EF999C0FC873"
+				"572412E33622DE2C"
+				"085C4ED17767B8D3"
+			]
+			description: ["Kill giants. Shoot giants. Stab giants. Firebomb giants. Nuke giants. Sterilise giants."]
+			id: "70FA8EE46C218730"
+			rewards: [{
+				id: "7F0755B376983377"
+				item: "twilightforest:giant_obsidian"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "6B28F44EBF738079"
+				item: {
+					Count: 1
+					id: "twilightforest:giant_pickaxe"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["70FA8EE46C218730"]
+			description: [
+				"Go back into the Troll Cave and break open the giant obsidian vault with the Giant's Pickaxe."
+				""
+				"The Lamp of Cinders will burn though the unbreakable thorns that surround the Final Castle."
+			]
+			id: "1DFDD856FE21A7EF"
+			rewards: [{
+				id: "6E5F351213090091"
+				item: "twilightdelight:aurora_pie"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				id: "04EDB2FAEDEBE01B"
+				item: {
+					Count: 1
+					id: "twilightforest:lamp_of_cinders"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1DFDD856FE21A7EF"]
+			description: ["You did it!"]
+			id: "6920E85CE9A7CAFF"
+			rewards: [
+				{
+					id: "2D8E5D7E4A44BA28"
+					item: "alexscavesdelight:vanilla_ice_cream"
+					type: "item"
+				}
+				{
+					id: "3A04DBF74BA75340"
+					type: "xp_levels"
+					xp_levels: 90
+				}
+				{
+					count: 4
+					id: "32C80A29124F6A92"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				icon: "twilightforest:aurora_pillar"
+				id: "32AAAD7C1C57C87E"
+				structure: "twilightforest:final_castle"
+				type: "structure"
+			}]
+			title: "The Final Castle"
+			x: 12.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			id: "75A6F08A1F1D5EC3"
+			rewards: [{
+				id: "4F009638F6495826"
+				item: "minecraft:golden_apple"
+				type: "item"
+			}]
+			shape: "diamond"
+			tasks: [{
+				icon: "minecraft:nether_brick_fence"
+				id: "16BC355666322085"
+				structure: "#minecraft:fortress"
+				type: "structure"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["75A6F08A1F1D5EC3"]
+			id: "1C7DCAEFD1AE9CB2"
+			optional: true
+			rewards: [
+				{
+					count: 5
+					id: "12FAAFE5D3D864E4"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "34BFD32E36646807"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "10070010E5A55273"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1C7DCAEFD1AE9CB2"]
+			hide_dependent_lines: true
+			id: "4E6F49E9144FFFB4"
+			rewards: [
+				{
+					count: 2
+					id: "17EFD266AAE710F5"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "6DB54DE8FB415FA4"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 5
+					id: "65777DAC022CEB70"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: "minecraft:nether_star"
+				id: "52403C9C001E6F3E"
+				type: "kill"
+				value: 1L
+			}]
+			x: 11.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["75A6F08A1F1D5EC3"]
+			id: "6DA8B613AD1D9421"
+			rewards: [
+				{
+					id: "5056B464DD70D3AA"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "4B7EB9C79CECA6C1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "2C6C71E7DAFECE87"
+				item: { Count: 6, id: "minecraft:blaze_rod" }
+				type: "item"
+			}]
+			x: 9.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"2B29286457BD0D04"
+				"4E6F49E9144FFFB4"
+				"4398943EE206A5A0"
+			]
+			description: [
+				"Doesn't actually spawn a mini-nether structure in the overworld."
+				""
+				"Instead, it emits the Crimson Veil status effect, giving the surrounding area a \"Nether environment\". This allows Nether mobs like the Piglins to survive, but will zombify any nearby Pigmen."
+				""
+				"To prevent your Pigmen from zombifiying, you will need the Golden Aura potion."
+			]
+			id: "59C500FBBD39DFCF"
+			optional: true
+			rewards: [{
+				id: "116730696C5A46B1"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0E619596252ACFD9"
+				item: "rediscovered:nether_reactor_core"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			id: "74BE29D72AB182FB"
+			optional: true
+			rewards: [{
+				id: "10493B3C0DC39331"
+				type: "xp_levels"
+				xp_levels: 5
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "friendsandfoes:wildfire"
+				icon: {
+					Count: 1
+					id: "friendsandfoes:wildfire_crown"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "3F2A34A379778743"
+				type: "kill"
+				value: 1L
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			id: "434EF81FA6DE23D3"
+			optional: true
+			shape: "diamond"
+			tasks: [{
+				icon: "minecraft:gilded_blackstone"
+				id: "298D993BBC4A58C3"
+				structure: "minecraft:bastion_remnant"
+				type: "structure"
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			description: ["Many of the plants BetterNether adds have cool uses, like being free magma cream or making medicine."]
+			id: "7A58F3CC10DDFED0"
+			optional: true
+			rewards: [{
+				count: 5
+				id: "0715B8BE81374F4F"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "087681BBE8C81294"
+					item: "betternether:golden_vine"
+					type: "item"
+				}
+				{
+					id: "1980AF787715728C"
+					item: "betternether:stalagnate_seed"
+					type: "item"
+				}
+				{
+					id: "56D913E41BA764BE"
+					item: "betternether:agave"
+					type: "item"
+				}
+				{
+					id: "2538389AD12A6C02"
+					item: "betternether:magma_flower"
+					type: "item"
+				}
+				{
+					id: "3ADBE8AF155F70E3"
+					item: "betternether:black_apple_seed"
+					type: "item"
+				}
+			]
+			title: "The wonders of BetterNether"
+			x: 7.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			description: ["Yep. These statues can't be crafted manually, but if you give them 4 glowstone you can set your respawn point in the nether WITHOUT needing to constantly refill it like a Respawn Anchor."]
+			id: "4F124CB59DEEFD0C"
+			optional: true
+			rewards: [
+				{
+					count: 4
+					id: "7ADD29C90950BF96"
+					item: "minecraft:glowstone_dust"
+					type: "item"
+				}
+				{
+					id: "423ED7CAD5F4BF7E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					icon: "betternether:pig_statue_respawner"
+					id: "1B2B318F9099C068"
+					optional_task: true
+					structure: "betternether:respawn_points"
+					type: "structure"
+				}
+				{
+					icon: "betternether:pig_statue_respawner"
+					id: "2EDA9FB4B49BA7D9"
+					optional_task: true
+					structure: "betternether:spawn_altar_ladder"
+					type: "structure"
+				}
+			]
+			title: "Respawn Anchors but awesome"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"40859389D42B3DF8"
+				"49391EC2A0B1F8D0"
+			]
+			description: ["Drink an Ominous Flask while in a village to make pillagers everywhere hate you."]
+			id: "396B7365C0F1A6BC"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "5DA1517E680D15BC"
+					item: "kubejs:g"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "47CC77829C3DCABE"
+					item: "minecraft:emerald"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:adventure/hero_of_the_village"
+				criterion: ""
+				id: "6A3861B649FEE91A"
+				type: "advancement"
+			}]
+			x: -5.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			id: "1C5EA39496602540"
+			rewards: [{
+				count: 2
+				id: "248947C0A6CD2800"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "103F1AEF480BF802"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"6DA8B613AD1D9421"
+				"1C5EA39496602540"
+			]
+			id: "62B3624519EDF73A"
+			rewards: [
+				{
+					id: "7ECBC7FF82996F56"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+				{
+					count: 3
+					id: "30850F3A9D4AD6D7"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				count: 8L
+				id: "077B133C23B49A75"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			id: "2E2780692C49DB39"
+			optional: true
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				icon: "trials:trial_spawner"
+				id: "6FEEC70633087223"
+				structure: "trials:trials_chambers"
+				type: "structure"
+			}]
+			x: -4.000000000000001d
+			y: 8.000000000000002d
+		}
+		{
+			dependencies: ["2E2780692C49DB39"]
+			description: ["Killing all the enemies spawned from a Trial Spawner grants you a reward or a Trial Key, which can be inserted into a Trial Vault for even more rewards."]
+			id: "397D2B17592C2E86"
+			tasks: [{
+				count: 3L
+				id: "2C74C26C6001491D"
+				item: "trials:trial_key"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 9.0d
+		}
+		{
+			dependencies: [
+				"2E2780692C49DB39"
+				"49391EC2A0B1F8D0"
+			]
+			description: ["Drinking an Ominous Flask inside a Trial Chamber will make the spawners reactivate and give you these keys for free. There is definitely nothing else that happens when you do this."]
+			id: "60CD476350DFE1BD"
+			shape: "hexagon"
+			tasks: [{
+				id: "1423BC4BB174F053"
+				item: "trials:trial_key_ominous"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			description: ["Kill pillager captains"]
+			id: "49391EC2A0B1F8D0"
+			optional: true
+			tasks: [{
+				id: "063839450CD683BC"
+				item: "trials:ominous_bottle"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["60CD476350DFE1BD"]
+			id: "7A66FBD8982F33E7"
+			rewards: [
+				{
+					count: 16
+					id: "7A1D0DA83FD82C91"
+					item: "trials:wind_charge"
+					type: "item"
+				}
+				{
+					id: "35D8657736E8E147"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					count: 3
+					id: "679BCA40C7280294"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "0BE331B29AC178F1"
+				item: {
+					Count: 1
+					id: "trials:mace"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "SCREEEEEEAMING EAGLES"
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			description: [
+				"Big gears = important stuff, end goals"
+				"Squares = major subsections"
+				"Diamonds = go to somewhere"
+				"Hexagons = boss fight"
+			]
+			icon: "minecraft:writable_book"
+			id: "07E969322ECE7C93"
+			optional: true
+			rewards: [{
+				count: 8
+				id: "729801C747C566F0"
+				item: "minecraft:cobblestone"
+				type: "item"
+			}]
+			size: 0.7d
+			tasks: [{
+				id: "7FC4067295CC1BAB"
+				title: "How to read this questbook"
+				type: "checkmark"
+			}]
+			x: -2.7755575615628914E-16d
+			y: 2.6999999999999966d
+		}
+		{
+			dependencies: ["23A7442337BE2CAA"]
+			description: ["A potion that lets Pigmen survive in Nether environments. Only obtainable by levelling a Doctor Pigman to Master."]
+			id: "5596F02C09FC08D4"
+			optional: true
+			rewards: [
+				{
+					count: 3
+					id: "246EF5FF47AB1BFC"
+					item: {
+						Count: 1
+						id: "minecraft:potion"
+						tag: {
+							Potion: "rediscovered:strong_golden_aura"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "04128BCAF9F81231"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "3D2541D38D24587C"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "79B49549672BF0FD"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "rediscovered:golden_aura"
+					}
+				}
+				type: "item"
+			}]
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["686FA01BB8BEE1CA"]
+			description: ["Place 4 new Pylons on the Dragon Altar in order to respawn the Red Dragon. Useful if you want more eggs."]
+			id: "763B2D027F136FAD"
+			optional: true
+			rewards: [
+				{
+					id: "4DCF67F62BFC5C3A"
+					item: "rediscovered:ruby_block"
+					type: "item"
+				}
+				{
+					id: "5AFFDD18A4798B4D"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "3F77A60434F9617D"
+				item: "rediscovered:mini_dragon_pylon"
+				type: "item"
+			}]
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["19E4278A1A1EB2E8"]
+			icon: {
+				Count: 1
+				id: "minecraft:diamond_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "258319C688CA23F0"
+			optional: true
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "6EA9FB03A589143B"
+				type: "checkmark"
+			}]
+			title: "Miscellaneous Bosses"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53D99A5BE70FF547"]
+			id: "713414BA9C8C916E"
+			optional: true
+			rewards: [{
+				id: "1855AF110498D782"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:illusioner"
+				icon: "friendsandfoes:totem_of_illusion"
+				id: "450623D6AE0C134A"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.500000000000002d
+			y: 1.0d
+		}
+		{
+			dependencies: ["53D99A5BE70FF547"]
+			id: "5860E8532CC384CF"
+			optional: true
+			rewards: [{
+				id: "07F0033C395CD37E"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "friendsandfoes:iceologer"
+				icon: "friendsandfoes:totem_of_freezing"
+				id: "4A3D697F0AAF46C2"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53D99A5BE70FF547"]
+			id: "32C2B9F4885CBA19"
+			optional: true
+			rewards: [{
+				id: "71CF809D71510291"
+				type: "xp"
+				xp: 100
+			}]
+			shape: "diamond"
+			tasks: [{
+				entity: "minecraft:evoker"
+				icon: "minecraft:totem_of_undying"
+				id: "2F0198F913CEA295"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["40F4CCBD656491DE"]
+			icon: {
+				Count: 1
+				id: "farmersdelight:iron_knife"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "33D0CB7F3652893B"
+			rewards: [{
+				id: "118C0488181BB6F6"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [
+				{
+					advancement: "mca:monster"
+					criterion: ""
+					id: "11BDD17494FBB025"
+					type: "advancement"
+				}
+				{
+					advancement: "mca:baby_smelted"
+					criterion: ""
+					id: "1B907D419CA0B140"
+					type: "advancement"
+				}
+			]
+			title: "You already know"
+			x: -7.799999999999995d
+			y: 5.5d
+		}
+		{
+			dependencies: ["40859389D42B3DF8"]
+			id: "71F4EA206D0C70F4"
+			optional: true
+			rewards: [{
+				command: "/summon alexsmobs:grizzly_bear ~ ~ ~"
+				id: "53EFB22D9579C8FA"
+				type: "command"
+			}]
+			tasks: [{
+				advancement: "mca:mayor"
+				criterion: ""
+				id: "0C846C0BC21ADE92"
+				type: "advancement"
+			}]
+			x: -6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["40859389D42B3DF8"]
+			description: ["this is optional because none of us are getting laid"]
+			id: "40F4CCBD656491DE"
+			optional: true
+			rewards: [{
+				id: "7DA3B6B24ADDD100"
+				item: "mca:red_oak_crib"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "79E0CE0BE2B7CDA1"
+					item: {
+						Count: 1
+						id: "mca:baby_boy"
+						tag: {
+							baby: {
+								age: 0
+								father: [I;
+									0
+									0
+									0
+									0
+								]
+								fatherName: "Unknown"
+								mother: [I;
+									0
+									0
+									0
+									0
+								]
+								motherName: "Unknown"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4B030D26C2E76346"
+					item: {
+						Count: 1
+						id: "mca:baby_girl"
+						tag: {
+							baby: {
+								age: 0
+								father: [I;
+									0
+									0
+									0
+									0
+								]
+								fatherName: "Unknown"
+								mother: [I;
+									0
+									0
+									0
+									0
+								]
+								motherName: "Unknown"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Have sex"
+			x: -6.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["71F4EA206D0C70F4"]
+			id: "6B4D3AF5D14DD03A"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75EED55D1FFCA666"
+					table_id: 5563351068620510876L
+					type: "choice"
+				}
+				{
+					count: 5
+					id: "3BDDBEA583370447"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			tasks: [{
+				advancement: "mca:monarch"
+				criterion: ""
+				id: "2ED6135C9245FD1D"
+				type: "advancement"
+			}]
+			x: -7.799999999999999d
+			y: 2.5000000000000013d
+		}
+		{
+			dependencies: [
+				"33D0CB7F3652893B"
+				"6B4D3AF5D14DD03A"
+			]
+			description: ["SLOL SLOT SPOTTED ON THE ROYN SMP"]
+			id: "6BF2449E09D56E3F"
+			rewards: [{
+				count: 4
+				id: "15A73516F16897B3"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "mca:baby_dropped"
+				criterion: ""
+				id: "16D57FDCAE8E02AF"
+				type: "advancement"
+			}]
+			title: "Kill people? Kill people!"
+			x: -9.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["258319C688CA23F0"]
+			icon: {
+				Count: 1
+				id: "minecraft:iron_axe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "53D99A5BE70FF547"
+			optional: true
+			size: 1.2d
+			tasks: [{
+				id: "1D21CB00F029E9D6"
+				title: "Triple Totem Trouble"
+				type: "checkmark"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["258319C688CA23F0"]
+			icon: "mowziesmobs:wrought_axe"
+			id: "479B17F951BE4359"
+			optional: true
+			size: 1.2d
+			tasks: [{
+				id: "5E950481697797E6"
+				title: "Mowzie's Mobs Meltdown"
+				type: "checkmark"
+			}]
+			x: -4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["479B17F951BE4359"]
+			id: "7632E5B5E1BC8F32"
+			rewards: [{
+				id: "107647DF96C70453"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				icon: "mowziesmobs:wrought_helmet"
+				id: "7C3D1BB0DC067191"
+				type: "kill"
+				value: 1L
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4639318491975782"]
+			id: "0A6A748AA1E8726A"
+			rewards: [{
+				id: "065AD4848EDCE673"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				icon: "mowziesmobs:sol_visage"
+				id: "0807B8499471B59C"
+				type: "kill"
+				value: 1L
+			}]
+			x: -6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["479B17F951BE4359"]
+			id: "5E53DACE7B96C750"
+			rewards: [{
+				id: "168849C5ADAB4FAE"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "mowziesmobs:sculptor"
+				icon: {
+					Count: 1
+					id: "mowziesmobs:sculptor_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "610EFE8731C944CD"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["479B17F951BE4359"]
+			description: ["Abavuthana drop their masks when killed. Wearing them makes them stop attacking you, and lets you trade with them."]
+			id: "4639318491975782"
+			tasks: [
+				{
+					id: "7224DCCB7DFAA74C"
+					item: {
+						Count: 1
+						id: "mowziesmobs:umvuthana_mask_fury"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "44C0E500A7566575"
+					item: {
+						Count: 1
+						id: "mowziesmobs:umvuthana_mask_fear"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "58380B3ED9BCC826"
+					item: {
+						Count: 1
+						id: "mowziesmobs:umvuthana_mask_rage"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3E549FED6D63FBF0"
+					item: {
+						Count: 1
+						id: "mowziesmobs:umvuthana_mask_bliss"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6424CF6264D7240E"
+					item: {
+						Count: 1
+						id: "mowziesmobs:umvuthana_mask_misery"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "19A69EBBFB568752"
+					item: {
+						Count: 1
+						id: "mowziesmobs:umvuthana_mask_faith"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Umvuthana masks"
+			x: -5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["245C1A1BA387C0D7"]
+			description: ["Probably invest in double-jump boots before attempting this."]
+			id: "1AC03240258A9580"
+			rewards: [{
+				id: "5BFA606709221586"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "55AF7C991839250F"
+				item: {
+					Count: 1
+					id: "mowziesmobs:earthrend_gauntlet"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Tongbi's Challenge"
+			x: -0.49999999999999956d
+			y: -1.5d
+		}
+		{
+			dependencies: ["479B17F951BE4359"]
+			description: ["Kill Bluffs in order to obtain their rods. They can be given to Tongbi to do a parkour challenge."]
+			id: "245C1A1BA387C0D7"
+			shape: "diamond"
+			tasks: [{
+				id: "4A3FE87CB94B4779"
+				item: "mowziesmobs:bluff_rod"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["479B17F951BE4359"]
+			id: "053171F672DDC77B"
+			rewards: [{
+				id: "618E99B64CB95976"
+				type: "xp"
+				xp: 120
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				icon: {
+					Count: 1
+					id: "mowziesmobs:ice_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "591E0BC375BF067E"
+				type: "kill"
+				value: 1L
+			}]
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			can_repeat: true
+			description: ["WARNING: There is no way to turn the Submarine back into an item once it is placed."]
+			icon: "alexscaves:enigmatic_engine"
+			id: "6735BC880601D55C"
+			optional: true
+			rewards: [{
+				id: "06354F5C8783DED7"
+				item: "alexscaves:submarine"
+				type: "item"
+			}]
+			size: 0.7d
+			tasks: [
+				{
+					consume_items: true
+					count: 20L
+					id: "5459C35DBECFC7CB"
+					item: { Count: 20, id: "minecraft:copper_block" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					count: 6L
+					id: "0464FFF165A10AA6"
+					item: { Count: 6, id: "alexscaves:depth_glass" }
+					type: "item"
+				}
+				{
+					consume_items: true
+					id: "5F8AF668240ABA7E"
+					item: "alexscaves:enigmatic_engine"
+					type: "item"
+				}
+			]
+			title: "The Submarine multiblock isn't working :("
+			x: -3.9999999999999996d
+			y: 13.8d
+		}
+		{
+			dependencies: ["258319C688CA23F0"]
+			id: "281C7E541E966D9D"
+			optional: true
+			rewards: [
+				{
+					id: "577829D040A45366"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 2
+					id: "1BCD272DEA4A428A"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: "minecraft:sculk_catalyst"
+				id: "39129FCB95243DDD"
+				type: "kill"
+				value: 1L
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4398943EE206A5A0"]
+			id: "0F459F3198BD4A06"
+			rewards: [
+				{
+					count: 4
+					id: "687D0C9A3B84E566"
+					item: "minecraft:netherite_scrap"
+					type: "item"
+				}
+				{
+					id: "0C218FFE2BA1EE6C"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "03F245C2A59C3456"
+				item: "minecraft:netherite_upgrade_smithing_template"
+				type: "item"
+			}]
+			x: 12.299999999999999d
+			y: 3.9999999999999996d
+		}
+		{
+			dependencies: ["3574E7EB8A9791A7"]
+			description: ["Besides the obvious functionality, Uncrafting Tables can be used to \"recraft\" items, changing the material of a (non-Tinkers') tool to upgrade it while preserving enchantments."]
+			id: "7999E8B5605119A4"
+			optional: true
+			rewards: [{
+				id: "58D15C6D11927D3B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "465D791364248DE3"
+				item: "twilightforest:uncrafting_table"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["258319C688CA23F0"]
+			id: "3DE9AC9F1227B512"
+			optional: true
+			rewards: [{
+				id: "27001F8F767E516B"
+				type: "xp"
+				xp: 120
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "2E6ABD97BD8BF3CE"
+				item: {
+					Count: 1
+					id: "mutantmonsters:creeper_shard"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Attack of the Mutants"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3DE9AC9F1227B512"]
+			description: ["The Creeper Minion Egg dropped by Mutant Creepers will eventually hatch into a Creeper Minion. Use the Tracker to tame it and feed it gunpowder and TNT to increase its health and explosion power."]
+			id: "25AD7490ACCC1A2A"
+			rewards: [
+				{
+					count: 16
+					id: "06E82D22C9669774"
+					item: "minecraft:gunpowder"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1E9C40A2AB630E08"
+					item: "minecraft:tnt"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "0B638B3ED9795211"
+				item: "mutantmonsters:creeper_minion_tracker"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+	]
+	title: "Exploration Hell"
+}

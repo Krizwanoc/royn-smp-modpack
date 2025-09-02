@@ -1,0 +1,12 @@
+{
+	id: "0A39247C9DDDC59C"
+	loot_size: 1
+	order_index: 3
+	rewards: [
+		{ count: 8, item: "tconstruct:earth_slime_crystal_block" }
+		{ count: 8, item: "tconstruct:sky_slime_crystal_block" }
+		{ count: 8, item: "tconstruct:ichor_slime_crystal_block" }
+		{ count: 8, item: "tconstruct:ender_slime_crystal_block" }
+	]
+	title: "slimecrystals"
+}

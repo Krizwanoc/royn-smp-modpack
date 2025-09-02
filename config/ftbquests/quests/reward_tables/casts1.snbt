@@ -1,0 +1,12 @@
+{
+	id: "0EBC17C8FA1B0EAE"
+	loot_size: 1
+	order_index: 2
+	rewards: [
+		{ item: "tconstruct:ingot_cast" }
+		{ item: "tconstruct:tool_handle_cast" }
+		{ item: "tconstruct:pick_head_cast" }
+		{ item: "tconstruct:tool_binding_cast" }
+	]
+	title: "casts1"
+}

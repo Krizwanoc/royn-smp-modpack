@@ -1,0 +1,901 @@
+{
+	autofocus_id: "6BDC6D5382A345F2"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "apeirospace_navigator"
+	group: ""
+	icon: {
+		Count: 1
+		id: "betterend:aeternium_boots"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "2223A38F1D1A2B9C"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7B59B4795247E228"]
+			description: ["Lets you set up two Rifts that point to each other. Simply right click one block, go somewhere else, and right click another block. Placing a Dimensional Door on top of one of these Rifts will let you instantly teleport to the other."]
+			id: "69AF16263EED83BA"
+			rewards: [
+				{
+					id: "26EC10C93DAEEEC4"
+					item: "kubejs:g"
+					type: "item"
+				}
+				{
+					id: "45C505A7363C1580"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [{
+				id: "2C01A98705FFCBCB"
+				item: {
+					Count: 1
+					id: "dimdoors:rift_signature"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7B59B4795247E228"]
+			id: "26A428DA1BB81828"
+			rewards: [
+				{
+					id: "2D08C6D6BAF8AD33"
+					item: "kubejs:g"
+					type: "item"
+				}
+				{
+					id: "6AEC7956E6BE7AA7"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [{
+				id: "38680E424299656C"
+				item: {
+					Count: 1
+					id: "dimdoors:rift_stabilizer"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7B59B4795247E228"]
+			description: ["Completely destroys a Rift. [TODO: probably change the recipe for this?]"]
+			id: "561DB1FC6BD67181"
+			rewards: [
+				{
+					id: "2CBB3EDE3F6042F9"
+					item: "kubejs:g"
+					type: "item"
+				}
+				{
+					id: "0D0478B9E9A02C06"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "42DC86A7D191B2D3"
+				item: {
+					Count: 1
+					id: "dimdoors:rift_remover"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["02EFED82B75AFAC5"]
+			description: ["Craft your own Dimensional Doors to use them as a pocket dimension to store your stuff"]
+			id: "549420622C37EE17"
+			rewards: [{
+				id: "32D5830C8D13BB55"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [
+				{
+					id: "5AE715D2FFC8AE59"
+					item: "dimdoors:item_ag_dim_minecraft_oak_door"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6E8EB527E0342583"
+					item: "dimdoors:item_ag_dim_minecraft_iron_door"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: -1.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6EC2EC299A20C2EA"]
+			description: [
+				"Breaking a Dimensional Door or entering and leaving a Dimensional Door Dungeon will create a Rift. Rifts save the location of the previous Dimensional Door"
+				""
+				"You can place a new Dimensional Door on top of a Rift to go to the place the old dimensional door pointed to."
+				""
+				"Leaving Rifts open for too long will cause them to grow, which will eventually destroy the world. Don't do that."
+			]
+			icon: "dimdoors:rift_pearl"
+			id: "7B59B4795247E228"
+			rewards: [{
+				id: "002DE5366D54802B"
+				item: "minecraft:iron_block"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "24971D3606C8C16E"
+				title: "Rift Management"
+				type: "checkmark"
+			}]
+			x: 0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["69AF16263EED83BA"]
+			description: ["Exactly the same as the regular Rift Signature, except the Rifts created from it won't grow."]
+			id: "0797EB0B4F1D3336"
+			rewards: [{
+				id: "3D617B60367F0A3F"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3A763531614351FC"
+				item: {
+					Count: 1
+					id: "dimdoors:stabilized_rift_signature"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["02EFED82B75AFAC5"]
+			description: ["Get to the bright red Eternal Fluid to escape! And don't stare at the Monoliths."]
+			id: "0FB3F051AFFD0853"
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				dimension: "dimdoors:limbo"
+				icon: "dimdoors:monolith_spawner"
+				id: "17B20572E70E5364"
+				type: "dimension"
+			}]
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"6EC2EC299A20C2EA"
+				"2E6E14D8DD1C87E8"
+			]
+			description: ["Frayed Filament can be obtained by exploding Unraveled Fabric found in Limbo."]
+			id: "6734222101C63D7C"
+			rewards: [{
+				id: "6023200E637ADA70"
+				item: "dimdoors:enduring_fibers"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "1E7C193574DF1CE8"
+				item: "dimdoors:enduring_fibers"
+				type: "item"
+			}]
+			x: 1.700000000000001d
+			y: 3.5d
+		}
+		{
+			dependencies: ["02EFED82B75AFAC5"]
+			description: ["World Thread can be found in chests in Dimensional Doors dungeons, or by closing Rifts with the Rift Remover."]
+			id: "1060152763F680DB"
+			rewards: [
+				{
+					count: 4
+					id: "49559FA8347B9240"
+					item: "dimdoors:world_thread"
+					type: "item"
+				}
+				{
+					id: "5E5597C63B7F6393"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			tasks: [{
+				count: 4L
+				id: "55EF2FA57142A47F"
+				item: { Count: 4, id: "dimdoors:world_thread" }
+				type: "item"
+			}]
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["0FB3F051AFFD0853"]
+			description: ["Break Solid Static to get this"]
+			id: "2E6E14D8DD1C87E8"
+			rewards: [{
+				count: 2
+				id: "1E60121112285AAA"
+				item: "dimdoors:infrangible_fiber"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "49E3CC5A9CF907EE"
+				item: { Count: 4, id: "dimdoors:infrangible_fiber" }
+				type: "item"
+			}]
+			x: 1.700000000000001d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1060152763F680DB"]
+			id: "6EC2EC299A20C2EA"
+			size: 1.2d
+			tasks: [{
+				id: "682CFE38907F900D"
+				item: "dimdoors:tesselating_loom"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"6EC2EC299A20C2EA"
+				"2E6E14D8DD1C87E8"
+			]
+			description: ["The Reality Sponge is capable of decaying adjacent blocks (i.e. in direct contact, so no corners) into Limbo versions of themselves."]
+			id: "1888DF1D7880E819"
+			rewards: [
+				{
+					id: "027CD7B955A6872D"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					id: "4F2285971C4BB21F"
+					type: "xp_levels"
+					xp_levels: 2
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "6AB3AA3EAFBDCC03"
+				item: "dimdoors:reality_sponge"
+				type: "item"
+			}]
+			x: 3.700000000000001d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0FB3F051AFFD0853"]
+			description: ["Frayed Filament can be obtained by exploding Unraveled Fabric found in Limbo."]
+			id: "27C32AF37C08A301"
+			rewards: [{
+				count: 3
+				id: "49AE3416653BEFE6"
+				item: "dimdoors:frayed_filament"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "39635D4EA84EC759"
+				item: "dimdoors:frayed_filament"
+				type: "item"
+			}]
+			x: -0.7999999999999989d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"6EC2EC299A20C2EA"
+				"27C32AF37C08A301"
+			]
+			description: ["Frayed Filament can be obtained by exploding Unraveled Fabric found in Limbo."]
+			id: "63D978BC59259D34"
+			rewards: [{
+				id: "2B5684C67D6BFE37"
+				item: "dimdoors:liminal_lint"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "4A82FFC26A5EDE2D"
+				item: "dimdoors:liminal_lint"
+				type: "item"
+			}]
+			x: -0.7999999999999989d
+			y: 3.5d
+		}
+		{
+			dependencies: ["561DB1FC6BD67181"]
+			description: ["Exactly what the description on the item says. Except the teleport attack doesn't actually work."]
+			id: "775011836AC905C5"
+			tasks: [{
+				id: "06BD75ED96034552"
+				item: {
+					Count: 1
+					id: "dimdoors:rift_blade"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -1.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1888DF1D7880E819"]
+			description: ["Coal, emeral, and lapis blocks decay into Clod."]
+			id: "5703F248B7FD1619"
+			rewards: [{
+				count: 3
+				id: "1B8BE9F7B2E0F9B9"
+				item: "dimdoors:clod"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D16820FE7911908"
+				item: "dimdoors:clod"
+				type: "item"
+			}]
+			x: 3.700000000000001d
+			y: 0.7000000000000002d
+		}
+		{
+			dependencies: ["1888DF1D7880E819"]
+			description: ["Iron and gold blocks will get decayed into Amalgam"]
+			id: "590AB7F8D7EA181C"
+			rewards: [{
+				count: 3
+				id: "36C804EEEE01A325"
+				item: "dimdoors:amalgam_lump"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32F6E1F62F36628C"
+				item: "dimdoors:amalgam_lump"
+				type: "item"
+			}]
+			x: 3.6999999999999993d
+			y: 3.2d
+		}
+		{
+			dependencies: ["1888DF1D7880E819"]
+			description: ["Wooden planks and logs decay into Driftwood."]
+			id: "7CF35AAD733CFFB6"
+			tasks: [{
+				id: "6A5ED138F783DE74"
+				item: "dimdoors:driftwood_planks"
+				type: "item"
+			}]
+			x: 5.200000000000001d
+			y: 2.0000000000000004d
+		}
+		{
+			description: ["Oh boy a random door in the forest, I sure hope nothing wacky happens when I walk into it"]
+			id: "02EFED82B75AFAC5"
+			optional: true
+			rewards: [
+				{
+					count: 5
+					id: "61437FA85D8023A2"
+					item: "minecraft:golden_apple"
+					type: "item"
+				}
+				{
+					id: "249A3EE8CC3E3D18"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+			]
+			shape: "gear"
+			size: 2.2d
+			tasks: [{
+				dimension: "dimdoors:dungeon_pockets"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"dimdoors:counter": {
+							counter: 0
+						}
+					}
+					id: "dimdoors:rift_configuration_tool"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "119EC12458254710"
+				type: "dimension"
+			}]
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["62B3624519EDF73A"]
+			description: ["I'm not fucking explaining how you get to the End."]
+			id: "6BDC6D5382A345F2"
+			rewards: [
+				{
+					count: 2
+					id: "220D208B40CC405F"
+					item: "minecraft:enchanted_golden_apple"
+					type: "item"
+				}
+				{
+					id: "6DB9572FDCA8EE5E"
+					type: "xp_levels"
+					xp_levels: 10
+				}
+			]
+			shape: "gear"
+			size: 2.2d
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: "minecraft:end_portal_frame"
+				id: "6EF2A29FFC03320B"
+				type: "dimension"
+			}]
+			x: -4.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6BDC6D5382A345F2"]
+			id: "3B19ED06BBC6F8FC"
+			rewards: [
+				{
+					count: 2
+					id: "1283A8028843AF3B"
+					item: "minecraft:diamond_block"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5381F7FE137A0FC7"
+					item: "minecraft:obsidian"
+					type: "item"
+				}
+				{
+					count: 7
+					id: "5C42C1F2AB4B778E"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [{
+				advancement: "minecraft:end/kill_dragon"
+				criterion: ""
+				id: "4E12BF8A6376295F"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B19ED06BBC6F8FC"]
+			description: ["Respawn the ender dragon for fun and profit"]
+			id: "3C93E085A71B6CDC"
+			rewards: [{
+				id: "3C58320DDE48E9AA"
+				type: "xp_levels"
+				xp_levels: 7
+			}]
+			tasks: [{
+				count: 4L
+				id: "3214F3D87637071C"
+				item: { Count: 4, id: "minecraft:end_crystal" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3B19ED06BBC6F8FC"]
+			id: "7E725ED494138F7F"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				advancement: "minecraft:end/enter_end_gateway"
+				criterion: ""
+				icon: "blockofsky:void_block"
+				id: "373B76DA0C0A7B93"
+				type: "advancement"
+			}]
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7E725ED494138F7F"]
+			id: "590607B64F7BE9CC"
+			rewards: [{
+				count: 4
+				id: "6A4523A53203A802"
+				item: "betterend:thallasium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "3C0F61B75D0F0155"
+				item: { Count: 12, id: "betterend:thallasium_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"590607B64F7BE9CC"
+				"559D25E756CECA0F"
+			]
+			id: "12673D38A7348A74"
+			rewards: [{
+				id: "205FCDD0B6E47F02"
+				item: "betterend:terminite_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "2B66BCBA4AE37569"
+				item: { Count: 8, id: "betterend:terminite_ingot" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["12673D38A7348A74"]
+			id: "05BEF0C780E50B81"
+			rewards: [{
+				id: "27C191C231F28408"
+				item: "betterend:aeternium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "62988E4945971017"
+				item: "betterend:aeternium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["05BEF0C780E50B81"]
+			id: "2A207F4CE4A2E519"
+			rewards: [
+				{
+					count: 8
+					id: "0D93F735C21533F2"
+					item: "betterend:smaragdant_crystal_pedestal"
+					type: "item"
+				}
+				{
+					id: "6BFE89011889E06A"
+					type: "xp_levels"
+					xp_levels: 3
+				}
+				{
+					id: "4995C6B9EBECA8F1"
+					item: "betterend:guidebook"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "62CC82878FA8FBE2"
+				item: "betterend:infusion_pedestal"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["7E725ED494138F7F"]
+			id: "7981D1936C0309CE"
+			tasks: [{
+				count: 8L
+				id: "78CD4B161C1C0738"
+				item: { Count: 8, id: "betterend:crystal_shards" }
+				type: "item"
+			}]
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7E725ED494138F7F"]
+			id: "7703C126E78C6649"
+			rewards: [{
+				id: "7F131FF0FC2BEBA5"
+				item: "endersdelight:stuffed_shulker"
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 1.2d
+			tasks: [{
+				icon: "minecraft:purpur_block"
+				id: "2126740D26A0E66E"
+				structure: "minecraft:end_city"
+				type: "structure"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7E725ED494138F7F"]
+			id: "4176E775A5339271"
+			rewards: [{
+				count: 10
+				id: "458479D7AE329ED3"
+				item: "minecraft:phantom_membrane"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5056BEC518A6AFE4"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2A207F4CE4A2E519"]
+			id: "5C123F45335F0089"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				icon: "betterend:flavolite_runed_eternal"
+				id: "1963A3B1420C153F"
+				structure: "betterend:eternal_portal"
+				type: "structure"
+			}]
+			x: -5.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["7E725ED494138F7F"]
+			description: ["Requires 6 amber gems to set your spawnpoint permanently in the end."]
+			id: "2C2B5B34247A58B0"
+			rewards: [{
+				count: 4
+				id: "751DCC645F0BE5B3"
+				item: "betterend:amber_gem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5B3745BF00FB6F30"
+				item: "betterend:respawn_obelisk"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["590607B64F7BE9CC"]
+			description: ["The anvils added by BetterEnd serve as custom crafting stations. Smithing hammers can be used with these special anvils to smash ingredients into powder, or to turn certain metlas into forged plates."]
+			id: "23C423AFE4ABD1F6"
+			rewards: [{
+				id: "6E8865C39067294E"
+				item: {
+					Count: 1
+					id: "betterend:iron_hammer"
+					tag: {
+						Damage: 170
+					}
+				}
+				type: "item"
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "3B19C658BA268315"
+				item: {
+					Count: 1
+					id: "betterend:thallasium_anvil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"23C423AFE4ABD1F6"
+				"12673D38A7348A74"
+			]
+			id: "302E365D2A6EEAE0"
+			size: 1.2d
+			tasks: [{
+				id: "6560FA96D51F1A9E"
+				item: {
+					Count: 1
+					id: "betterend:terminite_anvil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"302E365D2A6EEAE0"
+				"05BEF0C780E50B81"
+			]
+			id: "36FB33944486651E"
+			size: 1.2d
+			tasks: [{
+				id: "5A88624EBBF58186"
+				item: {
+					Count: 1
+					id: "betterend:aeternium_anvil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"4176E775A5339271"
+				"2A207F4CE4A2E519"
+			]
+			id: "4153C38E10F446B3"
+			shape: "gear"
+			size: 1.2d
+			tasks: [
+				{
+					id: "16850D4B22B2B4DE"
+					item: {
+						Count: 1
+						id: "betterend:elytra_crystalite"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6A89521B5A426653"
+					item: {
+						Count: 1
+						id: "betterend:crystalite_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "557EA07599FAC111"
+					item: {
+						Count: 1
+						id: "betterend:crystalite_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "56036EC468EF3628"
+					item: {
+						Count: 1
+						id: "betterend:crystalite_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "75E074356E5FB727"
+					item: {
+						Count: 1
+						id: "betterend:crystalite_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Crystalite Gear"
+			x: -2.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["23C423AFE4ABD1F6"]
+			id: "06DCEDD71B165902"
+			tasks: [{
+				id: "3AE9CC5CA2020F9E"
+				item: "betterend:thallasium_forged_plate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["302E365D2A6EEAE0"]
+			id: "0B488CCA44E8E88A"
+			tasks: [{
+				id: "3C3CE25F42843052"
+				item: "betterend:terminite_forged_plate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["36FB33944486651E"]
+			id: "713E6E75209485AE"
+			tasks: [{
+				id: "4A1BDB5AE198084C"
+				item: "betterend:aeternium_forged_plate"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["7E725ED494138F7F"]
+			hide_dependency_lines: true
+			id: "559D25E756CECA0F"
+			tasks: [{
+				id: "4E95FFD420FD54DF"
+				item: "betterend:ancient_emerald_ice"
+				type: "item"
+			}]
+			x: -3.2d
+			y: 4.199999999999999d
+		}
+	]
+	title: "Apeirospace Navigator"
+}

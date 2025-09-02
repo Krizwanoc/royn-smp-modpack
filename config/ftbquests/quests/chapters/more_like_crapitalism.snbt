@@ -1,0 +1,2263 @@
+{
+	autofocus_id: "3EAD98C34C99A9C9"
+	consume_items: true
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	default_repeatable_quest: true
+	filename: "more_like_crapitalism"
+	group: ""
+	icon: "kubejs:g"
+	id: "4EAD53753499FF40"
+	order_index: 3
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			can_repeat: false
+			description: ["Convert your boring icky lame stupid items into G."]
+			icon: "kubejs:g"
+			id: "3EAD98C34C99A9C9"
+			optional: true
+			shape: "octagon"
+			size: 1.7d
+			tasks: [{
+				id: "3CB70AF65AF1D8A8"
+				title: "[SELL] Cash Converters"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			description: ["Lucky blocks give these things out like fent, so unfortunately they have been nerfed."]
+			id: "6F2A5E2DF1BADCC2"
+			rewards: [{
+				id: "34D0EA00865A4CAD"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "5ED3CC8E1BE33C54"
+				item: "minecraft:beacon"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "0D1A1AF732B0BA90"
+			rewards: [{
+				count: 15
+				id: "1F089B9E17E6FD2D"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3999DDFD4567A3D0"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "1FB9E23B6BECE9A8"
+			rewards: [{
+				count: 20
+				id: "74E01B542CE20D00"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4F4B0C444FD64821"
+				item: "minecraft:dragon_egg"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "78C8238592BDC4A6"
+			rewards: [{
+				count: 5
+				id: "7C939D2664F79ABB"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "36DEA22EB98EB5C2"
+				item: "minecraft:diamond_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "0F04565EE5FEB186"
+			rewards: [{
+				count: 15
+				id: "3D56F2C8BE78156B"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3BC255F52B5E0DE4"
+				item: "rediscovered:red_dragon_egg"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "3F686E8DC4227C0D"
+			rewards: [{
+				count: 7
+				id: "1843BDB87772FF82"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "72B8B77758AED6D6"
+				item: "minecraft:saddle"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "6D4C3BEB702E9099"
+			rewards: [{
+				count: 10
+				id: "44ABA0A34FAA5F4A"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5D11CB60850FF158"
+				item: "minecraft:end_portal_frame"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "1C74658FBDA17A99"
+			rewards: [{
+				count: 7
+				id: "6E8CF6FF661D631D"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "4E457FB5FA94D00B"
+				item: "minecraft:netherite_block"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "08995BF25CEE7F97"
+			rewards: [{
+				count: 10
+				id: "0856F8AECA0E5CA6"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "01AE748938622664"
+				item: { Count: 2, id: "tconstruct:manyullyn_block" }
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "7D7D9DD1664B4A69"
+			rewards: [{
+				count: 7
+				id: "23213C3E9264E55C"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "43B8CD591168E532"
+					item: {
+						Count: 1
+						id: "mutantmonsters:hulk_hammer"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "133C5856D2DB361D"
+					item: {
+						Count: 1
+						id: "mutantmonsters:endersoul_hand"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0412385C21ABD980"
+					item: {
+						Count: 1
+						id: "mutantmonsters:creeper_shard"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "544BBF7AA6D361EA"
+					item: {
+						Count: 1
+						id: "mutantmonsters:mutant_skeleton_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Mutant Mobs"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "769416208D08E119"
+			rewards: [{
+				count: 17
+				id: "029EBEFFF2969D88"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "501013E53913C190"
+				item: "mowziesmobs:wrought_axe"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "6DBB95A9B3204894"
+			rewards: [{
+				count: 2
+				id: "151AB3A6C6FA9DE8"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0DE760981FD105BF"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(curios:charm)"
+					}
+				}
+				title: "Any #curios:charm"
+				type: "item"
+			}]
+			title: "Totems and Charms"
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "27CF90ACFD2E8990"
+			rewards: [{
+				count: 12
+				id: "62EAB7F828742277"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1A459B105F59BBD4"
+				item: "vivis_atrocities:heros_rapier"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "0AA83F6B1675FC56"
+			rewards: [{
+				count: 7
+				id: "04D3FF3A1DDD0ED2"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "06F67115A6B59B1D"
+				item: {
+					Count: 1
+					id: "minecraft:elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "4E5CAEBC42DDFAED"
+			rewards: [{
+				count: 10
+				id: "7BB507A87CAC066F"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "33C03C3C2108B19D"
+				item: "alexscaves:nuclear_bomb"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "04E2BB6A384BF847"
+			rewards: [{
+				count: 12
+				id: "6EBC88AB80BB2AAC"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "03BB5579320EAC26"
+					item: "twilightforest:naga_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "598FF74543A699B9"
+					item: "twilightforest:lich_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7107DA5F286708B9"
+					item: "twilightforest:minoshroom_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "306731B1A5764F35"
+					item: "twilightforest:hydra_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5C7F3087B784FEFF"
+					item: "twilightforest:knight_phantom_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "2DB9BA5A9016910E"
+					item: "twilightforest:ur_ghast_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4202542C0C556807"
+					item: "twilightforest:alpha_yeti_trophy"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "553D19ABA734DF1E"
+					item: "twilightforest:snow_queen_trophy"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Twilight Trophies"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			can_repeat: false
+			description: ["LETS GO GAMBLING!!!!"]
+			icon: "lucky:lucky_block"
+			id: "04E00591FC028B76"
+			optional: true
+			shape: "octagon"
+			size: 1.7d
+			tasks: [{
+				id: "0D435776E64CB54E"
+				title: "[BUY] Lucky Block Shop"
+				type: "checkmark"
+			}]
+			x: -7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: {
+				Count: 1
+				id: "lucky:lucky_block"
+				tag: {
+					Luck: 100
+				}
+			}
+			id: "11ECFBF76DB9C532"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "31A1B45F5B261BE1"
+				item: "lucky:lucky_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 5L
+				id: "28BB7CB429209D85"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Lucky Block (0)"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: {
+				Count: 1
+				id: "lucky:lucky_block"
+				tag: {
+					Luck: 100
+				}
+			}
+			id: "00ABED771544C5A2"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "3EF9AC4FFC4A9607"
+				item: {
+					Count: 1
+					id: "lucky:lucky_block"
+					tag: {
+						Luck: 100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "46A34B50CB559ED7"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Lucky Block (+100)"
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: {
+				Count: 1
+				id: "lucky:lucky_block"
+				tag: {
+					Luck: 100
+				}
+			}
+			id: "7943AA5D87D2677C"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "52A346488728CEDA"
+				item: {
+					Count: 1
+					id: "lucky:lucky_block"
+					tag: {
+						Luck: -100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "4A75FDF46C23976B"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Lucky Block (-100)"
+			x: -8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:pink_lucky_block"
+			id: "5202C3DE9B78CA77"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "2270034B2B35BC98"
+				item: "lucky:pink_lucky_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "4F68079D2ED17348"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Pink Lucky Block (0)"
+			x: -5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:pink_lucky_block"
+			id: "0549F458CBC9A369"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "585F11A171CEB4C0"
+				item: {
+					Count: 1
+					id: "lucky:pink_lucky_block"
+					tag: {
+						Luck: 100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				consume_items: true
+				count: 12L
+				id: "207EAAB8BC59CE59"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Pink Lucky Block (+100)"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: {
+				Count: 1
+				id: "lucky:pink_lucky_block"
+				tag: {
+					Luck: -100
+				}
+			}
+			id: "700438912105FBE3"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "445BB27CD906A7B2"
+				item: {
+					Count: 1
+					id: "lucky:pink_lucky_block"
+					tag: {
+						Luck: -100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "6EE6654274F907A4"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Pink Lucky Block (-100)"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:summer_lucky_block"
+			id: "058D13C21BCE6A87"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "400F0A7A184A51E0"
+				item: "lucky:summer_lucky_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "3F457CE8916774A6"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Summer Lucky Block (0)"
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:summer_lucky_block"
+			id: "63E542BC4CFB8A73"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "021CC28B890EDBF2"
+				item: {
+					Count: 1
+					id: "lucky:summer_lucky_block"
+					tag: {
+						Luck: 100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "525FE509671498B0"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Summer Lucky Block (+100)"
+			x: -9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:summer_lucky_block"
+			id: "50E68B1A3879ACBB"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "654C7F3CDC61E962"
+				item: {
+					Count: 1
+					id: "lucky:summer_lucky_block"
+					tag: {
+						Luck: -100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "216A7100B10F2070"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Summer Lucky Block (-100)"
+			x: -9.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:amongus_lucky_block"
+			id: "4A93B46DC46ED7E8"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "50CEDD908B1E1532"
+				item: "lucky:amongus_lucky_block"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "6835E82961FE3CB6"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Among Us Lucky Block (0)"
+			x: -8.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:amongus_lucky_block"
+			id: "069296FC6E6F57BF"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "5620B8ABFA6A09B2"
+				item: {
+					Count: 1
+					id: "lucky:amongus_lucky_block"
+					tag: {
+						Luck: 100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "26E331F149898936"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Among Us Lucky Block (+100)"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			icon: "lucky:amongus_lucky_block"
+			id: "07E965322AEAA30E"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "47A3DEC90FA53E02"
+				item: {
+					Count: 1
+					id: "lucky:amongus_lucky_block"
+					tag: {
+						Luck: 100
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "78836845A816F5CB"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Among Us Lucky Block (-100)"
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			description: ["UNIMPLEMENTED"]
+			icon: "minecraft:purple_wool"
+			id: "40C82B68E18B5177"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "4A3E65030D7C26D7"
+				item: "minecraft:purple_wool"
+				type: "item"
+			}]
+			tasks: [{
+				count: 10L
+				id: "527217B8B4204F5F"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "ROYN Lucky Block (0)"
+			x: -5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			description: ["UNIMPLEMENTED"]
+			icon: "minecraft:purple_wool"
+			id: "7EE258CE1446B80C"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "140EC33E67238A10"
+				item: "minecraft:purple_wool"
+				type: "item"
+			}]
+			tasks: [{
+				count: 20L
+				id: "3CC11E7E1DD9379A"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "ROYN Lucky Block (-100)"
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["04E00591FC028B76"]
+			description: ["UNIMPLEMENTED"]
+			icon: "minecraft:purple_wool"
+			id: "57BD082D26DF2382"
+			optional: true
+			rewards: [{
+				count: 24
+				id: "052B7F2213748FC4"
+				item: "minecraft:purple_wool"
+				type: "item"
+			}]
+			tasks: [{
+				count: 20L
+				id: "08B661A7DB861BC5"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "ROYN Lucky Block (+100)"
+			x: -6.5d
+			y: 2.0d
+		}
+		{
+			can_repeat: false
+			description: ["Someone has etched serial numbers onto all of these, only to file them off again."]
+			icon: {
+				Count: 1
+				id: "minecraft:golden_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3A097125211A3E16"
+			optional: true
+			shape: "octagon"
+			size: 1.7d
+			tasks: [{
+				id: "22495E9B270CC049"
+				title: "[BUY] Weapons Depot"
+				type: "checkmark"
+			}]
+			x: 7.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: {
+				Count: 1
+				id: "lucky:lucky_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7245E9D54D3CF40E"
+			optional: true
+			rewards: [{
+				id: "63E1851D0B12F3B6"
+				item: {
+					Count: 1
+					id: "lucky:lucky_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 30L
+				id: "11390DE62ECDC20F"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Lucky Sword"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: {
+				Count: 1
+				id: "lucky:lucky_bow"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "03FE0E240C20BFA5"
+			optional: true
+			rewards: [{
+				id: "384A679ACCB22655"
+				item: {
+					Count: 1
+					id: "lucky:lucky_bow"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 38L
+				id: "31916F2E84C1083C"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Lucky Bow"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "110DF9592E80CA64"
+			rewards: [{
+				count: 7
+				id: "1036B28841FCBDB7"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5F338C91A4C10065"
+				item: "minecraft:enchanted_golden_apple"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3EAD98C34C99A9C9"]
+			id: "28911000DB0F97AA"
+			rewards: [{
+				count: 2
+				id: "407D7520A9AC1483"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [{
+				id: "276418823D9A5346"
+				item: "minecraft:name_tag"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: "lucky:lucky_potion"
+			id: "00FF0C8D45DFF7F5"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3A1F4E2ECF276A48"
+				item: "lucky:lucky_potion"
+				type: "item"
+			}]
+			tasks: [{
+				count: 30L
+				id: "76D1C4DDD690642C"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Lucky Potion"
+			x: 7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: "minecraft:netherite_upgrade_smithing_template"
+			id: "779043883C7845D4"
+			optional: true
+			rewards: [{
+				id: "0D7911D42291A167"
+				item: "minecraft:netherite_upgrade_smithing_template"
+				type: "item"
+			}]
+			tasks: [{
+				count: 425L
+				id: "2015FD3E08BCFCEE"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Netherite Upgrade"
+			x: 5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_sword"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "695103358E25573C"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2E18B1666A891DC9"
+				table_id: 7783479649197328138L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 150L
+				id: "744CA21A8B269112"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Ancient Tome (Sword)"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_pickaxe"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "196078B87ECAC482"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "07175C2B5FC1E3B7"
+				table_id: 3813041039734917493L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 150L
+				id: "1A9363303CEC9993"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Ancient Tome (Tools)"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: {
+				Count: 1
+				id: "minecraft:bow"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "19106C31F114C441"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4B61C086E7128683"
+				table_id: 5341155798927159295L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 150L
+				id: "66628730BE90D342"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Ancient Tome (Bow)"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3A097125211A3E16"]
+			icon: {
+				Count: 1
+				id: "minecraft:netherite_chestplate"
+				tag: {
+					Damage: 0
+					Enchantments: [{ }]
+				}
+			}
+			id: "3794B37AAB2BD991"
+			optional: true
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "312A736E4FBC7E61"
+				table_id: 5410845022182294828L
+				type: "choice"
+			}]
+			tasks: [{
+				count: 150L
+				id: "01C518E67D0C084A"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Ancient Tome (Armor)"
+			x: 9.0d
+			y: -2.0d
+		}
+		{
+			can_repeat: false
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:scar_l"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "72E4787FB765ABC4"
+			optional: true
+			shape: "octagon"
+			size: 2.2d
+			tasks: [{
+				id: "757402D57EE63F74"
+				title: "[BUY] The Fortnite Battle Pass"
+				type: "checkmark"
+			}]
+			x: -10.5d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["0DBA6FB62C668B4D"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 16
+					GunFireMode: "AUTO"
+					GunId: "tacz:cz75"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "45C64EFE9F453982"
+			optional: true
+			rewards: [{
+				id: "2C81BAB529E5F2D5"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 16
+						GunFireMode: "AUTO"
+						GunId: "tacz:cz75"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 25L
+				id: "73B0A97BDBCACD66"
+				item: { Count: 25, id: "kubejs:g" }
+				type: "item"
+			}]
+			title: "CZ 75"
+			x: -6.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["72E4787FB765ABC4"]
+			icon: "quark:raw_gold_bricks"
+			id: "7180778268F86902"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				count: 100L
+				id: "3E66EB179BC9152A"
+				item: { Count: 25, id: "kubejs:g" }
+				type: "item"
+			}]
+			title: "Fortnite Battle Pass+ Pro Max"
+			x: -10.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"7180778268F86902"
+				"0DBA6FB62C668B4D"
+			]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 17
+					GunFireMode: "SEMI"
+					GunId: "tacz:glock_17"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "22BCFE77B805D9C9"
+			optional: true
+			rewards: [{
+				id: "66DBC60B9694B338"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 17
+						GunFireMode: "SEMI"
+						GunId: "tacz:glock_17"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 30L
+				id: "4D36081271A3CA2F"
+				item: { Count: 25, id: "kubejs:g" }
+				type: "item"
+			}]
+			title: "Glock 17"
+			x: -9.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["72E4787FB765ABC4"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 12
+					GunFireMode: "SEMI"
+					GunId: "tacz:p320"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "0DBA6FB62C668B4D"
+			optional: true
+			rewards: [{
+				id: "2A77175ACB81F291"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 12
+						GunFireMode: "SEMI"
+						GunId: "tacz:p320"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 30L
+				id: "4FC763144E5CBE3A"
+				item: { Count: 25, id: "kubejs:g" }
+				type: "item"
+			}]
+			title: "P320"
+			x: -9.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["22BCFE77B805D9C9"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 7
+					GunFireMode: "SEMI"
+					GunId: "tacz:m1911"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "6F58DD7B9009F684"
+			optional: true
+			rewards: [{
+				id: "41121CB114696BEC"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 7
+						GunFireMode: "SEMI"
+						GunId: "tacz:m1911"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 35L
+				id: "4A7ECD6C519D5FF3"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "M1911"
+			x: -7.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"6F58DD7B9009F684"
+				"45C64EFE9F453982"
+			]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 7
+					GunFireMode: "SEMI"
+					GunId: "tacz:deagle"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "554AA954CECB9DC2"
+			optional: true
+			rewards: [{
+				id: "5D519058835B697A"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 7
+						GunFireMode: "SEMI"
+						GunId: "tacz:deagle"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 40L
+				id: "4389E15AF24848FA"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Deagle .50"
+			x: -6.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["554AA954CECB9DC2"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 20
+					GunFireMode: "AUTO"
+					GunId: "tacz:uzi"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "1F2D20BB378E6998"
+			optional: true
+			rewards: [{
+				id: "128AEBF7077EE94B"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 20
+						GunFireMode: "AUTO"
+						GunId: "tacz:uzi"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 45L
+				id: "142D64D3865F6148"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "UZI"
+			x: -4.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["45C64EFE9F453982"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 20
+					GunFireMode: "AUTO"
+					GunId: "tacz:vector45"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "134F149C3C63D3CF"
+			optional: true
+			rewards: [{
+				id: "177703B83FE52128"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 20
+						GunFireMode: "AUTO"
+						GunId: "tacz:vector45"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 40L
+				id: "21F52AA0757F07B2"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Vector SMG"
+			x: -3.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"1F2D20BB378E6998"
+				"134F149C3C63D3CF"
+			]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 50
+					GunFireMode: "AUTO"
+					GunId: "tacz:p90"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "62D115330E8EC4E3"
+			optional: true
+			rewards: [{
+				id: "2DF5774B8D93F557"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 50
+						GunFireMode: "AUTO"
+						GunId: "tacz:p90"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 50L
+				id: "7B1F22F5D7F23210"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "P90 PDW"
+			x: -3.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["62D115330E8EC4E3"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 25
+					GunFireMode: "AUTO"
+					GunId: "tacz:ump45"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "77F24F5FF17E6A3C"
+			optional: true
+			rewards: [{
+				id: "77D642E9DC82D0C9"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 25
+						GunFireMode: "AUTO"
+						GunId: "tacz:ump45"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 55L
+				id: "611B0CCD654F7CDD"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "UMP45 SMG"
+			x: -1.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["134F149C3C63D3CF"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:ak47"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "536BA40AF4612A00"
+			optional: true
+			rewards: [{
+				id: "49FF96440FBA36F1"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:ak47"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 50L
+				id: "183DB4C1BE4B6A63"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "AKM"
+			x: 0.0d
+			y: 6.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["77F24F5FF17E6A3C"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:scar_l"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "4C2C7F5335945337"
+			optional: true
+			rewards: [{
+				id: "261C49912B75B074"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:scar_l"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 60L
+				id: "29859B60FD01EC6A"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "SCAR-L Assault Rifle"
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["134F149C3C63D3CF"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:m4a1"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "60FF51AEC965A2C1"
+			optional: true
+			rewards: [{
+				id: "2E985CF473C8BE49"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:m4a1"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 50L
+				id: "5FDB21A39E3EA123"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "M4A1 Carbine"
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["77F24F5FF17E6A3C"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:type_81"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "436DC42B488F43C7"
+			optional: true
+			rewards: [{
+				id: "7DB5D353F9E87BF8"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 30
+						GunFireMode: "AUTO"
+						GunId: "tacz:type_81"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 60L
+				id: "67934DA023CC061E"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "Type 81-1 Service Rifle"
+			x: 0.0d
+			y: 8.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"4C2C7F5335945337"
+				"436DC42B488F43C7"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 15
+					GunFireMode: "SEMI"
+					GunId: "tacz:spr15hb"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "3DEDCFC19F47A09D"
+			optional: true
+			rewards: [{
+				id: "5783BFA755E92C26"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 15
+						GunFireMode: "SEMI"
+						GunId: "tacz:spr15hb"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 65L
+				id: "03A787587EDCC1EE"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "SPR-15 HB \"Sagittarius\""
+			x: 1.5d
+			y: 7.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"4C2C7F5335945337"
+				"436DC42B488F43C7"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 10
+					GunFireMode: "SEMI"
+					GunId: "tacz:sks_tactical"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "7D2106505C992EA2"
+			optional: true
+			rewards: [{
+				id: "1DCF4C0A174A4983"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 10
+						GunFireMode: "SEMI"
+						GunId: "tacz:sks_tactical"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 65L
+				id: "4C3F3B1964D6B6A4"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "SKS Tactical Rifle"
+			x: 1.5d
+			y: 8.0d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"3DEDCFC19F47A09D"
+				"7D2106505C992EA2"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 20
+					GunFireMode: "SEMI"
+					GunId: "tacz:hk_g3"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "58301713DE88B5D8"
+			optional: true
+			rewards: [{
+				id: "112EBDEFE501D2E2"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 20
+						GunFireMode: "SEMI"
+						GunId: "tacz:hk_g3"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 70L
+				id: "0154AB082A850BBF"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "HK G3 Battle Rifle"
+			x: 3.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"536BA40AF4612A00"
+				"60FF51AEC965A2C1"
+			]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 10
+					GunFireMode: "SEMI"
+					GunId: "tacz:mk14"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "0A07BB9EB9B9FFEF"
+			optional: true
+			rewards: [{
+				id: "308E63D0A00B515D"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 10
+						GunFireMode: "SEMI"
+						GunId: "tacz:mk14"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 60L
+				id: "6C8DF82ECEA913C3"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "MK14 EBR"
+			x: 3.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["58301713DE88B5D8"]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 20
+					GunFireMode: "SEMI"
+					GunId: "tacz:scar_h"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "7996EE0071E422DF"
+			optional: true
+			rewards: [{
+				id: "2379E40787E9C4E4"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 20
+						GunFireMode: "SEMI"
+						GunId: "tacz:scar_h"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 80L
+				id: "70595BF3993F9DD7"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "SCAR-H Battle Rifle"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["0A07BB9EB9B9FFEF"]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 2
+					GunFireMode: "BURST"
+					GunId: "tacz:db_short"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "5A40D994B22F90C5"
+			optional: true
+			rewards: [{
+				id: "4F86849960099B7D"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 2
+						GunFireMode: "BURST"
+						GunId: "tacz:db_short"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 70L
+				id: "5CA5D730240FB0C5"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "DB-2 Durin"
+			x: 6.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"7996EE0071E422DF"
+				"5A40D994B22F90C5"
+			]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 2
+					GunFireMode: "SEMI"
+					GunId: "tacz:db_long"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "1ECADDBADA20C837"
+			optional: true
+			rewards: [{
+				id: "53188663FA2BCC46"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 2
+						GunFireMode: "SEMI"
+						GunId: "tacz:db_long"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 100L
+				id: "051F1AA4E7A85ED6"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "DB-4 Ursus"
+			x: 6.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["1ECADDBADA20C837"]
+			dependency_requirement: "one_completed"
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 40
+					GunFireMode: "AUTO"
+					GunId: "tacz:rpk"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "206864BF3CED99FB"
+			optional: true
+			rewards: [{
+				id: "66699CCAD1234D7F"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 40
+						GunFireMode: "AUTO"
+						GunId: "tacz:rpk"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 120L
+				id: "3523ECAA6182BC24"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "RPK"
+			x: 7.5d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["5A40D994B22F90C5"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 5
+					GunFireMode: "SEMI"
+					GunId: "tacz:m870"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "4270701A9BD19AE6"
+			optional: true
+			rewards: [{
+				id: "0D4E99314CB7A67E"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 5
+						GunFireMode: "SEMI"
+						GunId: "tacz:m870"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 80L
+				id: "4F6CD3BCDD4D29BA"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "M870"
+			x: 9.0d
+			y: 5.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"206864BF3CED99FB"
+				"4270701A9BD19AE6"
+			]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 1
+					GunFireMode: "SEMI"
+					GunId: "tacz:m320"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "798875DCF9BE934B"
+			optional: true
+			rewards: [{
+				id: "53324E7414A31F05"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 1
+						GunFireMode: "SEMI"
+						GunId: "tacz:m320"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				count: 140L
+				id: "755CDBB1364A92F3"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "M320 Grenade Launcher"
+			x: 9.0d
+			y: 7.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["6D3A194C09E32736"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 1
+					GunFireMode: "SEMI"
+					GunId: "tacz:rpg7"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "20824078A9F36AEB"
+			optional: true
+			rewards: [{
+				id: "67167DD5C528FD78"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 1
+						GunFireMode: "SEMI"
+						GunId: "tacz:rpg7"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 175L
+				id: "16C884195FDD17CE"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "RPG-7"
+			x: -2.0d
+			y: 9.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["6D3A194C09E32736"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 8
+					GunFireMode: "SEMI"
+					GunId: "tacz:aa12"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "44DC28B3C3383DAE"
+			optional: true
+			rewards: [{
+				id: "77E3593607B84BC9"
+				item: {
+					Count: 1
+					id: "tacz:modern_kinetic_gun"
+					tag: {
+						GunCurrentAmmoCount: 8
+						GunFireMode: "SEMI"
+						GunId: "tacz:aa12"
+						HasBulletInBarrel: 1b
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 175L
+				id: "4BC6A7E7641C36A1"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "AA12 Shotgun"
+			x: 0.0d
+			y: 9.5d
+		}
+		{
+			can_repeat: false
+			dependencies: ["6D3A194C09E32736"]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 30
+					GunFireMode: "AUTO"
+					GunId: "tacz:minigun"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "26FA787AA75022CF"
+			optional: true
+			rewards: [
+				{
+					id: "0F6A489C29FDA5DD"
+					item: {
+						Count: 1
+						id: "tacz:modern_kinetic_gun"
+						tag: {
+							GunCurrentAmmoCount: 30
+							GunFireMode: "AUTO"
+							GunId: "tacz:minigun"
+							HasBulletInBarrel: 1b
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 192
+					id: "18C6CB8D87D11F2E"
+					item: {
+						Count: 1
+						id: "tacz:ammo"
+						tag: {
+							AmmoId: "tacz:308"
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 175L
+				id: "563797BCA2E8F325"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "M134 Minigun"
+			x: 2.0d
+			y: 9.5d
+		}
+		{
+			can_repeat: false
+			dependencies: [
+				"798875DCF9BE934B"
+				"4270701A9BD19AE6"
+			]
+			description: ["Requires the previous two Battle Passes to be fully unlocked."]
+			hide_dependency_lines: true
+			icon: "betterend:aurora_crystal"
+			id: "6D3A194C09E32736"
+			optional: true
+			shape: "octagon"
+			size: 1.7d
+			tasks: [{
+				count: 100L
+				id: "3E5FFFA91F4F710D"
+				item: { Count: 25, id: "kubejs:g" }
+				type: "item"
+			}]
+			title: "Fortnite Battle Pass++ Ultra Chapter 2"
+			x: 0.0d
+			y: 11.0d
+		}
+		{
+			can_repeat: false
+			dependencies: ["6D3A194C09E32736"]
+			description: ["(Only gives you infinite quantities of ONE type of ammo per box.)"]
+			icon: {
+				Count: 1
+				id: "tacz:ammo_box"
+				tag: {
+					AllTypeCreative: 1b
+				}
+			}
+			id: "39CF303884EA3DCF"
+			optional: true
+			rewards: [{
+				id: "1CD0D4FDD3DDE05A"
+				item: {
+					Count: 1
+					id: "tacz:ammo_box"
+					tag: {
+						Creative: 1b
+					}
+				}
+				type: "item"
+			}]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 600L
+				id: "6059750B1454E694"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			title: "UNLIMITED AMMUNITION!!!"
+			x: 0.0d
+			y: 12.5d
+		}
+	]
+	title: "More Like Crapitalism"
+}

@@ -1,0 +1,1517 @@
+{
+	autofocus_id: "5689CFC81CF5B120"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_industrial_revolution_and_its_consequences"
+	group: ""
+	icon: "rediscovered:gear"
+	id: "6BEEEE53C5D3BB65"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			icon: "rediscovered:gear"
+			id: "5689CFC81CF5B120"
+			shape: "gear"
+			size: 2.2d
+			tasks: [{
+				id: "1286B89868A762C5"
+				title: "What the fuck"
+				type: "checkmark"
+			}]
+			title: "...And Its Consequences"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			id: "1ECD32CCD7D86591"
+			rewards: [
+				{
+					count: 5
+					id: "5AE6ACDF119EB3CA"
+					item: "tconstruct:pattern"
+					type: "item"
+				}
+				{
+					id: "44B5EFD2A8136CE8"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "2161182AC2A8CB9F"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1ECD32CCD7D86591"]
+			icon: {
+				Count: 1
+				id: "tconstruct:pick_head"
+				tag: {
+					Material: "tconstruct:rock"
+				}
+			}
+			id: "569D81E255285F52"
+			tasks: [{
+				id: "59D2DB1E22F04005"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tconstruct:parts)"
+					}
+				}
+				title: "Any #tconstruct:parts"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["569D81E255285F52"]
+			id: "7B74F6313C26C191"
+			rewards: [{
+				id: "210012047D6E5D98"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "636FF3A38CDA269F"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1ECD32CCD7D86591"]
+			description: ["Get a fuckton of grout to make Seared Bricks with. You will probably need a lot more than this, but I don't care."]
+			id: "134C3225FF3C90E0"
+			rewards: [
+				{
+					count: 30
+					id: "057ED03628B0A322"
+					item: "tconstruct:grout"
+					type: "item"
+				}
+				{
+					id: "2FA389B94498269A"
+					type: "xp"
+					xp: 200
+				}
+				{
+					id: "49B80E9AF9E82D2B"
+					item: "tconstruct:puny_smelting"
+					type: "item"
+				}
+			]
+			tasks: [{
+				count: 50L
+				id: "42FAD25E672D4981"
+				item: "tconstruct:grout"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["134C3225FF3C90E0"]
+			icon: "tconstruct:seared_melter"
+			id: "5688DFE0B1AA89B6"
+			rewards: [
+				{
+					id: "657C95C9A02BCCC3"
+					item: "minecraft:lava_bucket"
+					type: "item"
+				}
+				{
+					id: "77A0841161773337"
+					item: "tconstruct:mighty_smelting"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "11EF4B900F97D6FF"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "672291E902F12CDE"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					id: "20BD8B673766CD49"
+					item: "tconstruct:seared_heater"
+					type: "item"
+				}
+				{
+					id: "34F17F31FCAB0F72"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					id: "72CF288824EB9AAB"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+			]
+			x: 6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5688DFE0B1AA89B6"]
+			icon: "tconstruct:smeltery_controller"
+			id: "4C77EE46F1A27598"
+			rewards: [
+				{
+					id: "00A379348F8E824E"
+					item: "tconstruct:part_chest"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "7FFB5DCF43B9335D"
+					table_id: 575590373991928076L
+					type: "choice"
+				}
+				{
+					id: "64D9FD6F260FC411"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			size: 1.2d
+			tasks: [
+				{
+					id: "2E909ED5AE538835"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "18C785CD32EBFBF3"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					id: "2C626FF270D2B6EC"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "2F72AA512986DE2B"
+					item: "tconstruct:seared_faucet"
+					type: "item"
+				}
+				{
+					count: 18L
+					id: "07308B1A6202A9FF"
+					item: { Count: 18, id: "tconstruct:seared_bricks" }
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5688DFE0B1AA89B6"]
+			description: ["Put down a Casting Table, place an ingot or tool part in it, and then dump molten gold on it to make a tool cast."]
+			icon: "tconstruct:ingot_cast"
+			id: "24F6BEB873AE7DBF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1AD1CAB50F4D0FA3"
+					table_id: 1061749764109569710L
+					type: "choice"
+				}
+				{
+					id: "5CE7100D28DF2D51"
+					item: "tconstruct:cast_chest"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "7E56A06D32A9282F"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(tconstruct:casts/multi_use)"
+					}
+				}
+				title: "Any #tconstruct:casts/multi_use"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["7B74F6313C26C191"]
+			id: "0A1AC490713FAFC3"
+			rewards: [
+				{
+					id: "6233516A19B616D9"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					count: 2
+					id: "6790C38AC277DD05"
+					item: "minecraft:diamond"
+					type: "item"
+				}
+				{
+					count: 2
+					id: "2FE0349E6288A192"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "72087014FAB99569"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["5B54524956D9E08B"]
+			description: [
+				"Hepatizon is better than Amethyst Bronze but still worse than Iron. However, it has even more durability, gets faster as you use it, and has the same mining level as Netherite gear."
+				""
+				"It can be created by alloying Copper, Cobalt, and Nether Quartz in a 2:1:1 ration, but requires Blazing Blood as fuel."
+			]
+			id: "35A92018F1803BA5"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "7941646999DCFE79"
+				item: "tconstruct:hepatizon_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "423F5D6A2C8DB1C6"
+				item: "tconstruct:hepatizon_ingot"
+				type: "item"
+			}]
+			x: 9.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4C77EE46F1A27598"]
+			description: [
+				"Amethyst Bronze is worse than Iron, but has more durability, mines faster and can mine Obsidian. It is made by alloying copper and amethyst in a 1:1 ratio."
+				""
+				"Somehow, you can make this with lava despite something something realism something something melting point. Whatever."
+			]
+			id: "658DF338F0061ECE"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "4A0D0BCD1FBE4798"
+				item: "tconstruct:amethyst_bronze_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "08B194371A24467A"
+				item: { Count: 8, id: "tconstruct:amethyst_bronze_ingot" }
+				type: "item"
+			}]
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5B54524956D9E08B"]
+			description: [
+				"Arguably the best material TC has to offer. Better than diamond, does more damage to mobs the more you hit them and ignores some armor, but mines slightly slower than Amethyst Bronze."
+				""
+				"Get it by alloying Cobalt and Netherite Scrap in a 3:1 ratio."
+			]
+			id: "3C90A7ECA3921E38"
+			optional: true
+			rewards: [
+				{
+					count: 2
+					id: "3ED7A8A5B057BB8C"
+					item: "tconstruct:manyullyn_ingot"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "02889316A20C16AD"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "0682AFA6C9C1E80E"
+				item: { Count: 8, id: "tconstruct:manyullyn_ingot" }
+				type: "item"
+			}]
+			x: 10.6d
+			y: 2.6d
+		}
+		{
+			dependencies: ["4C77EE46F1A27598"]
+			description: ["Blazing Blood is an alternative fuel that makes smelting faster and unlocks more advanced recipes. It can be obtained by pushing a Blaze into a Smeltery, or by melting down Blaze Rods and Blaze Powder."]
+			icon: "tconstruct:blazing_blood_bucket"
+			id: "5B54524956D9E08B"
+			rewards: [
+				{
+					id: "736184A687EB834A"
+					item: "minecraft:blaze_rod"
+					type: "item"
+				}
+				{
+					id: "2609143A4EFCEA0D"
+					item: "tconstruct:encyclopedia"
+					type: "item"
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "71B75D62CA46742D"
+				title: "Blazing Blood"
+				type: "checkmark"
+			}]
+			x: 10.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7B74F6313C26C191"]
+			description: ["Bit of a weird one. Lets you extract enchantments, modifiers and abilities from tools at the cost of materials, giving them back in crystal form so you can attach them to different items via the Tinker Table. I don't really know how to explain it just use JEI"]
+			id: "4D54D3342C2D6136"
+			optional: true
+			rewards: [
+				{
+					id: "6AE862D6A400E662"
+					item: "tconstruct:tinkers_gadgetry"
+					type: "item"
+				}
+				{
+					exclude_from_claim_all: true
+					id: "480DF6993C404E6B"
+					table_id: 736660131694888348L
+					type: "choice"
+				}
+			]
+			tasks: [{
+				id: "46F4E047C42E5AE7"
+				item: "tconstruct:modifier_worktable"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C77EE46F1A27598"]
+			description: [
+				"An upgraded version of the Smeltery. It unlocks melting recipes that give multiple outputs, and gives useful byproducts from a lot of existing recipes. However, it is unable to make alloys."
+				""
+				"Note that this requires Scorched Bricks and not Seared Bricks, meaning that you need to get Nether Grout to make this. Also the corners need to be filled in unlike the Smeltery"
+			]
+			id: "51AC55CB7DEBC67A"
+			rewards: [
+				{
+					id: "00D3BB6B4542E2C3"
+					type: "xp_levels"
+					xp_levels: 5
+				}
+				{
+					count: 8
+					id: "7930DCADE71E8CD9"
+					item: "minecraft:iron_ingot"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "5F52C03D81B7BC35"
+					item: "minecraft:gold_ingot"
+					type: "item"
+				}
+				{
+					count: 20
+					id: "05CDF8BC792468CF"
+					item: "tconstruct:scorched_bricks"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "5982F0C7701915AF"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "325D6506B1BF816E"
+					item: "tconstruct:foundry_controller"
+					type: "item"
+				}
+				{
+					id: "6F32D261BEBCAC44"
+					item: "tconstruct:scorched_drain"
+					type: "item"
+				}
+				{
+					count: 26L
+					id: "232613ABEC9D89A4"
+					item: { Count: 26, id: "tconstruct:scorched_bricks" }
+					type: "item"
+				}
+				{
+					id: "5A05EE5D628E2E87"
+					item: "tconstruct:scorched_faucet"
+					type: "item"
+				}
+				{
+					id: "5063CC52F1C399EC"
+					item: "tconstruct:scorched_fuel_tank"
+					type: "item"
+				}
+			]
+			x: 8.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			description: [
+				"Domestication Innovation is technically not a tech mod but it adds a lot of cool stuff so it's getting a mention here."
+				""
+				"To make a pet mob able to respawn, push it on top of a pet bed. You'll know it has worked when ZZZ particles appear over its head."
+			]
+			id: "4F50353915451C99"
+			optional: true
+			rewards: [{
+				count: 4
+				id: "3803CE59E1276980"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "6285903BE988EF32"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(domesticationinnovation:pet_beds)"
+					}
+				}
+				title: "Any #domesticationinnovation:pet_beds"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4F50353915451C99"]
+			description: [
+				"Four new vanilla mobs can be tamed. How nice."
+				""
+				"Axolotls need to be fed tropical fish, rabbits need to be fed hay bales (not carrots), frogs need spider eyes, and tamed foxes can be obtained by breeding two foxes with sweet berries."
+				""
+				"Pet rabbits will not attack, but tamed foxes will still attack chickens and rabbits no matter what."
+			]
+			icon: "minecraft:lead"
+			id: "4F4C5E25B3DFC88B"
+			rewards: [
+				{
+					count: 4
+					id: "7DAB64261B531E6A"
+					item: "farmersdelight:dog_food"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "66CC44221F8EBF1A"
+					item: "farmersdelight:horse_feed"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "2D4D56D76574151F"
+				title: "More pets!"
+				type: "checkmark"
+			}]
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F50353915451C99"]
+			description: ["The Collar Tag can be given to pets by right clicking them with it. Enchanting the Collar Tag gives unique buffs to the pet. To see the enchantments your pet has, sneak while looking at it."]
+			id: "42E17FB244DF9354"
+			rewards: [
+				{
+					id: "514409504C36431F"
+					type: "xp"
+					xp: 100
+				}
+				{
+					count: 16
+					id: "0F3C23ED98A8FEFA"
+					item: "minecraft:lapis_lazuli"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "70089B7106DDCB61"
+				item: "domesticationinnovation:collar_tag"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4F50353915451C99"]
+			description: [
+				"The Command Drum makes commanding groups of pets easy."
+				""
+				"When interacted with or given a redstone signal, the drum will beat and change command modes, whilst ordering all tamed mobs of the user to follow, stay or wander depending on the beat."
+			]
+			id: "29426011C1E7803D"
+			optional: true
+			rewards: [{
+				id: "2297136318668629"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [{
+				id: "3E24F9EC055FA373"
+				item: "domesticationinnovation:drum"
+				type: "item"
+			}]
+			x: -4.500000000000002d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4F50353915451C99"]
+			id: "502800FD6378E90D"
+			optional: true
+			tasks: [{
+				id: "4420786A6AB49CBD"
+				item: "domesticationinnovation:deed_of_ownership"
+				type: "item"
+			}]
+			x: -2.5d
+			y: -2.9999999999999996d
+		}
+		{
+			dependencies: ["4F50353915451C99"]
+			description: ["If your pets are so far away that they get unloaded, they will eventually teleport to the closest Wayward Lantern."]
+			id: "1C39DD6D45AC880A"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "786AF4C5D0043E64"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A26A9F3BA4785D8"
+				item: "domesticationinnovation:wayward_lantern"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			description: [
+				"WARNING: These guns are intended to be used far into the late game. Most modpacks change the recipes for these to have obscenely long recipe chains to force you into making a massive factory for all the parts, but I don't have the time for that."
+				""
+				"Hence, the guns themselves have been moved to the Fortnite Battle Pass. (Ignore the JEI entries for them I couldn't figure out how to remove them lmao) I hope you like microtransactions."
+				""
+				"NOTE: Ammo and attachments still need to be manually crafted."
+			]
+			icon: {
+				Count: 1
+				id: "tacz:modern_kinetic_gun"
+				tag: {
+					GunCurrentAmmoCount: 9
+					GunFireMode: "SEMI"
+					GunId: "tacz:deagle_golden"
+					HasBulletInBarrel: 1b
+				}
+			}
+			id: "304B443A21374149"
+			optional: true
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B00B04F8F9CD65F"
+					table_id: 575590373991928076L
+					type: "choice"
+				}
+				{
+					count: 2
+					id: "28284AA1BE260C15"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "1BC6B72453109A79"
+				title: "GUNS."
+				type: "checkmark"
+			}]
+			x: -2.45d
+			y: 1.0d
+		}
+		{
+			dependencies: ["304B443A21374149"]
+			id: "294FA46CCE2D00FF"
+			size: 1.2d
+			tasks: [{
+				id: "2222831F80EB75C4"
+				item: {
+					Count: 1
+					id: "tacz:workbench_a"
+					tag: {
+						BlockId: "tacz:ammo_workbench"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 1.6d
+		}
+		{
+			dependencies: ["304B443A21374149"]
+			id: "2CE4BD35A6BBCE60"
+			size: 1.2d
+			tasks: [{
+				id: "5A65AF37EB986D6D"
+				item: {
+					Count: 1
+					id: "tacz:workbench_c"
+					tag: {
+						BlockId: "tacz:attachment_workbench"
+					}
+				}
+				type: "item"
+			}]
+			x: -4.0d
+			y: 0.4d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			description: [
+				"you cook food with it. wow."
+				""
+				"Requires heat. Place it above either a stove or a campfire."
+			]
+			id: "6986CFB958131001"
+			optional: true
+			rewards: [
+				{
+					count: 16
+					id: "3697C5648E376E24"
+					item: "minecraft:bowl"
+					type: "item"
+				}
+				{
+					id: "2A60834F167E803F"
+					item: "farmersdelight:stuffed_pumpkin_block"
+					type: "item"
+				}
+				{
+					id: "77C691B1BD689A4C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "rsquare"
+			tasks: [{
+				id: "3100A96C3FDFB0BF"
+				item: "farmersdelight:cooking_pot"
+				type: "item"
+			}]
+			title: "Farmer's Delight"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6986CFB958131001"]
+			id: "7E94A5809372454F"
+			rewards: [{
+				id: "7F51392FB6C59542"
+				type: "xp"
+				xp: 180
+			}]
+			tasks: [{
+				id: "1B346816F0608769"
+				item: "twilightdelight:fiery_cooking_pot"
+				type: "item"
+			}]
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			description: ["I wonder what this does"]
+			id: "287B6F2B98441B3B"
+			optional: true
+			shape: "rsquare"
+			tasks: [{
+				id: "2A7668B3F094EFD6"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "mutantmonsters:chemical_x"
+					}
+				}
+				type: "item"
+			}]
+			title: "Chemical X"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5B54524956D9E08B"]
+			description: [
+				"Fiery Essence, obtained from certain Twilight Forest bosses can be used as an even hotter fuel. Produce it by mixing Carminite, Blazing Blood and Ancient Debris in a 3:3:1 ratio."
+				""
+				"Note that the recipe to produce more Fiery Essence requires you to already have it and use it as a fuel"
+			]
+			id: "451BD68281536556"
+			optional: true
+			rewards: [{
+				id: "0AC2FB161A98C6C1"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6B17E4F3F14E939D"
+					item: "twilightforest:fiery_blood"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "31253010684E6844"
+					item: "twilightforest:fiery_tears"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Fiery Essence"
+			x: 11.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["24507009C70A8E2A"]
+			icon: "enderio:enderface_none"
+			id: "303E98247FE95187"
+			optional: true
+			rewards: [
+				{
+					count: 32
+					id: "6642B877C049B09E"
+					item: "enderio:energy_conduit"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "6AF98CE55C29BC53"
+					item: "enderio:item_conduit"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "204F184346ACB277"
+					item: "enderio:fluid_conduit"
+					type: "item"
+				}
+			]
+			shape: "rsquare"
+			size: 1.5d
+			tasks: [{
+				id: "5FC5E7941A9853B4"
+				title: "Alloys of the Future"
+				type: "checkmark"
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			description: ["It's marked as a bossfight because you are going to want to fight the devs of these mods once you're done with this."]
+			icon: "enderio:energized_gear"
+			id: "24507009C70A8E2A"
+			optional: true
+			rewards: [{
+				id: "521AAC5A020A158E"
+				item: {
+					Count: 1
+					id: "supplementaries:wrench"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "hexagon"
+			size: 1.7d
+			tasks: [{
+				id: "2518471D197F2D8C"
+				title: "THE TECHENING"
+				type: "checkmark"
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["303E98247FE95187"]
+			description: ["The foundational material in EnderIO. Light some bedrock on fire to get some."]
+			id: "4CA80B96A1F09CAD"
+			rewards: [{
+				count: 4
+				id: "618C221B09B65129"
+				item: "enderio:grains_of_infinity"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "36C80EC4C52B6C82"
+				item: { Count: 16, id: "enderio:grains_of_infinity" }
+				type: "item"
+			}]
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["303E98247FE95187"]
+			description: ["Because EnderIO is so cool and awesome, some of its alloys need to be created with a special machine."]
+			id: "72177D99D2AF07CE"
+			rewards: [{
+				id: "37C9EBF05E93F23C"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			size: 1.2d
+			tasks: [{
+				id: "019FC7DBB490EF34"
+				item: "enderio:primitive_alloy_smelter"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["57E22323F780DB05"]
+			id: "72EECC793040AB11"
+			size: 1.2d
+			tasks: [{
+				id: "2711427FF54BA462"
+				item: "enderio:void_chassis"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"38D7563E85E88FFB"
+				"72EECC793040AB11"
+			]
+			id: "062DFD5D3C480E9C"
+			tasks: [{
+				id: "463C2B5CDE764376"
+				item: "enderio:sag_mill"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"38D7563E85E88FFB"
+				"72EECC793040AB11"
+			]
+			hide_dependency_lines: true
+			id: "0D9B73858608E11A"
+			tasks: [{
+				id: "1CBFA430C1D9FC2C"
+				item: "enderio:alloy_smelter"
+				type: "item"
+			}]
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"72EECC793040AB11"
+				"0E69F6930DFA46E5"
+				"63D978BC59259D34"
+			]
+			id: "3606B436C90751D2"
+			size: 1.2d
+			tasks: [{
+				id: "5B402ECE7585F30E"
+				item: "enderio:ensouled_chassis"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"487D33863CD60008"
+				"72EECC793040AB11"
+			]
+			id: "59C7C93B8E0F24DB"
+			tasks: [{
+				id: "6CAB5E0A3ED7280F"
+				item: "enderio:stirling_generator"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["24507009C70A8E2A"]
+			icon: "enderio:extraction_speed_upgrade_4"
+			id: "487D33863CD60008"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "2F81B945E5D7F26F"
+				title: "Power Generation"
+				type: "checkmark"
+			}]
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["24507009C70A8E2A"]
+			icon: "quark:crafter"
+			id: "38D7563E85E88FFB"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "18967E2650B5EF6E"
+				title: "Crafting"
+				type: "checkmark"
+			}]
+			x: 5.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"38D7563E85E88FFB"
+				"72EECC793040AB11"
+			]
+			hide_dependency_lines: true
+			id: "653641FD34A0A1C6"
+			tasks: [{
+				id: "42E926CBF364245E"
+				item: "enderio:crafter"
+				type: "item"
+			}]
+			x: 6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"38D7563E85E88FFB"
+				"3606B436C90751D2"
+			]
+			id: "28475745292C1C6F"
+			rewards: [{
+				id: "4BD4513402C544E5"
+				item: "enderio:xp_obelisk"
+				type: "item"
+			}]
+			tasks: [{
+				id: "28914B9D30D85E90"
+				item: "enderio:soul_binder"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["24507009C70A8E2A"]
+			icon: "minecraft:spawner"
+			id: "1D4DC6152D6FAB08"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "5113C16096053D85"
+				title: "Mob Farming"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"1D4DC6152D6FAB08"
+				"3606B436C90751D2"
+			]
+			id: "62D0BD19BF3EBBFB"
+			shape: "gear"
+			size: 1.2d
+			tasks: [{
+				id: "45AF279960BDF6CB"
+				item: {
+					Count: 1
+					id: "enderio:powered_spawner"
+					tag: { }
+				}
+				type: "item"
+			}]
+			x: 8.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["303E98247FE95187"]
+			description: [
+				"You use it to make steel. Neat."
+				""
+				"There are 3 ways of obtaining this. The first involves the SAG mill, which you only get later. The second way requires you to bash a few pieces of coal into obsidian or a grindstone with some flint [NOTE: I may remove this]. The third [INTENDED] way is gated behind the Thallasium Anvil from BetterEnd, where you smash coal with a smithing hammer."
+			]
+			id: "36FB2EA3385F6472"
+			rewards: [{
+				count: 2
+				id: "76EF00128ACB7C49"
+				item: "enderio:powdered_coal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "0F7DFC37C0D2F1F4"
+				item: "enderio:powdered_coal"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"72177D99D2AF07CE"
+				"36FB2EA3385F6472"
+			]
+			dependency_requirement: "one_completed"
+			id: "57E22323F780DB05"
+			tasks: [{
+				id: "06E86F5F06F60BFB"
+				item: "tconstruct:steel_ingot"
+				type: "item"
+			}]
+			x: -2.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["72177D99D2AF07CE"]
+			id: "7A9E0C5FD78BC056"
+			tasks: [{
+				id: "70D6A0974F4CE046"
+				item: "enderio:redstone_alloy_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["72177D99D2AF07CE"]
+			id: "2CDCEFF29FECDC16"
+			tasks: [{
+				id: "68ED515AD13C5FDC"
+				item: "enderio:copper_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["72177D99D2AF07CE"]
+			id: "4F2C849E0DBEF9C6"
+			tasks: [{
+				id: "2214C496B2AEF809"
+				item: "enderio:energetic_alloy_ingot"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"2CDCEFF29FECDC16"
+				"7A9E0C5FD78BC056"
+			]
+			id: "59B3708E8688DEE1"
+			tasks: [{
+				id: "5579FB1075CDCAFA"
+				item: "enderio:conductive_alloy_ingot"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"0DFA4E9DB8CFC367"
+				"59B3708E8688DEE1"
+			]
+			id: "66F597AABA520BF7"
+			tasks: [{
+				id: "6DCB20D78B31F76A"
+				item: "enderio:vibrant_alloy_ingot"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"4F2C849E0DBEF9C6"
+				"7A9E0C5FD78BC056"
+			]
+			id: "0DFA4E9DB8CFC367"
+			tasks: [{
+				id: "050005F98BB16894"
+				item: "enderio:pulsating_alloy_ingot"
+				type: "item"
+			}]
+			x: -6.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["57E22323F780DB05"]
+			description: ["This is the only EnderIO alloy you make in the Smeltery."]
+			id: "0E69F6930DFA46E5"
+			tasks: [{
+				id: "03430EDE5833E471"
+				item: "enderio:soularium_ingot"
+				type: "item"
+			}]
+			x: -4.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["57E22323F780DB05"]
+			id: "2EC82C162D78EF6F"
+			tasks: [{
+				id: "3924C1092BA5C36C"
+				item: "enderio:end_steel_ingot"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["57E22323F780DB05"]
+			id: "00860C849A9C0ACE"
+			tasks: [{
+				id: "3496DD76E260B093"
+				item: "enderio:dark_steel_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["24507009C70A8E2A"]
+			icon: "betternether:nether_mushroom_chest"
+			id: "58996BE28415C242"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "2CBB2993B2F38259"
+				title: "Storage"
+				type: "checkmark"
+			}]
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["4CA80B96A1F09CAD"]
+			description: ["Capacitors are required for most EnderIO machines to work. Upgraded capacitors make them go even faster."]
+			id: "2CEE8BB68C6951A0"
+			rewards: [{
+				count: 2
+				id: "441744CE5809FE31"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68C789681B2AA08F"
+				item: "enderio:basic_capacitor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"4F2C849E0DBEF9C6"
+				"2CEE8BB68C6951A0"
+			]
+			id: "550AF0B832DEEBA8"
+			tasks: [{
+				id: "2B4DCF39814F27C8"
+				item: "enderio:double_layer_capacitor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: [
+				"66F597AABA520BF7"
+				"550AF0B832DEEBA8"
+			]
+			id: "5398AB3A056A356E"
+			tasks: [{
+				id: "077514F6308048A8"
+				item: "enderio:octadic_capacitor"
+				type: "item"
+			}]
+			x: -8.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["58996BE28415C242"]
+			hide_dependency_lines: false
+			id: "1E43B93986E64E1A"
+			tasks: [{
+				id: "0290540EB0BDE4B6"
+				item: "enderio:basic_capacitor_bank"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["1E43B93986E64E1A"]
+			id: "04CD72D6EAE95A90"
+			tasks: [{
+				id: "1EF6B1504221C8C7"
+				item: "enderio:advanced_capacitor_bank"
+				type: "item"
+			}]
+			x: 12.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"04CD72D6EAE95A90"
+				"2A207F4CE4A2E519"
+			]
+			id: "31DEA9AD8201283E"
+			tasks: [{
+				id: "3EA9B20F35EBCC15"
+				item: "enderio:vibrant_capacitor_bank"
+				type: "item"
+			}]
+			x: 11.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["24507009C70A8E2A"]
+			dependency_requirement: "one_completed"
+			icon: "enderio:yeta_wrench"
+			id: "3BA5FBCAC9F4721F"
+			optional: true
+			shape: "octagon"
+			size: 1.5d
+			tasks: [{
+				id: "268757544A5DC0AA"
+				title: "Miscellaneous"
+				type: "checkmark"
+			}]
+			x: 14.5d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"3BA5FBCAC9F4721F"
+				"72EECC793040AB11"
+			]
+			description: ["EnderIO's special gears need to be charged with the Wired Charger."]
+			id: "596DC19A301ACF9A"
+			tasks: [{
+				id: "0AE0FBBD9B49AFF5"
+				item: "enderio:wired_charger"
+				type: "item"
+			}]
+			x: 14.5d
+			y: 7.5d
+		}
+		{
+			dependencies: [
+				"72EECC793040AB11"
+				"3BA5FBCAC9F4721F"
+			]
+			hide_dependency_lines: true
+			id: "76F554FB4B820F49"
+			tasks: [{
+				id: "61077D9A8A92F748"
+				item: "enderio:fluid_tank"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["76F554FB4B820F49"]
+			id: "4549EFCB3A73B75F"
+			tasks: [{
+				id: "2489CEEEB2419558"
+				item: "enderio:pressurized_fluid_tank"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"3BA5FBCAC9F4721F"
+				"2A207F4CE4A2E519"
+			]
+			id: "142A737EE0026527"
+			tasks: [{
+				id: "79D1108D93A36EED"
+				item: "enderio:vacuum_chest"
+				type: "item"
+			}]
+			x: 13.5d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"3BA5FBCAC9F4721F"
+				"2A207F4CE4A2E519"
+			]
+			id: "050AE76378113005"
+			tasks: [{
+				id: "3F8AF44B6A920409"
+				item: "enderio:xp_vacuum"
+				type: "item"
+			}]
+			x: 15.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["596DC19A301ACF9A"]
+			description: ["NOTE: To charge the Staff, you need to fill it up with Vapor of Levity, obtained by melting shulker shells, in an EnderIO tank."]
+			id: "7AD96D2D87BDBEF1"
+			size: 0.6d
+			tasks: [{
+				id: "794712131404ABA0"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_levity"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 10000
+							MaxEnergyUse: 10000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 6.499999999999995d
+		}
+		{
+			dependencies: ["596DC19A301ACF9A"]
+			id: "6D67F8E18CC44C7E"
+			size: 0.6d
+			tasks: [{
+				id: "0A6EAA9357E185AF"
+				item: {
+					Count: 1
+					id: "enderio:staff_of_travelling"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 10000
+							MaxEnergyUse: 10000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["596DC19A301ACF9A"]
+			id: "00454526137C8CAB"
+			size: 0.6d
+			tasks: [{
+				id: "4B04739755EBD306"
+				item: {
+					Count: 1
+					id: "enderio:electromagnet"
+					tag: {
+						Energy: {
+							EnergyStored: 0
+							MaxEnergyStored: 100000
+							MaxEnergyUse: 100000
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: 15.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["0E69F6930DFA46E5"]
+			description: ["right click mobs with this to trap them. This is required to bind souls to items like the powered spawner."]
+			id: "2FF507B4AA9A3DE0"
+			tasks: [{
+				id: "03AFC5C6D4F69682"
+				item: { Count: 64, id: "enderio:empty_soul_vial" }
+				type: "item"
+			}]
+			x: -4.0d
+			y: 9.0d
+		}
+		{
+			dependencies: ["00860C849A9C0ACE"]
+			id: "7073FE504CA63758"
+			tasks: [{
+				id: "6A7EE6F9AC8743A6"
+				item: "enderio:enchanter"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 6.0d
+		}
+	]
+	title: "The Industrial Revolution..."
+}

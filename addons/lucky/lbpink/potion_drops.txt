@@ -1,0 +1,109 @@
+// Good
+// Potion Effects
+group(type=effect,ID=jump_boost,range=4,amplifier=2,duration=600;type=particle,ID=splashpotion,potion=leaping;type=entity,ID=rabbit,posOffset=#circleOffset(0.0,2.0),amount=8)@luck=2
+group(type=effect,ID=speed,range=4,amplifier=2,duration=600;type=particle,ID=splashpotion,potion=swiftness;type=item,ID=#randList(cookie,sugar),posOffset=#circleOffset(0.0,2.0),amount=30)@luck=2
+group(type=effect,ID=invisibility,range=4,duration=300;type=particle,ID=splashpotion,potion=invisibility;type=particle,ID=poof,size=(2.0,1.0,2.0),particleAmount=300,amount=30,delay=#rand(0.0,8.0))@luck=2
+group(type=effect,ID=instant_health,range=4,amplifier=3;type=effect,ID=regeneration,range=4,amplifier=1,duration=300;type=particle,ID=splashpotion,potion=healing;type=particle,ID=heart,size=(1.5,0.5,1.5),particleAmount=300)@luck=2
+group(type=entity,ID=potion,NBTTag=(Potion=(id=splash_potion,tag=(Potion=#randList(night_vision,leaping,fire_resistance,swiftness,water_breathing,healing,regeneration,strength)),Count=1),Motion=#motionFromDirection(#rand(0,360),-70,0.4)),amount=10)@luck=2
+group(type=effect,ID=health_boost,range=4,amplifier=1,duration=600;type=effect,ID=absorption,range=4,amplifier=1,duration=600;type=particle,ID=splashpotion,potion=healing;type=entity,ID=horse,NBTTag=(OwnerUUID=#pUUID,ArmorItem=(id=golden_horse_armor,Count=1),SaddleItem=(id=saddle,Count=1)))@luck=2
+group(type=effect,ID=saturation,range=4,amplifier=3,duration=600;type=particle,ID=splashpotion,potion=strength;type=block,ID=cake;type=item,ID=#randList(apple,baked_potato,bread,carrot,cooked_chicken,cooked_salmon,cooked_mutton,cooked_porkchop,cooked_beef,cooked_rabbit,cookie,golden_apple,golden_carrot,melon,mushroom_stew,potato,pumpkin_pie,rabbit_stew,beef,salmon,mutton,porkchop),amount=20)@luck=2
+group(type=effect,ID=strength,range=4,amplifier=1,duration=600;type=effect,ID=resistance,range=4,amplifier=1,duration=600;type=particle,ID=splashpotion,potion=strength;type=item,ID=iron_sword,posOffset=#circleOffset(0.0,2.0);type=item,ID=iron_helmet,posOffset=#circleOffset(0.0,2.0);type=item,ID=iron_chestplate,posOffset=#circleOffset(0.0,2.0);type=item,ID=iron_leggings,posOffset=#circleOffset(0.0,2.0);type=item,ID=iron_boots,posOffset=#circleOffset(0.0,2.0))@luck=2
+
+// Commands
+// Time Based
+group(type=command,ID="/time set day",commandSender="_Kristen";ID=clock,NBTTag=(display=(Name=#jsonStr(text="Notice The Time?",color=gold))))@luck=2
+group(type=command,ID="/time set noon",commandSender="_Kristen";ID=clock,NBTTag=(display=(Name=#jsonStr(text="Notice The Time?",color=gold))))@luck=2
+
+// Potion Based
+group(type=command,ID="/effect give @p minecraft:strength 30 1",commandSender="KristenStuffs")@luck=2
+group(type=command,ID="/effect give @p minecraft:resistance 30 1",commandSender="KristenStuffs")@luck=2
+group(type=command,ID="/effect give @p minecraft:regeneration 30 1",commandSender="KristenStuffs")@luck=2
+
+// Blocks
+group(type=block,ID=lapis_block,posOffset=#circleOffset(0,3),amount=50;type=block,ID=ancient_debris;type=particle,ID=splashpotion,potion="strength")@luck=2
+group(type=block,ID=gold_block,posOffset=#circleOffset(0,3),amount=50;type=block,ID=diamond_block;type=particle,ID=splashpotion,potion="regeneration")@luck=2
+group(type=block,ID=iron_block,posOffset=#circleOffset(0,3),amount=50;type=block,ID=emerald_block;type=particle,ID=splashpotion,potion="water_breathing")@luck=2
+
+// Items
+ID=trident@luck=2
+ID=totem_of_undying@luck=2
+ID=cake,amount=#rand(4,16)@luck=2
+ID=cookie,amount=#rand(4,16)@luck=2
+ID=ender_pearl,amount=#rand(1,4)@luck=2
+ID=golden_apple,amount=#rand(1,4)@luck=2
+
+// Item Groups
+group(type=item,ID=anvil;ID=enchanted_book,NBTTag=(StoredEnchantments=#randEnchantment),posOffset=#circleOffset(0.0,2.0),amount=#rand(7,10);type=particle,ID=splashpotion,potion=strength)@luck=2
+
+// Entities
+// Singular Mobs
+type=entity,ID=iron_golem@luck=2
+type=entity,ID=snow_golem@luck=2
+group(type=difficulty,ID=hard;type=entity,ID=mooshroom;type=entity,ID=lightning_bolt)@luck=2
+
+// Groups
+group(type=entity,ID=wolf,amount=#rand(2,8),posOffset=#circleOffset(3),NBTTag=(CollarColor=#rand(0,15),Owner=#pUUIDArray,Sitting=1b);type=particle,ID="heart",size=(2,0,2),particleAmount=20)@luck=2
+
+// XP Bottles
+type=entity,ID=experience_bottle,NBTTag=(Motion=#motionFromDirection(#rand(0,360),-70,0.4)),amount=#rand(20,30)@luck=2
+
+// Falling Towers
+group(type=fill,ID=air,size=(1,51,1);group(NBTTag=(BlockState=(Name=red_glazed_terracotta)),posY=#bPosY+5;NBTTag=(BlockState=(Name=orange_glazed_terracotta)),posY=#bPosY+10;NBTTag=(BlockState=(Name=yellow_glazed_terracotta)),posY=#bPosY+15;NBTTag=(BlockState=(Name=lime_glazed_terracotta)),posY=#bPosY+20;NBTTag=(BlockState=(Name=light_blue_glazed_terracotta)),posY=#bPosY+25;NBTTag=(BlockState=(Name=blue_glazed_terracotta)),posY=#bPosY+30;NBTTag=(BlockState=(Name=purple_glazed_terracotta)),posY=#bPosY+35;NBTTag=(BlockState=(Name=magenta_glazed_terracotta)),posY=#bPosY+40;NBTTag=(BlockState=(Name=pink_glazed_terracotta)),posY=#bPosY+45),type=entity,ID=falling_block;type=entity,ID=falling_block,NBTTag=(BlockState=(Name=emerald_block)),posY=#bPosY+50;type=entity,ID=lightning_bolt,posY=#bPosY+10,delay=5.3)@luck=2
+
+// Structures
+type=structure,ID=lbp_full_rainbow@luck=2
+
+// Bad
+// Potion Effects
+group(type=entity,ID=potion,NBTTag=(Potion=(id=splash_potion,tag=(Potion=#randList(slowness,harming,poison,weakness)),Count=1),Motion=#motionFromDirection(#rand(0,360),-70,0.4)),amount=10)@luck=-2
+group(type=effect,ID=instant_damage,range=4;type=particle,ID=splashpotion,potion=harming;type=entity,ID=lucky:lucky_projectile,NBTTag=(Motion=#motionFromDirection(#rand(0,360),-50,0.4),item=(id=iron_sword),damage=4.0),amount=20)@luck=-2
+group(type=effect,ID=blindness,range=4,duration=10;type=effect,ID=slowness,range=4,duration=10;type=particle,ID=splashpotion,potion=slowness;type=particle,ID=large_smoke,size=(2.0,1.0,2.0),particleAmount=300,amount=30,delay=#rand(0.0,8.0))@luck=-2
+group(type=effect,ID=poison,range=4,duration=30;type=particle,ID=splashpotion,potion=poison;type=difficulty,ID=hard;type=entity,ID=cave_spider;type=item,ID=#randList(rotten_flesh,spider_eye,fermented_spider_eye),posOffset=#circleOffset(0.0,2.0),amount=30)@luck=-2
+group(type=effect,ID=nausea,range=4,duration=10;type=effect,ID=hunger,range=3,amplifier=8,duration=10;type=particle,ID=splashpotion,potion=poison;type=difficulty,ID=hard;type=entity,ID=slime;type=particle,ID=item_slime,size=(1.5,0.5,1.5),particleAmount=500)@luck=-2
+group(type=effect,ID=wither,range=4,duration=30;type=particle,ID=splashpotion,potion=weakness;type=item,ID=bone,posOffset=#circleOffset(0.0,2.0),amount=10;type=item,ID=bone_meal,posOffset=#circleOffset(0.0,2.0),amount=10;type=item,ID=skeleton_skull,posOffset=#circleOffset(0.0,2.0))@luck=-2
+
+// Special
+group(type=difficulty,ID=hard;type=explosion,damage=4;type=particle,ID=splashpotion,potion=harming)@luck=-2
+group(type=effect,ID=special_knockback,power=2.5,range=4,delay=0.1;type=particle,ID=splashpotion,potion=swiftness;type=particle,ID=poof,size=(1.5,1.0,1.5),particleAmount=500)@luck=-2
+
+// Blocks
+// Fire + Lava
+group(type=block,ID=fire,posOffset=#circleOffset(0,3),amount=50;type=block,ID=flowing_lava;type=particle,ID=splashpotion,potion=fire_resistance)@luck=-2
+group(type=block,ID=netherrack,posOffset=#circleOffset(0,3),amount=50;type=block,ID=magma_block;type=particle,ID=splashpotion,potion="fire_resistance")@luck=-2
+
+// Commands
+group(type=command,ID="/time set night",commandSender="_Kristen";ID=clock,NBTTag=(display=(Name=#jsonStr(text="Notice The Time?",color=gold))))@luck=-2
+group(type=command,ID="/time set midnight",commandSender="_Kristen";ID=clock,NBTTag=(display=(Name=#jsonStr(text="Notice The Time?",color=gold))))@luck=-2
+
+// Potion Effects
+group(type=command,ID="/effect give @p minecraft:glowing 300 0",commandSender="KristenStuffs")@luck=-2
+group(type=command,ID="/effect give @e minecraft:levitation 10 0",commandSender="KristenStuffs")@luck=-2
+
+// Entities
+// Singular
+group(type=difficulty,ID=hard;type=entity,ID=illusioner)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=end_crystal)@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=elder_guardian)@luck=-2
+
+// Mob Circle
+type=entity,ID=phantom,amount=#rand(2,8),posOffset=#circleOffset(4)@luck=-2
+type=entity,ID=vex,amount=#rand(2,8),posOffset=#circleOffset(4),NBTTag=(Type=#rand(0,4))@luck=-2
+type=entity,ID=husk,amount=#rand(4,16),posOffset=#circleOffset(4),NBTTag=(Type=#rand(0,4))@luck=-2
+type=entity,ID=blaze,amount=#rand(4,16),posOffset=#circleOffset(4),NBTTag=(Type=#rand(0,4))@luck=-2
+type=entity,ID=piglin,amount=#rand(4,16),posOffset=#circleOffset(4),NBTTag=(Type=#rand(0,4))@luck=-2
+type=entity,ID=guardian,amount=#rand(4,16),posOffset=#circleOffset(4),NBTTag=(Type=#rand(0,4))@luck=-2
+
+// Weakness + Monsters
+group(type=effect,ID=weakness,range=4,duration=30;type=particle,ID=splashpotion,potion=weakness;type=difficulty,ID=hard;type=entity,ID=#randList(zombie,skeleton,spider),posOffset=#circleOffset(0.0,2.0),amount=#rand(7,10))@luck=-2
+
+// Armoured Mobs
+group(type=difficulty,ID=hard;type=entity,ID=skeleton,NBTTag=(HandItems=[(id=bow,Count=1,tag=(Enchantments=#luckyBowEnchantments))],ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Long Lost Date",color=gray,bold=true),CustomNameVisible=true))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=zombie,NBTTag=(HandItems=[(id=diamond_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Bob",color=blue,bold=true),CustomNameVisible=true))@luck=-2
+group(type=difficulty,ID=hard;type=entity,ID=creeper,NBTTag=(HandItems=[(id=diamond_sword,Count=1,tag=(Enchantments=#luckySwordEnchantments))],ArmorItems=[(id=diamond_boots,Count=1,tag=(Enchantments=#luckyBootsEnchantments)),(id=diamond_leggings,Count=1,tag=(Enchantments=#luckyLeggingsEnchantments)),(id=diamond_chestplate,Count=1,tag=(Enchantments=#luckyChestplateEnchantments)),(id=diamond_helmet,Count=1,tag=(Enchantments=#luckyHelmetEnchantments))],HandDropChances=[0.5f,0f],ArmorDropChances=[0.3f,0.3f,0.3f,0.3f],CustomName=#jsonStr(text="Shelly",color=dark_green,bold=true),CustomNameVisible=true))@luck=-2
+
+// Explosion Based
+group(type=difficulty,ID=hard;type=explosion,radius=5)@luck=-2
+type=entity,ID=tnt,NBTTag=(Fuse=50b,Motion=#randLaunchMotion),amount=12@luck=-2
+
+// Structures
+type=structure,ID=lbp_greybow@luck=-2

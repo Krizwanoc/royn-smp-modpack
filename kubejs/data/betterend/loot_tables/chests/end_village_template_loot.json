@@ -1,0 +1,213 @@
+{
+  "pools": [
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 2
+      },
+      "bonus_rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "betterend:netherite_upgrade_smithing_template",
+          "weight": 3,
+          "functions": []
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:aeternium_upgrade_smithing_template",
+          "weight": 7
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_upgrade_smithing_template",
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "enlightend:adamantite_smithing_template",
+          "weight": 3
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 1,
+        "max": 3
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:elytra",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:phantom_membrane",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:aeternium_ingot",
+          "weight": 2
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:firework_rocket",
+          "weight": 4,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 3,
+                "max": 10
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Fireworks:{Flight:3b}}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "alexsmobs:enderiophage_rocket",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 1,
+                "max": 6
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Fireworks:{Flight:3b}}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": {
+        "type": "minecraft:uniform",
+        "min": 0,
+        "max": 2
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "betterend:terminite_sword",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:terminite_pickaxe",
+          "weight": 6,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:terminite_axe",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:terminite_hoe",
+          "weight": 8,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:aeternium_sword",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:aeternium_pickaxe",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "betterend:aeternium_axe",
+          "weight": 2,
+          "functions": [
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": 30
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "functions": []
+}

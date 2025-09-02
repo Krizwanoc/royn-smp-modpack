@@ -1,0 +1,12 @@
+{
+  "conditions": {
+    "type": "dimdoors:block",
+    "entry": "#minecraft:planks"
+  },
+  "result": {
+    "type": "dimdoors:block",
+    "block": "dimdoors:driftwood_planks",
+    "entropy": 1,
+    "world_thread_chance": 0.01
+  }
+}

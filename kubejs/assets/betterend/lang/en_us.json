@@ -1,0 +1,19 @@
+{
+ 
+    "item.betterend.crystal_shards": "Celestial Crystal Shards",
+    "block.betterend.aurora_crystal": "Celestial Crystal",
+    "biome.betterend.empty_aurora_cave": "Empty Celestial Cave",
+    "biome.betterend.lush_aurora_cave": "Lush Celestial Cave",
+
+    "item.betterend.amber_gem": "Sunstone",
+    "item.betterend.raw_amber": "Raw Sunstone",
+    "block.betterend.amber_ore": "Sunstone Ore",
+    "block.betterend.amber_block": "Sunstone Block",
+
+    "block.betterend.amber_grass": "Heliograss",
+    "block.betterend.amber_grass_path": "Heliograss Path",
+    "block.betterend.amber_moss": "Heliomoss",
+    "block.betterend.amber_moss_path": "Heliomoss Path",
+    "item.betterend.amber_root_raw": "Raw Helioroot",
+    "block.betterend.amber_root_seed": "Helioroot"
+ }
