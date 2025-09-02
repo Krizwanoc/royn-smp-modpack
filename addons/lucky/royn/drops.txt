@@ -1,1 +1,34 @@
-type=item, ID=lucky:amongus_lucky_block, NBTTag=(Luck=-100,display=(Name=#jsonStr("GammaRaul", color=dark_red)))@luck=0
+// Joke items
+/ GammaRaul (we sealed him into an Among Us Lucky Block)
+type=command, ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"GammaRaul\",\"color\":\"dark_red\",\"italic\":false}',Item:{id:\"lucky:amongus_lucky_block\",Count:1b,tag:{display:{Name:'{\"text\":\"GammaRaul\",\"color\":\"dark_red\",\"italic\":false}'},Luck:-100}}}"@luck=0
+
+
+// Random items
+ID=milk_bucket,amount=#randList(1,1,1,2)@luck=0
+type=item, ID=purple_dye, amount=#rand(6,128)@luck=0
+group( \
+    ID=vivis_atrocities:marshmallow, amount=#rand(1,8);
+    ID=vivis_atrocities:roasted_marshmallow, amount=#rand(1,8)
+)@luck=0
+
+
+// Yippee!
+type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(1,64)@luck=2@chance=0.4
+
+
+// ROYN mobs
+/ Regular
+type=entity, ID=minecraft:enderman, NBTTag=(CustomName=#jsonStr(text="Regular",color="#67b6bd",bold=true),CustomNameVisible=true)@luck=-1
+/ Algae Man
+type=entity, ID=minecraft:zombie, NBTTag=(
+    ArmorItems=[
+        (id=minecraft:leather_boots,Count=1,tag=(display=(color=5611593))),
+        (id=minecraft:leather_leggings,Count=1,tag=(display=(color=5611593))),
+        (id=minecraft:leather_chestplate,Count=1,tag=(display=(color=5611593))),
+        (id=minecraft:slime_block,Count=1)
+    ],ArmorDropChances=[0.0f,0.0f,0.0f,0.0f],
+    CustomName=#jsonStr(text="Algae Man",color="#55a049",bold=true),CustomNameVisible=true,
+    ActiveEffects=[(Id=5, Amplifier=3, Duration=199980, ShowParticles=false)]
+)@luck=-1
+/ a singular fish
+type=entity, ID=#randList(cod,salmon), NBTTag=(CustomName=#jsonStr(text="Herring"),CustomNameVisible=True)@luck=0
