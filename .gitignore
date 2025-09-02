@@ -28,6 +28,8 @@ tacz/*
 tacz_backup/*
 
 config/roughlyenoughitems/*
+config/roughlyenoughitems/pinyin.properties
+config/roughlyenoughitems/pinyin_double.properties
 config/fabric/*
 
 mods/*
