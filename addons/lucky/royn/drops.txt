@@ -117,7 +117,29 @@ group:1:(
     group:#rand(1,2):(ID=mtao45086:malachite_armor_helmet;ID=mtao45086:malachite_armor_chestplate;ID=mtao45086:malachite_armor_leggings;ID=mtao45086:malachite_armor_boots)@luck=2@chance=0.3
 )@luck=2@chance=0.2
 
+/ MAPOrbs
 ID=mtao45086:maporb, amount=#rand(1,4)@luck=1
+
+/ MTAO materials with fireworks
+group(
+    group:#rand(3,5):(
+        ID=mtao45086:tigers_eye,amount=#rand(8,16);
+        ID=mtao45086:hawks_eye,amount=#rand(8,16);
+        ID=mtao45086:heliodor,amount=#rand(8,16);
+        ID=mtao45086:malachite,amount=#rand(8,16);
+        ID=mtao45086:peridot,amount=#rand(8,16);
+        ID=mtao45086:tungsten_ingot,amount=#rand(8,16);
+        ID=mtao45086:hyperboreum_ingot,amount=#rand(8,16);
+        ID=mtao45086:opal,amount=#rand(8,16);
+        ID=mtao45086:schorl,amount=#rand(8,16);
+        ID=mtao45086:platinum_ingot,amount=#rand(8,16);
+        ID=mtao45086:strebillium,amount=#rand(8,16);
+        ID=mtao45086:zirconium_ingot,amount=#rand(8,16)
+    );
+    type=entity,ID=firework_rocket,NBTTag=(
+        LifeTime=20,FireworksItem=(id=firework_rocket,Count=1,tag=#randFireworksRocket)
+    ),amount=20,posOffset=#circleOffset(0,2)
+)@luck=2@chance=0.5
 
 // Rewards!
 / XP rain

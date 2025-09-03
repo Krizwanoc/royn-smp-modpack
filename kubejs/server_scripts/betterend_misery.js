@@ -235,6 +235,8 @@ ServerEvents.recipes(event => {
         west: ingTag("betterend:crystal_shards"),
         north_west: ingTag("#forge:dusts/ender_pearl")
     }, "betterend:crystalite_boots", 150);
+
+    event.remove({input:"mtao45086:tung"})
 });
 
 LootJS.modifiers(event => {
