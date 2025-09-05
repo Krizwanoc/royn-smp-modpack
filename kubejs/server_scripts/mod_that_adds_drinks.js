@@ -80,7 +80,7 @@ ServerEvents.recipes(event => {
     // BREWING EXCLUSIVE
     cook(["minecraft:smooth_stone", "minecraft:water_bucket"], "minecraft:glass_bottle", "mtao45086:mineral_water");
     cook(["mtao45086:sodium_hydroxide", "#mtao45086:citrus_juice"], "minecraft:glass_bottle", "mtao45086:calcium_citrate");
-    cook(["mtao45086:sufluric_acid", "#mtao45086:coniferin"], "minecraft:glass_bottle", "mtao45086:vanillin");
+    cook(["mtao45086:sulfuric_acid", "#mtao45086:coniferin"], "minecraft:glass_bottle", "mtao45086:vanillin");
     cook(["mtao45086:spruce_beer", "mtao45086:amber"], "minecraft:glass_bottle", "mtao45086:spruce_ambeer");
     cook(["mtao45086:birch_beer", "mtao45086:amber"], "minecraft:glass_bottle", "mtao45086:birch_ambeer");
 });
