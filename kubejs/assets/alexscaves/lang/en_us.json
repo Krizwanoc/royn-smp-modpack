@@ -1,0 +1,35 @@
+{
+
+  "block.alexscaves.sulfur": "Toxic Sulfur",
+  "block.alexscaves.sulfur_cluster": "Toxic Sulfur Cluster",
+  "block.alexscaves.sulfur_bud_small": "Small Toxic Sulfur Bud",
+  "block.alexscaves.sulfur_bud_medium": "Medium Toxic Sulfur Bud",
+  "block.alexscaves.sulfur_bud_large": "Large Toxic Sulfur Bud",
+
+  "item.alexscaves.sulfur_dust": "Toxic Sulfur Dust",
+
+  "advancements.alexscaves.sulfur_dust.desc": "Obtain Toxic Sulfur Dust from Toxic Sulfur Clusters",
+
+  "block.alexscaves.limestone": "Primordial Limestone",
+  "block.alexscaves.limestone_stairs": "Primordial Limestone Stairs",
+  "block.alexscaves.limestone_slab": "Primordial Limestone Slab",
+  "block.alexscaves.limestone_wall": "Primordial Limestone Wall",
+  "block.alexscaves.limestone_pillar": "Primordial Limestone Pillar",
+  "block.alexscaves.limestone_chiseled": "Chiseled Primordial Limestone",
+  "block.alexscaves.smooth_limestone": "Smooth Primordial Limestone",
+  "block.alexscaves.smooth_limestone_stairs": "Smooth Primordial Limestone Stairs",
+  "block.alexscaves.smooth_limestone_slab": "Smooth Primordial Limestone Slab",
+  "block.alexscaves.smooth_limestone_wall": "Smooth Primordial Limestone Wall",
+
+  "item.alexscaves.limestone_spear": "Primordial Limestone Spear",
+  "item.alexscaves.limestone_spear_inventory": "Primordial Limestone Spear",
+
+  "entity.alexscaves.limestone_spear": "Primordial Limestone Spear",
+
+  "advancements.alexscaves.limestone.desc": "Obtain Primordial Limestone",
+
+  "advancements.alexscaves.cave_painting.desc": "Create a Cave Painting by using Charcoal on Smooth Primordial Limestone",
+
+  "alexscaves.sound.subtitle.limestone_spear_throw": "Primordial Limestone Spear chucked",
+  "alexscaves.sound.subtitle.limestone_spear_hit": "Primordial Limestone Spear stabs"
+}

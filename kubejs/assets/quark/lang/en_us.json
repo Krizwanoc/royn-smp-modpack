@@ -1,0 +1,73 @@
+{
+    
+	"quark.jei.hint.ancient_fruit": "Falls from Ancient Ashen Trees when they're chopped down. Gives you a small amount of XP when eaten.",
+	"quark.jei.hint.ancient_sapling": "Can be sometimes sniffed by a Sniffer.",
+
+	"quark.jei.hint.ancient_tome": "Can upgrade an item or book's enchantment by one level, up to one above the normal cap. Rarely found in dungeons or strongholds.",
+
+	"quark.misc.ancient_tome_tooltip": "+I %s (Max. %s)",
+	"quark.misc.ancient_tome_tooltip_curse": "Applies a random curse",
+	"quark.misc.ancient_tome_tooltip_any": "(Any Enchantment)",
+
+	"item.quark.ancient_boat": "Ancient Ashen Boat",
+	"item.quark.ancient_chest_boat": "Ancient Ashen Boat with Chest",
+	"item.quark.ancient_fruit": "Enchanted Fruit",
+
+	"block.quark.ancient_planks": "Ancient Ashen Planks",
+	"block.quark.ancient_log": "Ancient Ashen Log",
+	"block.quark.stripped_ancient_log": "Stripped Ancient Ashen Log",
+	"block.quark.ancient_wood": "Ancient Ashen Wood",
+	"block.quark.stripped_ancient_wood": "Stripped Ancient Ashen Wood",
+	"block.quark.hollow_ancient_log": "Hollow Ancient Ashen Log",
+	"block.quark.ancient_planks_stairs": "Ancient Ashen Stairs",
+	"block.quark.ancient_planks_slab": "Ancient Ashen Slab",
+	"block.quark.ancient_planks_vertical_slab": "Ancient Ashen Vertical Slab",
+	"block.quark.ancient_post": "Ancient Ashen Post",
+	"block.quark.stripped_ancient_post": "Stripped Ancient Ashen Post",
+	"block.quark.ancient_bookshelf": "Ancient Ashen Bookshelf",
+	"block.quark.ancient_chest": "Ancient Ashen Chest",
+	"block.quark.ancient_trapped_chest": "Ancient Ashen Trapped Chest",
+	"block.quark.lootr_ancient_chest": "Ancient Ashen Loot Chest",
+	"block.quark.lootr_ancient_trapped_chest": "Ancient Ashen Trapped Loot Chest",
+	"block.quark.ancient_ladder": "Ancient Ashen Ladder",
+	"block.quark.ancient_door": "Ancient Ashen Door",
+	"block.quark.ancient_trapdoor": "Ancient Ashen Trapdoor",
+	"block.quark.ancient_fence_gate": "Ancient Ashen Fence Gate",
+	"block.quark.ancient_fence": "Ancient Ashen Fence",
+	"block.quark.ancient_sign": "Ancient Ashen Sign",
+	"block.quark.ancient_button": "Ancient Ashen Button",
+	"block.quark.ancient_pressure_plate": "Ancient Ashen Pressure Plate",
+	"block.quark.vertical_ancient_planks": "Vertical Ancient Ashen Planks",
+	"block.quark.ancient_leaves": "Ancient Ashen Leaves",
+	"block.quark.ancient_sapling": "Ancient Ashen Sapling",
+	"block.quark.ancient_leaf_carpet": "Ancient Ashen Leaf Carpet",
+	"block.quark.ancient_hedge": "Ancient Ashen Leaf Hedge",
+
+	"block.quark.ancient_hanging_sign": "Ancient Ashen Hanging Sign",
+
+	"block.quark.potted_ancient_sapling": "Potted Ancient Ashen Sapling",
+
+	"tag.item.quark.ancient_logs": "Ancient Ashen Logs",
+
+	"advancements.quark.ancient_apple_overlevel.title": "Bit Fruity",
+	"advancements.quark.ancient_apple_overlevel.description": "Eat an Enchanted Fruit with over 100 levels on you",
+
+
+	"quark.jei.hint.crab_info": "Dungeness Crabs can be found in Beaches, and bred with Wheat, Chicken, or any type of Fish.",
+
+	"quark.subtitles.crab_scuttle": "Dungeness Crab scuttles",
+
+	"quark.subtitles.bucket.fill_crab": "Dungeness Crab grabbed",
+
+	"item.quark.crab_bucket": "Bucket of Dungeness Crab",
+	"item.quark.crab_leg": "Raw Dungeness Crab Leg",
+	"item.quark.cooked_crab_leg": "Cooked Dungeness Crab Leg",
+	"item.quark.crab_shell": "Dungeness Crab Shell",
+
+	"item.quark.crab_spawn_egg": "Dungeness Crab Spawn Egg",
+
+	"entity.quark.crab": "Dungeness Crab",
+
+	"advancements.quark.crab_in_a_bucket.description": "Capture a Dungeness Crab in a Bucket"
+
+}
