@@ -174,6 +174,26 @@ ServerEvents.tags("fluid", event => {
 
 ServerEvents.tags("entity_type", event => {
     event.add("kubejs:ender_mobs", [
-        "minecraft:enderman"
+        "minecraft:enderman",
+        "minecraft:endermite",
+        "betterend:end_slime",
+        "betterend:dragonfly",
+        "betterend:end_fish",
+        "betterend:shadow_walker",
+        "betterend:cubozoa",
+        "betterend:silk_moth",
+        "tconstruct:ender_slime",
+        "mutantmonsters:mutant_enderman",
+        "enlightened_end:floating_elevibloom",
+        "enlightened_end:ringling",
+        "enlightened_end:fumesplat",
+        "enlightened_end:gloop",
+        "enlightened_end:bouncer",
+        "enlightened_end:stalker",
+        "enlightened_end:void_leviathan",
+        "minecraft:phantom"
     ]);
+
+    event.add("alexscaves:resists_radiation", "#forge:immune_to_radiation");
+    event.add("alexscaves:resists_bubbled", "#enlightened_end:bubble_immune");
 });
