@@ -225,27 +225,7 @@ group(
     type=message, ID="$aCut the red wire!$r";
     type=entity, ID=alexscaves:nuclear_bomb;
     type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
-)@luck=-2
-group(
-    type=message, ID="$aCut the red wire!$r";
-    type=entity, ID=alexscaves:nuclear_bomb;
-    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
-)@luck=-2
-group(
-    type=message, ID="$aCut the red wire!$r";
-    type=entity, ID=alexscaves:nuclear_bomb;
-    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
-)@luck=-2
-group(
-    type=message, ID="$aCut the red wire!$r";
-    type=entity, ID=alexscaves:nuclear_bomb;
-    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
-)@luck=-2
-group(
-    type=message, ID="$aCut the red wire!$r";
-    type=entity, ID=alexscaves:nuclear_bomb;
-    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
-)@luck=-2
+)@luck=-2@chance=0.05
 
 
 
