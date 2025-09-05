@@ -27,6 +27,11 @@ screenshots/**
 tacz/**
 tacz_backup/**
 
+config/roughlyenoughitems/
+config/spark/
+config/fabric
+.vscode/
+
 config/roughlyenoughitems/**
 config/roughlyenoughitems/pinyin.properties
 config/roughlyenoughitems/pinyin_double.properties
