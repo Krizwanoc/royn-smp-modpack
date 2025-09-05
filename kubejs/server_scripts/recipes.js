@@ -245,7 +245,7 @@ ServerEvents.recipes(event => {
         "alexscaves:amber"
     ], "#kubejs:amber_blocks");
     // event.replaceInput({id: "alexscaves:polymer_plate"}, "minecraft:iron_ingot", "industrialforegoing:plastic");
-    mergeIngredients([["mtao45086:caramel", "alexscaves:caramel"], "#kubejs:caramel"]);
+    mergeIngredients(["mtao45086:caramel", "alexscaves:caramel"], "#kubejs:caramel");
 
 
     // fix uranium dupe
