@@ -21,6 +21,8 @@ StartupEvents.registry('item', event => {
     // event.create("soularium_dust");
 
     event.create("aeternium_nugget");
+    event.create("zirconium_nugget");
+    event.create("hyperboreum_nugget");
 })
 
 StartupEvents.registry("fluid", event => {
@@ -51,4 +53,14 @@ StartupEvents.registry("fluid", event => {
         .thinTexture(0x126c4a)
         .bucketColor(0x126c4a)
         .displayName('Emerald Water')
+
+      event.create('molten_zirconium')
+        .thickTexture(0xb88383)
+        .bucketColor(0xb88383)
+        .displayName('Molten Zirconium');
+      event.create('molten_hyperboreum')
+        .thickTexture(0xD2F4FA)
+        .bucketColor(0xD2F4FA)
+        .displayName('Molten Hyperboreum');
+
 })

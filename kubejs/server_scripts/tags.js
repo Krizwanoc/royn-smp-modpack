@@ -48,6 +48,8 @@ ServerEvents.tags("item", event => {
     event.add("forge:ingots/aeternium", "betterend:aeternium_ingot");
     event.add("forge:storage_blocks/aeternium", "betterend:aeternium_block");
     event.add("forge:nuggets/aeternium", "kubejs:aeternium_nugget");
+    event.add("forge:nuggets/zirconium", "kubejs:zirconium_nugget");
+    event.add("forge:nuggets/hyperboreum", "kubejs:hyperboreum_nugget");
 
     event.add("forge:ores/uranium", 'alexscaves:radrock_uranium_ore');
     event.add("forge:ores/uranium", 'enlightened_end:irradium_ore');
@@ -55,16 +57,19 @@ ServerEvents.tags("item", event => {
     event.add("forge:ingots/uranium", 'alexscaves:uranium');
     
     event.add("forge:dusts/quartz", "mtao45086:quartz_dust");
-    let mtao = ["lead", "tungsten", "platinum", "zirconium", "slamtanium", "tin"];
+    let mtao = ["lead", "tungsten", "platinum", "zirconium", "slamtanium", "tin", "hyperboreum"];
     for (var i=0; i<mtao.length; i++) {
         var m = mtao[i];
         console.log(m);
         event.add(`forge:ores/${m}`, `mtao45086:${m}_ore`);
-        if (m != "tin") {
-            event.add(`forge:ores/${m}`, `mtao45086:${m}_ore_deep`);
-        }
+        event.add(`forge:ores/${m}`, `mtao45086:${m}_ore_deep`);
+        event.add(`forge:ores/${m}`, `mtao45086:${m}_ore_end`);
+        event.add(`forge:raw_materials/${m}`, `mtao45086:${m}_raw`);
+        event.add(`forge:raw_materials/${m}`, `mtao45086:raw_${m}`); // SIGMA WHY IS RAW TIN THE ONLY ONE WHOSE ID IS LIKE THIS
         event.add(`forge:ingots/${m}`, `mtao45086:${m}_ingot`);
         event.add(`forge:storage_blocks/${m}`, `mtao45086:${m}_block`);
+        event.add(`forge:storage_blocks/raw_${m}`, `mtao45086:raw_${m}_block`);
+        event.add(`forge:storage_blocks/raw_${m}`, `mtao45086:${m}_raw_block`);
     }
     
     event.add("forge:heads", [
@@ -152,13 +157,17 @@ ServerEvents.tags("fluid", event => {
     event.add("forge:molten_aeternium", "kubejs:molten_aeternium");
     event.add("kubejs:emerald_water", "kubejs:emerald_water");
     event.add("forge:molten_adamantite", "kubejs:molten_adamantite");
+    event.add("forge:molten_zirconium", "kubejs:molten_zirconium");
+    event.add("forge:molten_hyperboreum", "kubejs:molten_hyperboreum");
 
     event.add("tconstruct:tooltips/metal", [
         "kubejs:molten_soularium",
         "kubejs:molten_thallasium",
         "kubejs:molten_terminite",
         "kubejs:molten_aeternium",
-        "kubejs:molten_adamantite"
+        "kubejs:molten_adamantite",
+        "kubejs:molten_zirconium",
+        "kubejs:molten_hyperboreum"
     ]);
     // event.add("tconst")
 });

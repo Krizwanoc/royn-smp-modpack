@@ -140,11 +140,13 @@ ServerEvents.recipes(event => {
     datagen("betterend", "terminite", 1000);
     datagen("betterend", "aeternium", 1500);
     datagen("enlightened_end", "adamantite", 1500);
-    smelteryGen("thallasium", 900);
+    smelteryGen("thallasium", 860);
     smelteryGen("terminite", 1000);
     smelteryGen("aeternium", 1500);
     smelteryGen("soularium", 1500);
     smelteryGen("adamantite", 1500);
+    smelteryGen("zirconium", 910);
+    smelteryGen("hyperboreum", 1210);
 
 
     // for materials not part of the smeltery
@@ -161,4 +163,33 @@ ServerEvents.recipes(event => {
     }
     singleMaterialRecipe("dimdoors:enduring_fibers", "roynconstruct:enduring");
     singleMaterialRecipe("betterend:dragon_bone_block", "roynconstruct:dragon_bone");
+
+
+    // melting of ores and raw materials
+    function tcMeltWithByproduct(input, output, outputAmt, byproducts, byproductAmt, temp, time) {
+        event.custom({
+            type: "tconstruct:melting",
+            ingredient: ingTag(input),
+            result: {
+                amount: outputAmt,
+                tag: output
+            },
+            byproducts: [
+                {
+                    amount: byproductAmt,
+                    tag: byproducts
+                }
+            ],
+            temperature: temp,
+            time: time*4
+        });
+    }
+    tcMeltWithByproduct("betterend:thallasium_raw", "forge:molten_thallasium", 90, "tconstruct:molten_ender", 30, 900, 21);
+    tcMeltWithByproduct("betterend:thallasium_ore", "forge:molten_thallasium", 180, "tconstruct:molten_ender", 60, 900, 21);
+
+    tcMeltWithByproduct("mtao45086:zirconium_raw", "forge:molten_zirconium", 90, "forge:molten_tin", 30, 900, 21);
+    tcMeltWithByproduct("mtao45086:zirconium_raw_block", "forge:molten_zirconium", 810, "forge:molten_tin", 270, 900, 21);
+    tcMeltWithByproduct("mtao45086:zirconium_ore", "forge:molten_zirconium", 180, "forge:molten_tin", 60, 900, 21);
+
+    tcMeltWithByproduct("mtao45086:hyperboreum_ore", "forge:molten_hyperboreum", 180, "forge:molten_tin", 60, 900, 21);
 });

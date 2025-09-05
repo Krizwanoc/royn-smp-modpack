@@ -295,8 +295,6 @@ ServerEvents.recipes(event => {
     })
 
     // BETTEREND ALLOYS
-    tcMelt("betterend:thallasium_raw", "forge:molten_thallasium", 90, 900, 21);
-    tcMelt("betterend:thallasium_ore", "forge:molten_thallasium", 90, 900, 21);
     tcMelt("betterend:emerald_ice", "kubejs:emerald_water", 90/4, 10, 4);
     tcMelt("betterend:dense_emerald_ice", "kubejs:emerald_water", 90, 10, 5);
     tcMelt("betterend:ancient_emerald_ice", "kubejs:emerald_water", 810, 10, 7);
