@@ -271,7 +271,8 @@ ServerEvents.recipes(event => {
     // event.replaceInput({id: "mtao45086:cherry_limeade_craft"}, "mtao45086:black_cherry", ["mtao45086:black_cherry", "mtao45086:cherry_flavor"]);
     // event.replaceInput({id: "mtao45086:salt_smelt"}, "mtao45086:mineral_water", Item.of('minecraft:potion', '{Potion:"minecraft:water"}'));
     // event.replaceInput({id: "mtao45086:salt_smoke"}, "mtao45086:mineral_water", Item.of('minecraft:potion', '{Potion:"minecraft:water"}'));
-    mergeIngredients(["mtao45086:cherry_flavor", "mtao45086:black_cherry"], "#kubejs:cherry_flavour")
+    mergeIngredients(["mtao45086:cherry_flavor", "mtao45086:black_cherry"], "#kubejs:cherry_flavour");
+    event.shapeless("alexscaves:carmine_froglight", ["minecraft:golden_nugget", "mtao45086:synthetic_froglight", "alexscaves:pewen_sap"]);
     
 
     // CUSTOM BETTEREND HAMMER RECIPES
