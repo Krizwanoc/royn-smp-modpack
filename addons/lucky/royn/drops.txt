@@ -3,6 +3,7 @@
 type=command, ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"GammaRaul\",\"color\":\"dark_red\",\"italic\":false}',Item:{id:\"lucky:amongus_lucky_block\",Count:1b,tag:{display:{Name:'{\"text\":\"GammaRaul\",\"color\":\"dark_red\",\"italic\":false}'},Luck:-100}}}"@luck=0
 
 
+
 // Random items
 / ROYN merch
 type=item, ID=purple_dye, amount=#rand(1,64)@luck=0
@@ -17,8 +18,6 @@ group:1:(
 
 ID=milk_bucket,amount=#randList(1,1,1,2)@luck=0
 
-/ rediscovered jumpscare
-type=entity, ID=#randList(rediscovered:rana,rediscovered:beast_boy,rediscovered:steve,rediscovered:black_steve), amount=#rand(2,5), posOffset=#circleOffset(3)@luck=0
 
 / free dust
 group(
@@ -53,7 +52,7 @@ type=item, ID=#randList(
 type=item, ID=#randList(
     oak_sapling, birch_sapling, spruce_sapling, jungle_sapling, acacia_sapling, cherry_sapling, dark_oak_sapling, mangrove_propagule,
     twilightforest:twilight_oak_sapling, twilightforest:canopy_sapling, twilightforest:mangrove_sapling, twilightforest:darkwood_sapling, twilightforest:rainbow_oak_sapling,
-    mtao45086:mesquite_sapling, mtao45086:tropical_sapling,
+    mtao45086:mesquite_sapling, mtao45086:tropical_sapling,mtao45086:mesquite_sapling, mtao45086:tropical_sapling,mtao45086:mesquite_sapling, mtao45086:tropical_sapling,
     quark:ancient_sapling,
     alexscaves:pewen_sapling, alexscaves:thornwood_sapling, alexscaves:ancient_sapling,
     biomesoplenty:mahogany_sapling, biomesoplenty:maple_sapling, biomesoplenty:fir_sapling, biomesoplenty:palm_sapling, biomesoplenty:willow_sapling, biomesoplenty:redwood_sapling,
@@ -76,45 +75,93 @@ group:1:(
     ), amount=#rand(1,2)
 )@luck=0@chance=0.6
 
-/ MTAO gear
+
+
+// MTAO gear
+/ tin, watermelon, and zirconium
 group:1:(
-    group(ID=mtao45086:tin_sword;ID=mtao45086:tin_shovel;ID=mtao45086:tin_pickaxe;ID=mtao45086:tin_axe)@luck=0;
-    group(ID=mtao45086:tin_helmet;ID=mtao45086:tin_chestplate;ID=mtao45086:tin_leggings;ID=mtao45086:tin_boots)@luck=0;
+    group(
+        ID=mtao45086:tin_sword;ID=mtao45086:tin_shovel;ID=mtao45086:tin_pickaxe;ID=mtao45086:tin_axe
+    )@luck=0;
+    group(
+        ID=mtao45086:tin_helmet;ID=mtao45086:tin_chestplate;ID=mtao45086:tin_leggings;ID=mtao45086:tin_boots
+    )@luck=0;
 
-    group(ID=mtao45086:tourmaline_armor_helmet;ID=mtao45086:tourmaline_armor_chestplate;ID=mtao45086:tourmaline_armor_leggings;ID=mtao45086:tourmaline_armor_boots)@luck=0;
+    group(
+        ID=mtao45086:tourmaline_armor_helmet;ID=mtao45086:tourmaline_armor_chestplate;ID=mtao45086:tourmaline_armor_leggings;ID=mtao45086:tourmaline_armor_boots
+    )@luck=0;
 
-    group:#rand(2,3):(ID=mtao45086:zirconium_sword;ID=mtao45086:zirconium_shovel;ID=mtao45086:zirconium_pickaxe;ID=mtao45086:zirconium_axe;ID=mtao45086:zirconium_hoe)@luck=1@chance=0.75;
-    group:#rand(2,3):(ID=mtao45086:zirconium_armor_helmet;ID=mtao45086:zirconium_armor_chestplate;ID=mtao45086:zirconium_armor_leggings;ID=mtao45086:zirconium_armor_boots)@luck=1@chance=0.75
+    group:#rand(2,3):(
+        ID=mtao45086:zirconium_sword;ID=mtao45086:zirconium_shovel;ID=mtao45086:zirconium_pickaxe;ID=mtao45086:zirconium_axe;ID=mtao45086:zirconium_hoe
+    )@luck=1@chance=0.75;
+    group:#rand(2,3):(
+        ID=mtao45086:zirconium_armor_helmet;ID=mtao45086:zirconium_armor_chestplate;ID=mtao45086:zirconium_armor_leggings;ID=mtao45086:zirconium_armor_boots
+    )@luck=1@chance=0.75
 )@luck=0
 
+/ amber, tiger's eye, and strebillium
 group:1:(
-    group:#rand(2,3):(ID=mtao45086:amber_sword;ID=mtao45086:amber_shovel;ID=mtao45086:amber_pickaxe;ID=mtao45086:amber_axe;ID=mtao45086:amber_hoe)@luck=1;
-    group:#rand(2,3):(ID=mtao45086:amber_armor_helmet;ID=mtao45086:amber_armor_chestplate;ID=mtao45086:amber_armor_leggings;ID=mtao45086:amber_armor_boots)@luck=1;
+    group:#rand(2,3):(
+        ID=mtao45086:amber_sword;ID=mtao45086:amber_shovel;ID=mtao45086:amber_pickaxe;ID=mtao45086:amber_axe;ID=mtao45086:amber_hoe
+    )@luck=1;
+    group:#rand(2,3):(
+        ID=mtao45086:amber_armor_helmet;ID=mtao45086:amber_armor_chestplate;ID=mtao45086:amber_armor_leggings;ID=mtao45086:amber_armor_boots
+    )@luck=1;
 
-    group:#rand(2,3):(ID=mtao45086:tigers_eye_sword;ID=mtao45086:tigers_eye_shovel;ID=mtao45086:tigers_eye_pickaxe;ID=mtao45086:tigers_eye_axe;ID=mtao45086:tigers_eye_hoe)@luck=1;
-    group:#rand(2,3):(ID=mtao45086:tigers_eye_armor_helmet;ID=mtao45086:tigers_eye_armor_chestplate;ID=mtao45086:tigers_eye_armor_leggings;ID=mtao45086:tigers_eye_armor_boots)@luck=1;
+    group:#rand(2,3):(
+        ID=mtao45086:tigers_eye_sword;ID=mtao45086:tigers_eye_shovel;ID=mtao45086:tigers_eye_pickaxe;ID=mtao45086:tigers_eye_axe;ID=mtao45086:tigers_eye_hoe
+    )@luck=1;
+    group:#rand(2,3):(
+        ID=mtao45086:tigers_eye_armor_helmet;ID=mtao45086:tigers_eye_armor_chestplate;ID=mtao45086:tigers_eye_armor_leggings;ID=mtao45086:tigers_eye_armor_boots
+    )@luck=1;
 
-    group:#rand(1,2):(ID=mtao45086:strebillium_sword;ID=mtao45086:strebillium_shovel;ID=mtao45086:strebillium_pickaxe;ID=mtao45086:strebillium_axe;ID=mtao45086:strebillium_hoe)@luck=1@chance=0.75;
-    group:#rand(1,2):(ID=mtao45086:strebillium_armor_helmet;ID=mtao45086:strebillium_armor_chestplate;ID=mtao45086:strebillium_armor_leggings;ID=mtao45086:strebillium_armor_boots)@luck=1@chance=0.75
+    group:#rand(1,2):(
+        ID=mtao45086:strebillium_sword;ID=mtao45086:strebillium_shovel;ID=mtao45086:strebillium_pickaxe;ID=mtao45086:strebillium_axe;ID=mtao45086:strebillium_hoe
+    )@luck=1@chance=0.75;
+    group:#rand(1,2):(
+        ID=mtao45086:strebillium_armor_helmet;ID=mtao45086:strebillium_armor_chestplate;ID=mtao45086:strebillium_armor_leggings;ID=mtao45086:strebillium_armor_boots
+    )@luck=1@chance=0.75
 )@luck=1
 
+/ heliodor and peridot
 group:1:(
-    group:#rand(1,2):(ID=mtao45086:heliodor_sword;ID=mtao45086:heliodor_shovel;ID=mtao45086:heliodor_pickaxe;ID=mtao45086:heliodor_axe;ID=mtao45086:heliodor_hoe)@luck=2;
-    group:#rand(1,2):(ID=mtao45086:heliodor_armor_helmet;ID=mtao45086:heliodor_armor_chestplate;ID=mtao45086:heliodor_armor_leggings;ID=mtao45086:heliodor_armor_boots)@luck=2;
+    group:#rand(1,2):(
+        ID=mtao45086:heliodor_sword;ID=mtao45086:heliodor_shovel;ID=mtao45086:heliodor_pickaxe;ID=mtao45086:heliodor_axe;ID=mtao45086:heliodor_hoe
+    )@luck=2;
+    group:#rand(1,2):(
+        ID=mtao45086:heliodor_armor_helmet;ID=mtao45086:heliodor_armor_chestplate;ID=mtao45086:heliodor_armor_leggings;ID=mtao45086:heliodor_armor_boots
+    )@luck=2;
 
-    group:#rand(1,2):(ID=mtao45086:peridot_sword_blaze;ID=mtao45086:peridot_hammer_blaze;ID=mtao45086:peridot_mattock;ID=mtao45086:peridot_halberd)@luck=2@chance=0.4;
-    group:#rand(1,2):(ID=mtao45086:peridot_armor_helmet;ID=mtao45086:peridot_armor_chestplate;ID=mtao45086:peridot_armor_leggings;ID=mtao45086:peridot_armor_boots)@luck=2@chance=0.4
+    group:#rand(1,2):(
+        ID=mtao45086:peridot_sword_blaze;ID=mtao45086:peridot_hammer_blaze;ID=mtao45086:peridot_mattock;ID=mtao45086:peridot_halberd
+    )@luck=2@chance=0.4;
+    group:#rand(1,2):(
+        ID=mtao45086:peridot_armor_helmet;ID=mtao45086:peridot_armor_chestplate;ID=mtao45086:peridot_armor_leggings;ID=mtao45086:peridot_armor_boots
+    )@luck=2@chance=0.4
 )@luck=2@chance=0.5
 
+/ hawk's eye, tungsten, and malachite
 group:1:(
-    group:#rand(1,2):(ID=mtao45086:hawks_eye_sword_blaze;ID=mtao45086:hawks_eye_hammer_blaze;ID=mtao45086:hawks_eye_mattock;ID=mtao45086:hawks_eye_halberd)@luck=2@chance=0.3;
-    group:#rand(1,2):(ID=mtao45086:hawks_eye_armor_helmet;ID=mtao45086:hawks_eye_armor_chestplate;ID=mtao45086:hawks_eye_armor_leggings;ID=mtao45086:hawks_eye_armor_boots)@luck=2@chance=0.3;
+    group:#rand(1,2):(
+        ID=mtao45086:hawks_eye_sword_blaze;ID=mtao45086:hawks_eye_hammer_blaze;ID=mtao45086:hawks_eye_mattock;ID=mtao45086:hawks_eye_halberd
+    )@luck=2@chance=0.3;
+    group:#rand(1,2):(
+        ID=mtao45086:hawks_eye_armor_helmet;ID=mtao45086:hawks_eye_armor_chestplate;ID=mtao45086:hawks_eye_armor_leggings;ID=mtao45086:hawks_eye_armor_boots
+    )@luck=2@chance=0.3;
 
-    group:#rand(1,2):(ID=mtao45086:tungsten_sword_blaze;ID=mtao45086:tungsten_hammer_blaze;ID=mtao45086:tungsten_mattock;ID=mtao45086:tungsten_halberd)@luck=2@chance=0.3;
-    group:#rand(1,2):(ID=mtao45086:tungsten_armor_helmet;ID=mtao45086:tungsten_armor_chestplate;ID=mtao45086:tungsten_armor_leggings;ID=mtao45086:tungsten_armor_boots)@luck=2@chance=0.3;
+    group:#rand(1,2):(
+        ID=mtao45086:tungsten_sword_blaze;ID=mtao45086:tungsten_hammer_blaze;ID=mtao45086:tungsten_mattock;ID=mtao45086:tungsten_halberd
+    )@luck=2@chance=0.3;
+    group:#rand(1,2):(
+        ID=mtao45086:tungsten_armor_helmet;ID=mtao45086:tungsten_armor_chestplate;ID=mtao45086:tungsten_armor_leggings;ID=mtao45086:tungsten_armor_boots
+    )@luck=2@chance=0.3;
 
-    group:#rand(1,2):(ID=mtao45086:malachite_sword_blaze;ID=mtao45086:malachite_hammer_blaze;ID=mtao45086:malachite_mattock;ID=mtao45086:malachite_halberd)@luck=2@chance=0.3;
-    group:#rand(1,2):(ID=mtao45086:malachite_armor_helmet;ID=mtao45086:malachite_armor_chestplate;ID=mtao45086:malachite_armor_leggings;ID=mtao45086:malachite_armor_boots)@luck=2@chance=0.3
+    group:#rand(1,2):(
+        ID=mtao45086:malachite_sword_blaze;ID=mtao45086:malachite_hammer_blaze;ID=mtao45086:malachite_mattock;ID=mtao45086:malachite_halberd
+    )@luck=2@chance=0.3;
+    group:#rand(1,2):(
+        ID=mtao45086:malachite_armor_helmet;ID=mtao45086:malachite_armor_chestplate;ID=mtao45086:malachite_armor_leggings;ID=mtao45086:malachite_armor_boots
+    )@luck=2@chance=0.3
 )@luck=2@chance=0.2
 
 / MAPOrbs
@@ -141,9 +188,71 @@ group(
     ),amount=20,posOffset=#circleOffset(0,2)
 )@luck=2@chance=0.5
 
-// Rewards!
+
+
+// Miscellaneous Rewards
 / XP rain
 type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(1,64)@luck=2@chance=0.4
+
+
+
+// Traps
+/ Temporary barrier
+group(
+    type=message, ID="$b??? cast Temporary Barrier!$r";
+    type=fill, ID=lime_stained_glass, size=(3,3,3), pos=(#pPosX-1,#pPosY,#pPosZ-1);
+    type=fill, ID=air, size=(3,3,3), pos=(#pPosX-1,#pPosY,#pPosZ-1),delay=4
+)@luck=-1
+
+/ cages of hell
+group(
+    type=fill,ID=air,size=(1,51,1),pos=(#pPosX,#pPosY,#pPosZ);
+    type=structure,ID=cage,pos=#pPos,rotation=#pDirect;
+    group:1:(
+        type=block,ID=alexscaves:acid,pos=(#pPosX,#pPosY+10,#pPosZ);
+        type=block,ID=biomesoplenty:blood,pos=(#pPosX,#pPosY+10,#pPosZ);
+        type=block,ID=enlightened_end:ooze_fluid,pos=(#pPosX,#pPosY+10,#pPosZ);
+        group(
+            type=entity, ID=tnt, posY=#pPosY+10;
+            type=entity, ID=tnt, posY=#pPosY+15;
+            type=entity, ID=tnt, posY=#pPosY+20
+        )
+    )
+)@luck=-2
+
+/ QUICK TIME EVENT!
+group(
+    type=message, ID="$aCut the red wire!$r";
+    type=entity, ID=alexscaves:nuclear_bomb;
+    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
+)@luck=-2
+group(
+    type=message, ID="$aCut the red wire!$r";
+    type=entity, ID=alexscaves:nuclear_bomb;
+    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
+)@luck=-2
+group(
+    type=message, ID="$aCut the red wire!$r";
+    type=entity, ID=alexscaves:nuclear_bomb;
+    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
+)@luck=-2
+group(
+    type=message, ID="$aCut the red wire!$r";
+    type=entity, ID=alexscaves:nuclear_bomb;
+    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
+)@luck=-2
+group(
+    type=message, ID="$aCut the red wire!$r";
+    type=entity, ID=alexscaves:nuclear_bomb;
+    type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
+)@luck=-2
+
+
+
+// Random Mob spawns
+/ rediscovered jumpscare
+type=entity, ID=#randList(rediscovered:rana,rediscovered:beast_boy,rediscovered:steve,rediscovered:black_steve), amount=#rand(2,5), posOffset=#circleOffset(3)@luck=0
+
 
 
 // ROYN mobs (single)
@@ -176,7 +285,7 @@ group(
         ActiveEffects=[(Id=10, Amplifier=2, Duration=199980)]
     )
 )@luck=0@chance=0.7
-/ Expectant Chicken
+/ Expectant Chicken (chicken with oozing)
 group(
     type=message, ID="$2Quoluck!$r";
     type=entity, ID=minecraft:chicken, NBTTag=(
