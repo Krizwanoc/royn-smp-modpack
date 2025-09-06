@@ -146,7 +146,7 @@ ServerEvents.recipes(event => {
     smelteryGen("soularium", 1500);
     smelteryGen("adamantite", 1500);
     smelteryGen("zirconium", 910);
-    smelteryGen("hyperboreum", 1210);
+    smelteryGen("hyperboreum", 0);
 
 
     // for materials not part of the smeltery
@@ -191,5 +191,5 @@ ServerEvents.recipes(event => {
     tcMeltWithByproduct("mtao45086:zirconium_raw_block", "forge:molten_zirconium", 810, "forge:molten_tin", 270, 900, 21);
     tcMeltWithByproduct("mtao45086:zirconium_ore", "forge:molten_zirconium", 180, "forge:molten_tin", 60, 900, 21);
 
-    tcMeltWithByproduct("mtao45086:hyperboreum_ore", "forge:molten_hyperboreum", 180, "forge:molten_tin", 60, 900, 21);
+    tcMeltWithByproduct("mtao45086:hyperboreum_ore", "forge:molten_hyperboreum", 180, "minecraft:water", 60, 0, 21);
 });

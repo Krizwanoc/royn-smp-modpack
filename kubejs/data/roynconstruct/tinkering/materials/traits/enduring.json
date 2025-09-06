@@ -1,5 +1,8 @@
 {
   "default": [
-    {}
+    {
+      "level": 1,
+      "name": "tconstruct:sweeping_edge"
+    }
   ]
 }
