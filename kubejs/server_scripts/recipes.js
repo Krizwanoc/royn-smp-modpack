@@ -373,8 +373,16 @@ ServerEvents.recipes(event => {
     tcCast("table", "tconstruct:blazing_blood", 200, "#minecraft:shulker_boxes", "enderstorage:ender_pouch", true);
 
 
-    // change the among us lucky block
+    // LUCKY BLOCKS
     event.replaceInput({id: "lucky:amongus_lucky_block"}, "minecraft:dropper", "lucky:lucky_block");
+    event.shaped("lucky:summer_lucky_block", [
+        "sss",
+        "sls",
+        "sss"
+    ], {
+        s: "minecraft:sunflower",
+        l: "lucky:lucky_block"
+    });
 
     // scarecrow crafting
     event.shapeless("dummmmmmy:target_dummy", ["rediscovered:scarecrow", "minecraft:target"]);
