@@ -29,6 +29,12 @@
   "advancements.alexscaves.limestone.desc": "Obtain Primordial Limestone",
 
   "advancements.alexscaves.cave_painting.desc": "Create a Cave Painting by using Charcoal on Smooth Primordial Limestone",
+  
+  "block.alexscaves.amber": "Prehistoric Amber",
+  "block.alexscaves.amber_monolith": "Prehistoric Amber Monolith",
+  "item.alexscaves.amber_curiosity": "Prehistoric Amber Curiosity",
+  "entity.alexscaves.luxtructosaurus.slain_message": "New forms are taking shape within Prehistoric Amber Monoliths...",
+  "advancements.alexscaves.ominous_catalyst.desc": "Craft an Ominous Catalyst from Heavy Bones and an Prehistoric Amber Curiosity",
 
   "alexscaves.sound.subtitle.limestone_spear_throw": "Primordial Limestone Spear chucked",
   "alexscaves.sound.subtitle.limestone_spear_hit": "Primordial Limestone Spear stabs"

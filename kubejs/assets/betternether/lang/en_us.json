@@ -1,0 +1,52 @@
+{
+  "advancements.betternether.flaming_armor.description": "Cover yourself in flaming red garnet gear",
+
+  "advancements.betternether.flaming_ruby.description": "Find a Smithing Template for your Garnet Tools in a Loot Chest in the Nether",
+  "advancements.betternether.flaming_ruby.title": "Embers of the Nether",
+  "advancements.betternether.flaming_tools.description": "Create a full set of Warding Garnet Tools",
+
+  "advancements.betternether.ruby_gear.description": "Cover yourself in garnet gear",
+  "advancements.betternether.ruby_gear.title": "Harder than Diamond",
+  "advancements.betternether.ruby_ore.description": "Obtain Garnet Ore in the Nether",
+  "advancements.betternether.ruby_ore.title": "Garnet Ore",
+  "advancements.betternether.ruby_tools.description": "Obtain some garnet tools from the depth of the Nether",
+  "advancements.betternether.ruby_tools.title": "Red Nether",
+
+  "block.betternether.nether_ruby_block": "Garnet Block",
+  "block.betternether.nether_ruby_ore": "Garnet Ore",
+  "block.betternether.nether_ruby_slab": "Garnet Slab",
+  "block.betternether.nether_ruby_stairs": "Garnet Stairs",
+
+  "enchantment.betternether.ruby_fire": "Garnet's Fire",
+  "enchantment.betternether.ruby_fire.desc": "Auto-Smelts ores (Pickaxe) \n Flame and Knockback (Armor and Sword)",
+
+  "item.betternether.flaming_ruby_axe": "Warding Garnet Axe",
+  "item.betternether.flaming_ruby_boots": "Warding Garnet Boots",
+  "item.betternether.flaming_ruby_chestplate": "Warding Garnet Chestplate",
+  "item.betternether.flaming_ruby_helmet": "Warding Garnet Helmet",
+  "item.betternether.flaming_ruby_hoe": "Warding Garnet Hoe",
+  "item.betternether.flaming_ruby_leggings": "Warding Garnet Leggings",
+  "item.betternether.flaming_ruby_pickaxe": "Warding Garnet Pickaxe",
+  "item.betternether.flaming_ruby_shovel": "Warding Garnet Shovel",
+  "item.betternether.flaming_ruby_sword": "Warding Garnet Sword",
+
+  "item.betternether.nether_ruby": "Garnet",
+  "item.betternether.nether_ruby_axe": "Garnet Axe",
+  "item.betternether.nether_ruby_boots": "Garnet Boots",
+  "item.betternether.nether_ruby_chestplate": "Garnet Chestplate",
+  "item.betternether.nether_ruby_excavator": "Garnet Excavator",
+  "item.betternether.nether_ruby_hammer": "Garnet Hammer",
+  "item.betternether.nether_ruby_helmet": "Garnet Helmet",
+  "item.betternether.nether_ruby_hoe": "Garnet Hoe",
+  "item.betternether.nether_ruby_leggings": "Garnet Leggings",
+  "item.betternether.nether_ruby_pickaxe": "Garnet Pickaxe",
+  "item.betternether.nether_ruby_shovel": "Garnet Shovel",
+  "item.betternether.nether_ruby_sword": "Garnet Sword",
+
+  "item.betternether.smithing_template.flaming_ruby_upgrade.additions_slot_description": "Add Sculk Catalyst",
+  "item.betternether.smithing_template.flaming_ruby_upgrade.applies_to": "Garnet Armor or Tools",
+  "item.betternether.smithing_template.flaming_ruby_upgrade.base_slot_description": "Add Garnet Armor or Tools",
+  "item.betternether.smithing_template.flaming_ruby_upgrade.ingredients": "Sculk Catalysts",
+
+  "upgrade.betternether.flaming_ruby_upgrade": "Warding Garnet Upgrade"
+}
