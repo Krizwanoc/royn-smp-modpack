@@ -176,6 +176,7 @@ ServerEvents.tags("entity_type", event => {
     event.add("kubejs:ender_mobs", [
         "minecraft:enderman",
         "minecraft:endermite",
+        "minecraft:ender_dragon",
         "betterend:end_slime",
         "betterend:dragonfly",
         "betterend:end_fish",
