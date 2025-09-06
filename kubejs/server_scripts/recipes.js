@@ -91,12 +91,10 @@ ServerEvents.recipes(event => {
         });
     }
 
-    function tcCast(fluid, fluidAmt, cast, result, consumeCast) {
+    function tcCast(type, fluid, fluidAmt, cast, result, consumeCast) {
         event.custom({
-            type: "tconstruct:casting_table",
-            cast: {
-                tag: `tconstruct:casts/${consumeCast ?  "single_use" : "multi_use"}/${cast}`
-            },
+            type: `tconstruct:casting_${type}`,
+            cast: ingTag(cast),
             cast_consumed: consumeCast,
             cooling_time: 70,
             fluid: {
@@ -366,9 +364,19 @@ ServerEvents.recipes(event => {
     }, 200);
 
 
+    // ENDER STORAGE
+    event.remove({id: "enderstorage:ender_chest"});
+    event.remove({id: "enderstorage:ender_tank"});
+    event.remove({id: "enderstorage:ender_pouch"});
+    tcCast("basin", "tconstruct:blazing_blood", 200, "minecraft:ender_chest", "enderstorage:ender_chest", true);
+    tcCast("basin", "tconstruct:blazing_blood", 200, "enderio:fluid_tank", "enderstorage:ender_tank", true);
+    tcCast("table", "tconstruct:blazing_blood", 200, "#minecraft:shulker_boxes", "enderstorage:ender_pouch", true);
+
+
     // change the among us lucky block
     event.replaceInput({id: "lucky:amongus_lucky_block"}, "minecraft:dropper", "lucky:lucky_block");
 
+    // scarecrow crafting
     event.shapeless("dummmmmmy:target_dummy", ["rediscovered:scarecrow", "minecraft:target"]);
     event.remove({id: "dummmmmmy:dummy_crafting"});
 
