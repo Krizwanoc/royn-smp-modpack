@@ -657,20 +657,12 @@
 			}
 			id: "304B443A21374149"
 			optional: true
-			rewards: [
-				{
-					exclude_from_claim_all: true
-					id: "7B00B04F8F9CD65F"
-					table_id: 575590373991928076L
-					type: "choice"
-				}
-				{
-					count: 2
-					id: "28284AA1BE260C15"
-					item: "kubejs:g"
-					type: "item"
-				}
-			]
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7B00B04F8F9CD65F"
+				table_id: 575590373991928076L
+				type: "choice"
+			}]
 			shape: "rsquare"
 			size: 1.5d
 			tasks: [{
@@ -684,6 +676,11 @@
 		{
 			dependencies: ["304B443A21374149"]
 			id: "294FA46CCE2D00FF"
+			rewards: [{
+				id: "61D247AC31B563A3"
+				item: "kubejs:g"
+				type: "item"
+			}]
 			size: 1.2d
 			tasks: [{
 				id: "2222831F80EB75C4"
@@ -702,6 +699,11 @@
 		{
 			dependencies: ["304B443A21374149"]
 			id: "2CE4BD35A6BBCE60"
+			rewards: [{
+				id: "4297B70B7E242C4D"
+				item: "kubejs:g"
+				type: "item"
+			}]
 			size: 1.2d
 			tasks: [{
 				id: "5A65AF37EB986D6D"
@@ -718,7 +720,7 @@
 			y: 0.4d
 		}
 		{
-			dependencies: ["5689CFC81CF5B120"]
+			dependencies: ["191C1E96966526CC"]
 			description: [
 				"you cook food with it. wow."
 				""
@@ -744,31 +746,34 @@
 					xp: 100
 				}
 			]
-			shape: "rsquare"
 			tasks: [{
 				id: "3100A96C3FDFB0BF"
 				item: "farmersdelight:cooking_pot"
 				type: "item"
 			}]
-			title: "Farmer's Delight"
 			x: -1.0d
-			y: -2.0d
+			y: -4.0d
 		}
 		{
-			dependencies: ["6986CFB958131001"]
+			dependencies: [
+				"6986CFB958131001"
+				"3574E7EB8A9791A7"
+			]
 			id: "7E94A5809372454F"
+			optional: true
 			rewards: [{
 				id: "7F51392FB6C59542"
 				type: "xp"
 				xp: 180
 			}]
+			size: 0.7d
 			tasks: [{
 				id: "1B346816F0608769"
 				item: "twilightdelight:fiery_cooking_pot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: -3.0d
+			x: -0.9999999999999999d
+			y: -4.9d
 		}
 		{
 			dependencies: ["5689CFC81CF5B120"]
@@ -1511,6 +1516,133 @@
 			}]
 			x: 5.5d
 			y: 6.0d
+		}
+		{
+			dependencies: ["5689CFC81CF5B120"]
+			description: [
+				"you cook food with it. wow."
+				""
+				"Requires heat. Place it above either a stove or a campfire."
+			]
+			icon: {
+				Count: 1
+				id: "farmersdelight:skillet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "191C1E96966526CC"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "67D31C5DF5292303"
+				item: "minecraft:bowl"
+				type: "item"
+			}]
+			shape: "rsquare"
+			tasks: [{
+				id: "11A26AC2AFFF6A8F"
+				title: "Farmer's Delight"
+				type: "checkmark"
+			}]
+			title: "Farmer's Delight"
+			x: -1.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["191C1E96966526CC"]
+			description: ["Knives can be used to harvest straw from grass, guarantee secondary drops from animals, and for cutting things. Wow."]
+			id: "47DDDDD3C364651D"
+			rewards: [{
+				count: 16
+				id: "2969BDDCDAF10E70"
+				item: "farmersdelight:straw"
+				type: "item"
+			}]
+			tasks: [{
+				id: "761573FB4419139E"
+				item: {
+					Count: 1
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(farmersdelight:tools/knives)"
+					}
+				}
+				title: "Any #farmersdelight:tools/knives"
+				type: "item"
+			}]
+			x: -1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["47DDDDD3C364651D"]
+			id: "433F5113E1F078EA"
+			tasks: [{
+				id: "7A0BE5B16B6665CF"
+				item: "farmersdelight:cutting_board"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["191C1E96966526CC"]
+			id: "4E2D39397CF9F7E2"
+			tasks: [{
+				id: "510906C16653669D"
+				item: "farmersdelight:organic_compost"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4E2D39397CF9F7E2"]
+			description: [
+				"Mushroom colonies are grown by planting a mushroom on Rich Soil at a light level below 12. That's it."
+				""
+				"This makes mushrooms much easier to farm. Shears can be used to preseve the colony instead of destroying and replacing the mushroom."
+			]
+			id: "1461DCFB890BB4AF"
+			rewards: [{
+				id: "1FB5B4FEDA2017D0"
+				item: "tconstruct:mushroom_stew_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "249EC6C07C91D09D"
+					item: "farmersdelight:brown_mushroom_colony"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "00544D06B056896E"
+					item: "farmersdelight:red_mushroom_colony"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "3CE5526191ABF193"
+					item: "nethersdelight:crimson_fungus_colony"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "70DB70CD2D891206"
+					item: "nethersdelight:warped_fungus_colony"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "639CD57EE57207B0"
+					item: "twilightdelight:mushgloom_colony"
+					optional_task: true
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -4.0d
 		}
 	]
 	title: "The Industrial Revolution..."
