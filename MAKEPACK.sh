@@ -15,7 +15,7 @@ for som in "${serverOnly[@]}"; do
 done
 
 # delete client-only mods on the server
-clientOnly=("cloth-config-11.1.136-forge" "configured-forge-1.20.1-2.2.3" "MouseTweaks-forge-mc1.20.1-2.25.1" "REIPluginCompatibilities-forge-12.0.93" "RoughlyEnoughItems-12.1.785-forge" "journeymap-1.20.1-5.10.3-forge")
+clientOnly=("MouseTweaks-forge-mc1.20.1-2.25.1" "REIPluginCompatibilities-forge-12.0.93" "RoughlyEnoughItems-12.1.785-forge" "journeymap-1.20.1-5.10.3-forge")
 for com in "${clientOnly[@]}"; do
     zip -d "ROYNSMP_SERVER_$ver.zip" mods/$com.jar
 done
