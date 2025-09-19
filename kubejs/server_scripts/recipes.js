@@ -259,11 +259,11 @@ ServerEvents.recipes(event => {
     // MOD THAT ADDS ORES
     mergeIngredients(["mtao45086:quartz_dust", "enederio:powdered_quartz"], "#forge:dusts/quartz")
     betterEndAnvil("minecraft:quartz", "mtao45086:quartz_dust", 2, 3, 8);
-    event.shapeless("mtao45086:maporb", [
-        "3x minecraft:redstone",
-        "2x minecraft:lapis_lazuli",
-        "minecraft:lime_dye"
+    event.shapeless("mtao45086:cement_powder", [
+        "2x minecraft:clay_ball",
+        "2x minecraft:sandstone"
     ]);
+    event.remove({id:"mtao45086:cement_powder_craft"});
     event.replaceOutput({id: "mtao45086:orange_soda_craft"}, "mtao45086:orange_juice", "mtao45086:orange_soda");
     // event.replaceInput({id: "mtao45086:fruit_punch_craft"}, "mtao45086:black_cherry", ["mtao45086:black_cherry", "mtao45086:cherry_flavor"]);
     // event.replaceInput({id: "mtao45086:cherry_limeade_craft"}, "mtao45086:black_cherry", ["mtao45086:black_cherry", "mtao45086:cherry_flavor"]);
