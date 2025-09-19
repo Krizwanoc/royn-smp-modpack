@@ -1,0 +1,9 @@
+/home/Desktop/generated/
+/home/Desktop/generated
+/home/usermcuserface/.var/app/com.atlauncher.ATLauncher/data/instances/ROYNSMP/saves/luckyblock structures idk
+/home/usermcuserface/.var/app/com.atlauncher.ATLauncher/data/instances/ROYNSMP/saves/luckyblock structures idk/
+
+/home/usermcuserface/.var/app/com.atlauncher.ATLauncher/data/instances/ROYNSMP/saves/luckyblock structures idk/generated
+/home/usermcuserface/.var/app/com.atlauncher.ATLauncher/data/instances/ROYNSMP/saves/luckyblock structures idk/generated/
+
+/home/

@@ -1,0 +1,1 @@
+ID=dungeontest,file=royn/dungeontest.luckystruct,centerY=1,blockMode=overlay
