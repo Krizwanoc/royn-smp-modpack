@@ -29,7 +29,8 @@ ServerEvents.tags("item", event => {
     ]);
     
     event.add('forge:dusts/ender_pearl', "betterend:ender_dust");
-    // event.remove("forge:gears/iron", 'enderio:iron_gear');
+    event.add("forge:gears/iron", 'rediscovered:gear');
+    event.remove("forge:gears/iron", 'enderio:iron_gear');
     event.add("forge:dusts/steel", "kubejs:steel_dust");
     event.remove("forge:ingots/iron", "betterend:thallasium_ingot");
     event.remove("c:iron_ingots", "betterend:thallasium_ingot");

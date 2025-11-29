@@ -397,8 +397,8 @@ ServerEvents.recipes(event => {
     // event.remove({output: 'enderio:primitive_alloy_smelter'});
     // event.remove({output: 'industrialforegoing:mechanical_dirt'});
     // event.remove({output: 'industrialforegoing:mob_duplicator'});
-    event.replaceInput({input: '#forge:gears/iron'}, '#forge:gears/iron', 'enderio:iron_gear');
-    event.remove({output: 'enderio:vibrant_gear'});
+    event.replaceInput({input: '#forge:gears/iron', mod: "enderio"}, '#forge:gears/iron', 'enderio:iron_gear');
+    // event.remove({output: 'enderio:vibrant_gear'});
     event.remove({output: 'enderio:dark_bimetal_gear'});
     event.remove({id: 'enderio:soulbinding/sentient_ender'});
     event.remove({id: 'enderio:slicing/ender_resonator'});
@@ -535,6 +535,7 @@ ServerEvents.recipes(event => {
     event.replaceInput({id: "enderio:fluid_tank"}, "#forge:glass", 'enderio:void_chassis');
     event.replaceInput({id: "enderio:pressurized_fluid_tank"}, "#enderio:fused_quartz", 'enderio:fluid_tank');
     event.replaceInput({id: "enderio:pressurized_fluid_tank"}, "enderio:dark_steel_bars", "#enderio:fused_quartz");
+    event.replaceInput({id: "enderio:alloy_smelter"}, "enderio:iron_gear", "enderio:energized_gear")
     // SOUL MELTING
     event.remove({id: "tconstruct:smeltery/melting/soul/sand"});
     tcMelt("#forge:ground/soul", "tconstruct:liquid_soul", 500, 400, 17);
