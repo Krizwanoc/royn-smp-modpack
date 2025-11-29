@@ -399,6 +399,7 @@ ServerEvents.recipes(event => {
     // event.remove({output: 'industrialforegoing:mob_duplicator'});
     event.replaceInput({input: '#forge:gears/iron', mod: "enderio"}, '#forge:gears/iron', 'enderio:iron_gear');
     // event.remove({output: 'enderio:vibrant_gear'});
+    event.remove({id: 'rediscovered:gear'});
     event.remove({output: 'enderio:dark_bimetal_gear'});
     event.remove({id: 'enderio:soulbinding/sentient_ender'});
     event.remove({id: 'enderio:slicing/ender_resonator'});
