@@ -901,9 +901,9 @@
 				type: "item"
 			}]
 			tasks: [{
-				count: 16L
+				count: 8L
 				id: "36C80EC4C52B6C82"
-				item: { Count: 16, id: "enderio:grains_of_infinity" }
+				item: "enderio:grains_of_infinity"
 				type: "item"
 			}]
 			x: -6.0d
