@@ -1,5 +1,5 @@
-BlockEvents.rightClicked("obsidian", event => {
-    if (event.player.offHandItem == Item.of("flint")) {
+function fuckyou(event) {
+    if (event.player.offHandItem == Item.of("flint") && event.player.isCrouching()) {
         const mainhand = event.player.mainHandItem
         if (
             mainhand == Item.of("deepslate") ||
@@ -9,4 +9,14 @@ BlockEvents.rightClicked("obsidian", event => {
             event.cancel();
         }
     }
+}
+
+BlockEvents.rightClicked("obsidian", event => {
+    fuckyou(event)
+})
+BlockEvents.rightClicked("crying_obsidian", event => {
+    fuckyou(event)
+})
+BlockEvents.rightClicked("grindstone", event => {
+    fuckyou(event)
 })
