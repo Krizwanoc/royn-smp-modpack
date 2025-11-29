@@ -40,3 +40,4 @@ config/roughlyenoughitems/favorites.json5
 config/roughlyenoughitems/collapsible.json5
 config/roughlyenoughitems/hints.json
 config/fabric/*
+config/spark/*
