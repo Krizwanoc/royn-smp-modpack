@@ -86,7 +86,7 @@
 				""
 				"To do this, go inside an enclosed area, right click the blueprint, and click \"Add Room\"."
 				""
-				"Special buildings exist too if you're into that sort of thing."
+				"Special buildings exist too. You will need to build them in order to increase your rank in the village. Check their requirements in the \"Catalog\" tab of the Blueprint GUI."
 			]
 			id: "7DF7ED03DC009122"
 			rewards: [
@@ -2038,11 +2038,19 @@
 			description: ["this is optional because none of us are getting laid"]
 			id: "40F4CCBD656491DE"
 			optional: true
-			rewards: [{
-				id: "7DA3B6B24ADDD100"
-				item: "mca:red_oak_crib"
-				type: "item"
-			}]
+			rewards: [
+				{
+					id: "7DA3B6B24ADDD100"
+					item: "mca:red_oak_crib"
+					type: "item"
+				}
+				{
+					count: 5
+					id: "735D0BAE797EC040"
+					item: "kubejs:g"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "79E0CE0BE2B7CDA1"
@@ -2557,6 +2565,79 @@
 			}]
 			x: -1.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["7DF7ED03DC009122"]
+			icon: "mca:book_cult_0"
+			id: "2836E3F8BE03CC1E"
+			invisible: true
+			optional: true
+			rewards: [{
+				id: "2BA3D0E973AC3236"
+				item: "kubejs:g"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5FEE4ACBCE2064B9"
+					item: {
+						Count: 1
+						id: "mca:sirben_baby_girl"
+						tag: {
+							baby: {
+								age: 2400
+								father: [I;
+									0
+									0
+									0
+									0
+								]
+								fatherName: "Unknown"
+								mother: [I;
+									0
+									0
+									0
+									0
+								]
+								motherName: "Unknown"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "23AE134514D2B93E"
+					item: {
+						Count: 1
+						id: "mca:sirben_baby_boy"
+						tag: {
+							baby: {
+								age: 0
+								father: [I;
+									0
+									0
+									0
+									0
+								]
+								fatherName: "Unknown"
+								mother: [I;
+									0
+									0
+									0
+									0
+								]
+								motherName: "Unknown"
+							}
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "..."
+			x: -3.0d
+			y: 3.0d
 		}
 	]
 	title: "Exploration Hell"

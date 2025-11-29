@@ -17,7 +17,7 @@
   "villagerBirthNotification": true,
   "innArrivalNotification": true,
   "villagerRestockNotification": true,
-  "showNotificationsAsChat": false,
+  "showNotificationsAsChat": true,
   "heartsToBeConsideredAsFriend": 40,
   "enableVillagerMailingPlayers": true,
   "allowBodyCustomizationInDestiny": true,

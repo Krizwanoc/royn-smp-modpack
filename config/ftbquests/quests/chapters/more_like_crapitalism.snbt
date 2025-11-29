@@ -84,15 +84,15 @@
 			dependencies: ["3EAD98C34C99A9C9"]
 			id: "78C8238592BDC4A6"
 			rewards: [{
-				count: 5
+				count: 7
 				id: "7C939D2664F79ABB"
 				item: "kubejs:g"
 				type: "item"
 			}]
 			tasks: [{
-				count: 3L
+				count: 2L
 				id: "36DEA22EB98EB5C2"
-				item: "minecraft:diamond_block"
+				item: "mtao45086:platinum_block"
 				type: "item"
 			}]
 			x: -2.0d
@@ -240,6 +240,7 @@
 							Damage: 0
 						}
 					}
+					optional_task: true
 					type: "item"
 				}
 			]
