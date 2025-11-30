@@ -430,6 +430,7 @@
 				""
 				"Note that this requires Scorched Bricks and not Seared Bricks, meaning that you need to get Nether Grout to make this. Also the corners need to be filled in unlike the Smeltery"
 			]
+			icon: "tconstruct:foundry_controller"
 			id: "51AC55CB7DEBC67A"
 			rewards: [
 				{
@@ -462,6 +463,8 @@
 					type: "item"
 				}
 			]
+			shape: "gear"
+			size: 1.5d
 			tasks: [
 				{
 					id: "325D6506B1BF816E"
@@ -910,8 +913,8 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["303E98247FE95187"]
-			description: ["Because EnderIO is so cool and awesome, some of its alloys need to be created with a special machine."]
+			dependencies: ["57E22323F780DB05"]
+			description: ["Because EnderIO is so cool and awesome, its alloys need to be created with a special machine."]
 			id: "72177D99D2AF07CE"
 			rewards: [{
 				id: "37C9EBF05E93F23C"
@@ -924,7 +927,7 @@
 				item: "enderio:primitive_alloy_smelter"
 				type: "item"
 			}]
-			x: -4.5d
+			x: -6.0d
 			y: 4.5d
 		}
 		{
@@ -1099,32 +1102,6 @@
 		}
 		{
 			dependencies: ["303E98247FE95187"]
-			description: [
-				"You use it to make steel. Neat."
-				""
-				"There are 3 ways of obtaining this. The first involves the SAG mill, which you only get later. The second way requires you to bash a few pieces of coal into obsidian or a grindstone with some flint [NOTE: I may remove this]. The third [INTENDED] way is gated behind the Thallasium Anvil from BetterEnd, where you smash coal with a smithing hammer."
-			]
-			id: "36FB2EA3385F6472"
-			rewards: [{
-				count: 2
-				id: "76EF00128ACB7C49"
-				item: "enderio:powdered_coal"
-				type: "item"
-			}]
-			tasks: [{
-				count: 4L
-				id: "0F7DFC37C0D2F1F4"
-				item: "enderio:powdered_coal"
-				type: "item"
-			}]
-			x: -2.0d
-			y: 4.5d
-		}
-		{
-			dependencies: [
-				"72177D99D2AF07CE"
-				"36FB2EA3385F6472"
-			]
 			dependency_requirement: "one_completed"
 			id: "57E22323F780DB05"
 			tasks: [{
@@ -1133,14 +1110,14 @@
 				type: "item"
 			}]
 			x: -2.0d
-			y: 6.0d
+			y: 4.5d
 		}
 		{
 			dependencies: ["72177D99D2AF07CE"]
 			id: "7A9E0C5FD78BC056"
 			tasks: [{
 				id: "70D6A0974F4CE046"
-				item: "enderio:redstone_alloy_ingot"
+				item: "kubejs:redstone_alloy_dust"
 				type: "item"
 			}]
 			x: -6.0d
@@ -1151,7 +1128,7 @@
 			id: "2CDCEFF29FECDC16"
 			tasks: [{
 				id: "68ED515AD13C5FDC"
-				item: "enderio:copper_alloy_ingot"
+				item: "kubejs:copper_alloy_dust"
 				type: "item"
 			}]
 			x: -5.0d
@@ -1162,7 +1139,7 @@
 			id: "4F2C849E0DBEF9C6"
 			tasks: [{
 				id: "2214C496B2AEF809"
-				item: "enderio:energetic_alloy_ingot"
+				item: "kubejs:energetic_alloy_dust"
 				type: "item"
 			}]
 			x: -7.0d
@@ -1176,7 +1153,7 @@
 			id: "59B3708E8688DEE1"
 			tasks: [{
 				id: "5579FB1075CDCAFA"
-				item: "enderio:conductive_alloy_ingot"
+				item: "kubejs:conductive_alloy_dust"
 				type: "item"
 			}]
 			x: -5.5d
@@ -1190,7 +1167,7 @@
 			id: "66F597AABA520BF7"
 			tasks: [{
 				id: "6DCB20D78B31F76A"
-				item: "enderio:vibrant_alloy_ingot"
+				item: "kubejs:vibrant_alloy_dust"
 				type: "item"
 			}]
 			x: -6.0d
@@ -1204,7 +1181,7 @@
 			id: "0DFA4E9DB8CFC367"
 			tasks: [{
 				id: "050005F98BB16894"
-				item: "enderio:pulsating_alloy_ingot"
+				item: "kubejs:pulsating_alloy_dust"
 				type: "item"
 			}]
 			x: -6.5d
@@ -1230,8 +1207,8 @@
 				item: "enderio:end_steel_ingot"
 				type: "item"
 			}]
-			x: -3.5d
-			y: 6.0d
+			x: -4.0d
+			y: 5.5d
 		}
 		{
 			dependencies: ["57E22323F780DB05"]
