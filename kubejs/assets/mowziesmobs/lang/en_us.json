@@ -1,0 +1,23 @@
+{
+  "entity.mowziesmobs.naga": "Kaliya",
+  "item.mowziesmobs.naga_fang": "Kaliya Fang",
+  "item.mowziesmobs.naga_fang.text.0": "Used to brew Potion of Poison Resistance, craft a Kaliya Fang Dagger, or craft darts",
+  "item.mowziesmobs.naga_fang_dagger": "Kaliya Fang Dagger",
+  "item.mowziesmobs.naga_fang_dagger.text.0": "Poisons targets",
+  "item.mowziesmobs.naga_fang_dagger.text.1": "Deals double damage from behind",
+  "item.mowziesmobs.naga_spawn_egg": "Kaliya Spawn Egg",
+  "config.mowziesmobs.naga": "Kaliya",
+  "config.mowziesmobs.naga.tooltip": "",
+  "config.mowziesmobs.naga_fang_dagger": "Kaliya Fang Dagger",
+  "config.mowziesmobs.naga_fang_dagger.tooltip": "",
+  "advancements.mowziesmobs.kill_naga.description": "Kill a Kaliya",
+  "subtitles.mowziesmobs.naga.acid.charge": "Kaliya concentrates acid",
+  "subtitles.mowziesmobs.naga.acid.hit": "Acid splatters",
+  "subtitles.mowziesmobs.naga.acid.spit": "Kaliya spits",
+  "subtitles.mowziesmobs.naga.acid.hiss": "Acid hisses",
+  "subtitles.mowziesmobs.naga.flap": "Kaliya flaps",
+  "subtitles.mowziesmobs.naga.growl": "Kaliya growls",
+  "subtitles.mowziesmobs.naga.grunt": "Kaliya grunts",
+  "subtitles.mowziesmobs.naga.roar": "Kaliya roars",
+  "subtitles.mowziesmobs.naga.swoop": "Kaliya swoops"
+}
