@@ -50,7 +50,7 @@
 
   "upgrade.betternether.flaming_ruby_upgrade": "Warding Garnet Upgrade",
 
-  "entity.betternether.naga": "Withering Shitsucker",
-  "entity.betternether.naga_projectile": "Withering Shitsucker Projectile",
-  "item.betternether.spawn_egg_naga": "Withering Shitsucker Spawn Egg"
+  "entity.betternether.naga": "Withering Shitlauncher",
+  "entity.betternether.naga_projectile": "Withering Shitlauncher Projectile",
+  "item.betternether.spawn_egg_naga": "Withering Shitlauncher Spawn Egg"
 }
