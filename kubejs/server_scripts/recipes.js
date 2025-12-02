@@ -540,4 +540,8 @@ ServerEvents.recipes(event => {
     // SOUL MELTING
     event.remove({id: "tconstruct:smeltery/melting/soul/sand"});
     tcMelt("#forge:ground/soul", "tconstruct:liquid_soul", 500, 400, 17);
+
+
+    // readd the gem cast
+    tcCast("table","forge:molten_gold",90,"#forge:gems","tconstruct:gem_cast", true);
 })

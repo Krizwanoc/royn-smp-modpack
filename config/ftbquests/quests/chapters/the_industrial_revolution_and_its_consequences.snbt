@@ -428,7 +428,9 @@
 			description: [
 				"An upgraded version of the Smeltery. It unlocks melting recipes that give multiple outputs, and gives useful byproducts from a lot of existing recipes. However, it is unable to make alloys."
 				""
-				"Note that this requires Scorched Bricks and not Seared Bricks, meaning that you need to get Nether Grout to make this. Also the corners need to be filled in unlike the Smeltery"
+				"The Foundry is required for several kinds of materials, such as obtaining steel from iron ore, or melting down ichor items."
+				""
+				"Note that this requires Scorched Bricks and not Seared Bricks, meaning that you need to get Nether Grout to make this. Also the corners need to be filled in unlike the Smeltery."
 			]
 			icon: "tconstruct:foundry_controller"
 			id: "51AC55CB7DEBC67A"
@@ -1600,18 +1602,6 @@
 					type: "item"
 				}
 				{
-					id: "3CE5526191ABF193"
-					item: "nethersdelight:crimson_fungus_colony"
-					optional_task: true
-					type: "item"
-				}
-				{
-					id: "70DB70CD2D891206"
-					item: "nethersdelight:warped_fungus_colony"
-					optional_task: true
-					type: "item"
-				}
-				{
 					id: "639CD57EE57207B0"
 					item: "twilightdelight:mushgloom_colony"
 					optional_task: true
@@ -1620,6 +1610,24 @@
 			]
 			x: 0.0d
 			y: -4.0d
+		}
+		{
+			dependencies: ["4E2D39397CF9F7E2"]
+			description: ["Soul compost is required to grow colonies of these nether mushrooms."]
+			id: "6D214C188F58917D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "557522F3CB4C5069"
+				table_id: 4658518436838163636L
+				type: "choice"
+			}]
+			tasks: [{
+				id: "5C24A7C139986786"
+				item: "nethersdelight:soul_compost"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -3.0d
 		}
 	]
 	title: "The Industrial Revolution..."

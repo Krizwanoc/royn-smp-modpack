@@ -1,0 +1,10 @@
+{
+	id: "40A661D61F58C4B4"
+	loot_size: 1
+	order_index: 8
+	rewards: [
+		{ item: "nethersdelight:crimson_fungus_colony" }
+		{ item: "nethersdelight:warped_fungus_colony" }
+	]
+	title: "nethercolonie"
+}
