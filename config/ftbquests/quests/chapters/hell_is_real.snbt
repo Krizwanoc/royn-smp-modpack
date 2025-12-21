@@ -2499,7 +2499,11 @@
 		}
 		{
 			dependencies: ["3574E7EB8A9791A7"]
-			description: ["Besides the obvious functionality, Uncrafting Tables can be used to \"recraft\" items, changing the material of a (non-Tinkers') tool to upgrade it while preserving enchantments."]
+			description: [
+				"Besides the obvious functionality, Uncrafting Tables can be used to \"recraft\" items, changing the material of a (non-Tinkers') tool to upgrade it while preserving enchantments."
+				""
+				"Maze Map Focuses can be found inside Labryrinth structures, or from killing Minotaurs."
+			]
 			id: "7999E8B5605119A4"
 			optional: true
 			rewards: [{
