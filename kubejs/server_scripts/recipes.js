@@ -499,17 +499,17 @@ ServerEvents.recipes(event => {
         ["3x enderio:powdered_iron", "enderio:powdered_coal"]
     )
     eioAlloyer([["enderio:powdered_coal",1], ["enderio:powdered_iron",3]], "kubejs:steel_dust", 4, 3200);
-    eioAlloyer([["enderio:powdered_gold",3], ["enderio:powdered_copper",1]], "mca:rose_gold_dust", 4, 3200);
-    eioAlloyer([["enderio:powdered_copper",2], ["enderio:silicon",1]], "kubejs:copper_alloy_dust", 2, 3200);
-    eioAlloyer([["enderio:powdered_iron",2], ["enderio:silicon",1], ["minecraft:redstone",4]], "kubejs:redstone_alloy_dust", 2, 3200);
-    eioAlloyer([["minecraft:redstone",1], ["enderio:powdered_gold",2], ["minecraft:glowstone_dust",1]], "kubejs:energetic_alloy_dust", 2, 4800);
+    eioAlloyer([["enderio:powdered_gold",3], ["enderio:powdered_copper",1]], "mca:rose_gold_dust", 6, 3200);
+    eioAlloyer([["enderio:powdered_copper",2], ["enderio:silicon",1]], "kubejs:copper_alloy_dust", 3, 3200);
+    eioAlloyer([["enderio:powdered_iron",2], ["enderio:silicon",1], ["minecraft:redstone",4]], "kubejs:redstone_alloy_dust", 3, 3200);
+    eioAlloyer([["minecraft:redstone",1], ["enderio:powdered_gold",2], ["minecraft:glowstone_dust",1]], "kubejs:energetic_alloy_dust", 3, 4800);
 
-    eioAlloyer([["kubejs:redstone_alloy_dust",2], ["kubejs:steel_dust",1], ["kubejs:copper_alloy_dust",2]], "kubejs:conductive_alloy_dust", 3, 4800);
-    eioAlloyer([["kubejs:energetic_alloy_dust",2], ["#forge:dusts/ender_pearl",1], ["kubejs:redstone_alloy_dust",2]], "kubejs:pulsating_alloy_dust", 3, 4800);
-    eioAlloyer([["kubejs:pulsating_alloy_dust",2], ["#forge:dusts/ender_pearl",1], ["kubejs:conductive_alloy_dust",2]], "kubejs:vibrant_alloy_dust", 3, 6400);
+    eioAlloyer([["kubejs:redstone_alloy_dust",2], ["kubejs:steel_dust",1], ["kubejs:copper_alloy_dust",2]], "kubejs:conductive_alloy_dust", 5, 4800);
+    eioAlloyer([["kubejs:energetic_alloy_dust",2], ["#forge:dusts/ender_pearl",1], ["kubejs:redstone_alloy_dust",2]], "kubejs:pulsating_alloy_dust", 5, 4800);
+    eioAlloyer([["kubejs:pulsating_alloy_dust",2], ["#forge:dusts/ender_pearl",1], ["kubejs:conductive_alloy_dust",2]], "kubejs:vibrant_alloy_dust", 5, 6400);
 
-    eioAlloyer([["kubejs:steel_dust",5], ["kubejs:thallasium_dust",1], ["#forge:dusts/ender_pearl",2]], "kubejs:end_steel_dust", 8, 9600);
-    eioAlloyer([["kubejs:steel_dust",3], ["enderio:powdered_obsidian",3], ["#forge:dusts/ender_pearl",2]], "kubejs:dark_steel_dust", 8, 9600);
+    eioAlloyer([["kubejs:steel_dust",5], ["kubejs:thallasium_dust",1], ["#forge:dusts/ender_pearl",2]], "kubejs:end_steel_dust", 10, 9600);
+    eioAlloyer([["kubejs:steel_dust",3], ["enderio:powdered_obsidian",3], ["#forge:dusts/ender_pearl",2]], "kubejs:dark_steel_dust", 10, 9600);
 
     event.remove({id: "enderio:alloy_smelting/soularium_ingot"});
     tcAlloy([["forge:molten_gold", 90], ["tconstruct:molten_steel", 90], ["tconstruct:liquid_soul", 3000]], "forge:molten_soularium", 180, 1500);
