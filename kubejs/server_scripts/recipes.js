@@ -495,7 +495,7 @@ ServerEvents.recipes(event => {
     })
 
     event.shapeless( // early steel recipe lol
-        Item.of("kubejs:steel_dust"),
+        Item.of("kubejs:steel_dust", 2),
         ["3x enderio:powdered_iron", "enderio:powdered_coal"]
     )
     eioAlloyer([["enderio:powdered_coal",1], ["enderio:powdered_iron",3]], "kubejs:steel_dust", 4, 3200);
