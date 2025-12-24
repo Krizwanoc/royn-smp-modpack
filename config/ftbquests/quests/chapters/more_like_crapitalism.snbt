@@ -754,13 +754,13 @@
 		{
 			dependencies: ["04E00591FC028B76"]
 			description: ["UNIMPLEMENTED"]
-			icon: "minecraft:purple_wool"
+			icon: "lucky:royn_lucky_block"
 			id: "40C82B68E18B5177"
 			optional: true
 			rewards: [{
 				count: 24
 				id: "4A3E65030D7C26D7"
-				item: "minecraft:purple_wool"
+				item: "lucky:royn_lucky_block"
 				type: "item"
 			}]
 			tasks: [{
@@ -776,13 +776,19 @@
 		{
 			dependencies: ["04E00591FC028B76"]
 			description: ["UNIMPLEMENTED"]
-			icon: "minecraft:purple_wool"
+			icon: "lucky:royn_lucky_block"
 			id: "7EE258CE1446B80C"
 			optional: true
 			rewards: [{
 				count: 24
 				id: "140EC33E67238A10"
-				item: "minecraft:purple_wool"
+				item: {
+					Count: 1
+					id: "lucky:royn_lucky_block"
+					tag: {
+						Luck: -100
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -798,13 +804,19 @@
 		{
 			dependencies: ["04E00591FC028B76"]
 			description: ["UNIMPLEMENTED"]
-			icon: "minecraft:purple_wool"
+			icon: "lucky:royn_lucky_block"
 			id: "57BD082D26DF2382"
 			optional: true
 			rewards: [{
 				count: 24
 				id: "052B7F2213748FC4"
-				item: "minecraft:purple_wool"
+				item: {
+					Count: 1
+					id: "lucky:royn_lucky_block"
+					tag: {
+						Luck: 100
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
