@@ -44,7 +44,7 @@ biomeBlendRadius:0
 renderClouds:"true"
 resourcePacks:["Resources for lucky:royn_lucky_block","vanilla","tacz_resources","mod_resources","Resources for lucky:summer_lucky_block","Resources for lucky:pink_lucky_block","Resources for lucky:amongus_lucky_block","Moonlight Mods Dynamic Assets","fabric","file/TinkersConstructGeneratedPartTextures"]
 incompatibleResourcePacks:["Resources for lucky:royn_lucky_block","Resources for lucky:summer_lucky_block","Resources for lucky:pink_lucky_block","Resources for lucky:amongus_lucky_block"]
-lastServer:112.199.175.170
+lastServer:physical-type.gl.joinmc.link
 lang:en_us
 soundDevice:""
 chatVisibility:0
