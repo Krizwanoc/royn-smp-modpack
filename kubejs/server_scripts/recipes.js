@@ -362,6 +362,7 @@ ServerEvents.recipes(event => {
             V: "minecraft:diamond",
             X: "minecraft:ender_pearl"
     }, 200);
+    event.remove({id: "dimdoors:tesselating/fabric_of_finality"});
 
 
     // ENDER STORAGE
@@ -424,6 +425,7 @@ ServerEvents.recipes(event => {
     event.remove({id: "enderio:soulbinding/frank_n_zombie"});
     event.remove({id: "enderio:vibrant_capacitor_bank_upgrade"});
     event.remove({id: "enderio:advanced_capacitor_bank"});
+    event.remove({id: "enderio:darksteel_upgrade"});
     
     event.smelting("tconstruct:steel_ingot", "kubejs:steel_dust", 0, 200);
     event.blasting("tconstruct:steel_ingot", "kubejs:steel_dust", 0, 100);
@@ -537,11 +539,21 @@ ServerEvents.recipes(event => {
     event.replaceInput({id: "enderio:pressurized_fluid_tank"}, "#enderio:fused_quartz", 'enderio:fluid_tank');
     event.replaceInput({id: "enderio:pressurized_fluid_tank"}, "enderio:dark_steel_bars", "#enderio:fused_quartz");
     event.replaceInput({id: "enderio:alloy_smelter"}, "enderio:iron_gear", "enderio:energized_gear")
+    event.replaceInput({id: "enderio:staff_of_travelling"}, "enderio:dark_steel_ingot", "enderio:infinity_rod")
     // SOUL MELTING
     event.remove({id: "tconstruct:smeltery/melting/soul/sand"});
     tcMelt("#forge:ground/soul", "tconstruct:liquid_soul", 500, 400, 17);
+    event.smithing("vivis_atrocities:heros_rapier", "biomesoplenty:flesh", "vivis_atrocities:broken_rapier","vivis_atrocities:heroium_ingot")
 
 
     // readd the gem cast
     tcCast("table","forge:molten_gold",90,"#forge:gems","tconstruct:gem_cast", true);
+
+
+
+
+    // CHANGE THE ENDER EYE RECIPE
+    event.shapeless("minecraft:ender_eye", ["minecraft:blaze_powder", "dimdoors:rift_pearl", "dimdoors:amalgam_lump", '#forge:dusts/ender_pearl']);
 })
+
+

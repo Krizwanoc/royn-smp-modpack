@@ -1342,7 +1342,7 @@
 				"3BA5FBCAC9F4721F"
 				"72EECC793040AB11"
 			]
-			description: ["EnderIO's special gears need to be charged with the Wired Charger."]
+			description: ["EnderIO's special gears need to be charged with the Wired Charger. To use these gears, sneak and right click while holding them."]
 			id: "596DC19A301ACF9A"
 			tasks: [{
 				id: "0AE0FBBD9B49AFF5"

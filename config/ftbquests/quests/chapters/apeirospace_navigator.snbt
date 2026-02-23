@@ -76,7 +76,7 @@
 		}
 		{
 			dependencies: ["7B59B4795247E228"]
-			description: ["Completely destroys a Rift. [TODO: probably change the recipe for this?]"]
+			description: ["Completely destroys a Rift when you right click on it."]
 			id: "561DB1FC6BD67181"
 			rewards: [
 				{
