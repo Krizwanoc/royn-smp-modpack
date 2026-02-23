@@ -1,0 +1,91 @@
+{
+    "dialogue.location.umvuthana_grove/1": "I heard there is a village of bird people at %2$s! Their leader wields the power of the sun, and its followers attack all travellers who come near them!",
+    "dialogue.location.frostmaw_spawn/1": "A fearsome beast lives in the tundra near %2$s! Its ice breath has caused the end of many an adventurer.",
+    "dialogue.location.wrought_chamber/1": "If you dig near %2$s, you'll find a chamber holding a living statue.",
+    "dialogue.location.monastery/1": "There used to be a bunch of monks living in the mountains at %2$s, but they've since all disappeared. Could be worth checking out for treasure.",
+    
+    
+    "dialogue.location.iceologer_cabin/1": "I heard stories of a house in the mountains at %2$s where a Pillager versed in ice magic lives.",
+    "dialogue.location.illusioner_shack/1": "A powerful mage Pillager lives at %2$s! Beware, for he is a master of illusions!",
+    "dialogue.location.illusioner_training_grounds/1": "Deep in the woods near %2$s, Pillagers have set up a training camp. If you go anywhere near there, be careful. They shoot on sight.",
+
+
+    "dialogue.location.bastion_underground/1": "Some old catacombs at %2$s have been taken over by the undead! They say a clan of skeletons are stockpiling supplies in it, but that sounds kind of ridiculous.",
+    "dialogue.location.city_overworld/1": "Some villagers have built some strange, vertical living space at %2$s. I heard it's so tall, it scrapes the clouds in the sky!",
+    "dialogue.location.fortress_jungle/1": "I noticed a huge fortress out in the jungle at %2$s.",
+
+
+    "dialogue.location.mansion_birch/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_desert/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_jungle/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_mangrove/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_oak/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_savanna/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_snowy/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+    "dialogue.location.mansion_taiga/1": "If you go to %2$s, then you'll find a mansion owned by the illagers. If you value your life, don't come anywhere near that accursed place.",
+
+    "dialogue.location.mineshaft_birch/1": "There used to be a mine near %2$s, but it got closed after that huge accident.",
+    "dialogue.location.mineshaft_dark_forest/1": "There used to be a mine near %2$s, but it got closed after that huge accident.",
+    "dialogue.location.mineshaft_icy/1": "There used to be a mine under the ice near %2$s, but it got closed after that huge accident.",
+    "dialogue.location.mineshaft_jungle/1": "There used to be a mine near %2$s, but it got closed after that huge accident.",
+    "dialogue.location.mineshaft_ocean/1": "There used to be a mine near %2$s, but it got closed after that huge accident.",
+    "dialogue.location.mineshaft_stone/1": "Some geniuses tried to make a mineshaft under the ocean at %2$s. It's abandoned now, for obvious reasons.",
+    "dialogue.location.mineshaft_swamp/1": "There used to be a mine near the swamp %2$s, but it got closed after it almost caved in that one time.",
+    "dialogue.location.mineshaft_taiga/1": "There used to be a mine near %2$s, but it got closed after that huge accident.",
+
+    "dialogue.location.igloo_grassy/1": "At %2$s there is an abandoned house made of dirt. I think it's been abandoned for a good while.",
+    "dialogue.location.igloo_mangrove/1": "At %2$s there is an abandoned house made of mud and tree roots. I think it's been abandoned for a good while.",
+    "dialogue.location.igloo_mushroom/1": "At %2$s there is an abandoned house made of mushrooms. I think it's been abandoned for a good while.",
+    "dialogue.location.igloo_stone/1": "At %2$s there is an abandoned house made of rocks and moss. I think it's been abandoned for a good while.",
+
+    "dialogue.location.monument_desert/1": "I saw a huge pyramid out in the desert near %2$s. If you ask me, it looks like those sunken castles in the deep oceans I hear in rumors!",
+    "dialogue.location.monument_icy/1": "There is a giant ice castle at %2$s guarded by ghosts. Stay clear of it",
+    "dialogue.location.monument_jungle/1": "There is an ancient temple at %2$s. If you value your life, you should avoid it or you might get killed by one of the undead that roam its halls.",
+
+    "dialogue.location.outpost_badlands/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_birch/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_desert/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_icy/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_giant_tree_taiga/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_jungle/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_mangrove/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_oak/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_snowy/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+    "dialogue.location.outpost_taiga/1": "The Pillagers have set up an outpost at %2$s. The entire village would be thankful if you dealt with them, we can't stand another attack from their growing empire.",
+
+    "dialogue.location.pyramid_dark_forest/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_flower_forest/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_giant_tree_taiga/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_icy/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_jungle/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_mushroom/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_ocean/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_snowy/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+    "dialogue.location.pyramid_badlands/1": "They say there's a pyramid at %2$s. The traps are still active, but maybe you could find some worthwhile treasure in there?",
+
+    "dialogue.location.village_badlands/1": "At %2$s is another lovely village, in the middle of a badlands biome.",
+    "dialogue.location.village_bamboo/1": "At %2$s is another lovely village, in the middle of a bamboo forest.",
+    "dialogue.location.village_birch/1": "At %2$s is another lovely village, in the middle of a bitch forest.",
+    "dialogue.location.village_cherry/1": "At %2$s is another lovely village, in the middle of a cherry grove.",
+    "dialogue.location.village_dark_forest/1": "At %2$s is another lovely village, in the middle of a dark forest biome.",
+    "dialogue.location.village_giant_taiga/1": "At %2$s is another lovely village, in the middle of a taiga biome.",
+    "dialogue.location.village_jungle/1": "At %2$s is another lovely village, in the middle of a jungle biome.",
+    "dialogue.location.village_mountains/1": "At %2$s is another lovely village, in the middle of the mountains.",
+    "dialogue.location.village_mushroom/1": "At %2$s is another lovely village, in the middle of a mushroom biome.",
+    "dialogue.location.village_oak/1": "At %2$s is another lovely village, in the middle of a oak forest.",
+    "dialogue.location.village_swamp/1": "At %2$s is another lovely village, in the middle of a swamp biome.",
+
+    "dialogue.location.witch_hut_birch/2": "If I were you, I would avoid %2$s. There's this hut owned by that foul witch, and trust me, you don't want to be anywhere nearby.",
+    "dialogue.location.witch_hut_dark_forest/2": "If I were you, I would avoid %2$s. There's this hut owned by that foul witch, and trust me, you don't want to be anywhere nearby.",
+    "dialogue.location.witch_hut_giant_tree_taiga/2": "If I were you, I would avoid %2$s. There's this hut owned by that foul witch, and trust me, you don't want to be anywhere nearby.",
+    "dialogue.location.witch_hut_mangrove/2": "If I were you, I would avoid %2$s. There's this hut owned by that foul witch, and trust me, you don't want to be anywhere nearby.",
+    "dialogue.location.witch_hut_oak/2": "If I were you, I would avoid %2$s. There's this hut owned by that foul witch, and trust me, you don't want to be anywhere nearby.",
+    "dialogue.location.witch_hut_taiga/2": "If I were you, I would avoid %2$s. There's this hut owned by that foul witch, and trust me, you don't want to be anywhere nearby.",
+
+
+    "dialogue.location.roynhouse/1": "There's this little block of bricks on the river at %2$s that keeps the freshest waters to themselves. If you can best this riparian menace, you would make a humble family of fishermen very happy.",
+
+
+    "dialogue.location.dungeon/1": "There's this building in the wilderness at %2$s. I heard strange noises coming from the basement, but I'm too scared to go check it out myself.",
+    "dialogue.location.trials_chambers/1": "There's a massive underground complex at %2$s, filled with monster spawners."
+}
