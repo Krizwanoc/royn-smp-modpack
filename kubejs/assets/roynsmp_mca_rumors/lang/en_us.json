@@ -7,7 +7,7 @@
     
     "dialogue.location.iceologer_cabin/1": "I heard stories of a house in the mountains at %2$s where a Pillager versed in ice magic lives.",
     "dialogue.location.illusioner_shack/1": "A powerful mage Pillager lives at %2$s! Beware, for he is a master of illusions!",
-    "dialogue.location.illusioner_training_grounds/1": "Deep in the woods near %2$s, Pillagers have set up a training camp. If you go anywhere near there, be careful. They shoot on sight.",
+    "dialogue.location.illusioner_training_camp/1": "Deep in the woods near %2$s, Pillagers have set up a training camp. If you go anywhere near there, be careful. They shoot on sight.",
 
 
     "dialogue.location.bastion_underground/1": "Some old catacombs at %2$s have been taken over by the undead! They say a clan of skeletons are stockpiling supplies in it, but that sounds kind of ridiculous.",
@@ -65,7 +65,7 @@
 
     "dialogue.location.village_badlands/1": "At %2$s is another lovely village, in the middle of a badlands biome.",
     "dialogue.location.village_bamboo/1": "At %2$s is another lovely village, in the middle of a bamboo forest.",
-    "dialogue.location.village_birch/1": "At %2$s is another lovely village, in the middle of a bitch forest.",
+    "dialogue.location.village_birch/1": "At %2$s is another lovely village, in the middle of a birch forest.",
     "dialogue.location.village_cherry/1": "At %2$s is another lovely village, in the middle of a cherry grove.",
     "dialogue.location.village_dark_forest/1": "At %2$s is another lovely village, in the middle of a dark forest biome.",
     "dialogue.location.village_giant_taiga/1": "At %2$s is another lovely village, in the middle of a taiga biome.",
