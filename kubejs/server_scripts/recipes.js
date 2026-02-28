@@ -569,7 +569,7 @@ ServerEvents.recipes(event => {
 
 
     // CHANGE THE ENDER EYE RECIPE
-    event.shapeless("minecraft:ender_eye", ["minecraft:blaze_powder", "dimdoors:rift_pearl", "dimdoors:amalgam_lump", '#forge:dusts/ender_pearl']);
+    event.shapeless("minecraft:ender_eye", ["minecraft:blaze_powder", "dimdoors:rift_pearl", "dimdoors:amalgam_lump", 'twilightforest:transformation_powder']);
 })
 
 
