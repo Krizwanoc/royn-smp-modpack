@@ -43,8 +43,8 @@
 				item: "minecraft:beacon"
 				type: "item"
 			}]
-			x: 0.0d
-			y: 2.0d
+			x: -1.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["3EAD98C34C99A9C9"]
@@ -294,18 +294,18 @@
 			dependencies: ["3EAD98C34C99A9C9"]
 			id: "27CF90ACFD2E8990"
 			rewards: [{
-				count: 12
+				count: 30
 				id: "62EAB7F828742277"
 				item: "kubejs:g"
 				type: "item"
 			}]
 			tasks: [{
 				id: "1A459B105F59BBD4"
-				item: "vivis_atrocities:heros_rapier"
+				item: "vivis_atrocities:heroium_ingot"
 				type: "item"
 			}]
-			x: -1.0d
-			y: 2.5d
+			x: 0.0d
+			y: 2.0d
 		}
 		{
 			dependencies: ["3EAD98C34C99A9C9"]

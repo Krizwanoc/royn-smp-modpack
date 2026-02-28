@@ -377,6 +377,8 @@ ServerEvents.recipes(event => {
         ],{
             V: "dimdoors:clod"
     }, 200);
+    // change Heroium recipe slightly
+    event.replaceInput({id: "vivis_atrocities:heroium_recipe"}, "minecraft:purpur_stairs", "dimdoors:clod_block");
 
 
     // ENDER STORAGE
