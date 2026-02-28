@@ -18,6 +18,13 @@ StartupEvents.registry('item', event => {
     event.create("dark_steel_dust");
     event.create("end_steel_dust");
     event.create("thallasium_dust");
+
+    event.create("tin_dust");
+    event.create("hyperboreum_dust");
+    event.create("lead_dust");
+    event.create("platinum_dust");
+    event.create("tungsten_dust");
+    event.create("zirconium_dust");
     // event.create("soularium_dust");
 
     event.create("aeternium_nugget");

@@ -58,10 +58,13 @@ ServerEvents.tags("item", event => {
     event.add("forge:ingots/uranium", 'alexscaves:uranium');
     
     event.add("forge:dusts/quartz", "mtao45086:quartz_dust");
-    let mtao = ["lead", "tungsten", "platinum", "zirconium", "slamtanium", "tin", "hyperboreum"];
+    let mtao = [
+        "lead", "tungsten", "platinum", "zirconium", "slamtanium", "tin", "hyperboreum",
+        "tigers_eye", "strebillium", "heliodor", "malachite", "peridot", "hawks_eye", "schorl", "opal"
+    ];
     for (var i=0; i<mtao.length; i++) {
         var m = mtao[i];
-        console.log(m);
+        // console.log(m);
         event.add(`forge:ores/${m}`, `mtao45086:${m}_ore`);
         event.add(`forge:ores/${m}`, `mtao45086:${m}_ore_deep`);
         event.add(`forge:ores/${m}`, `mtao45086:${m}_ore_end`);
@@ -71,6 +74,8 @@ ServerEvents.tags("item", event => {
         event.add(`forge:storage_blocks/${m}`, `mtao45086:${m}_block`);
         event.add(`forge:storage_blocks/raw_${m}`, `mtao45086:raw_${m}_block`);
         event.add(`forge:storage_blocks/raw_${m}`, `mtao45086:${m}_raw_block`);
+        event.add(`forge:dusts/${m}`, `kubejs:${m}_dust`);
+        event.add(`forge:gems/${m}`, `mtao45086:${m}`);
     }
     
     event.add("forge:heads", [
