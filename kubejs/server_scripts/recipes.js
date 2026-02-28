@@ -363,6 +363,20 @@ ServerEvents.recipes(event => {
             X: "minecraft:ender_pearl"
     }, 200);
     event.remove({id: "dimdoors:tesselating/fabric_of_finality"});
+    tesselate("dimdoors:amalgam_block", [
+            "VVV",
+            "VVV",
+            "VVV"
+        ],{
+            V: "dimdoors:amalgam_lump"
+    }, 200);
+    tesselate("dimdoors:clod_block", [
+            "VVV",
+            "VVV",
+            "VVV"
+        ],{
+            V: "dimdoors:clod"
+    }, 200);
 
 
     // ENDER STORAGE
