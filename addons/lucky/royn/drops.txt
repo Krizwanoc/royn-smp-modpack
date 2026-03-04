@@ -6,6 +6,8 @@ type=entity,ID=experience_bottle,NBTTag=(Motion=#randLaunchMotion),amount=#rand(
 // Joke items
 / GammaRaul (we sealed him into an Among Us Lucky Block)
 type=command, ID="/summon item ~ ~ ~ {CustomNameVisible:1b,CustomName:'{\"text\":\"GammaRaul\",\"color\":\"dark_red\",\"italic\":false}',Item:{id:\"lucky:amongus_lucky_block\",Count:1b,tag:{display:{Name:'{\"text\":\"GammaRaul\",\"color\":\"dark_red\",\"italic\":false}'},Luck:-100}}}"@luck=0
+/ a singluar barrel
+ID=barrel, amount=1@luck=0
 
 
 
@@ -21,7 +23,15 @@ group:1:(
     ID=vivis_atrocities:hero_then, amount=1
 )@luck=0
 
-ID=milk_bucket,amount=#randList(1,1,1,2)@luck=0
+ID=milk_bucket,amount=#randList(1,1,1,2),NBTTag=(display=(Name=#jsonStr(text="Dooygron",color="white",italic=false)))@luck=0
+
+group(
+    type=item, ID=rediscovered:plate_chestplate, amount=1;
+    type=item, ID=leather_helmet, amount=1, NBTTag=(display=(color=5263440));
+    type=item, ID=leather_boots, amount=1, NBTTag=(display=(color=5263440));
+    type=item, ID=leather_leggings, amount=1, NBTTag=(display=(color=8927538));
+    type=message, ID="$cRemind the Meneserians that they bleed and die! Join the Northeastern Army!$r"
+)@luck=0
 
 
 / free dust
@@ -232,6 +242,14 @@ group(
     type=command, ID=/give #pName shears{display:{Name:"{\"text\":\"Wire Cutters\",\"color\":\"red\"}"}}
 )@luck=-2@chance=0.05
 
+/ Gods fireball
+group(
+    type=message, ID="$b$lWE, THE GODS, SHALL RAIN FIRE ON THE CULTISTS$r";
+    type=entity, ID=minecraft:fireball, posY=#pPosY+30, NBTTag=(
+        ExplosionPower=7,power=[0.0,-0.2,0.0]
+    )
+)@luck=-2
+
 
 
 // Random Mob spawns
@@ -275,7 +293,7 @@ group(
     type=message, ID="$2Quoluck!$r";
     type=entity, ID=minecraft:chicken, NBTTag=(
         CustomName=#jsonStr(text="Expectant Chicken",color="#55a049",bold=true),CustomNameVisible=true,
-        ActiveEffects=[(Id=90, Amplifier=1, Duration=199980)]
+        ActiveEffects=[(forge:id="trials:oozing", Amplifier=1, Duration=199980)]
     )
 )@luck=0@chance=0.5
 / Rack (fakeout)
@@ -300,6 +318,7 @@ group(
                 )
             ))
         ],Rotation=[#pYaw+180f,0f],
+        DisabledSlots=16,
         CustomName=#jsonStr(text="Rack",color="#505050",bold=true),CustomNameVisible=true
     )
 )@luck=0
@@ -326,4 +345,82 @@ group(
         ],Rotation=[#pYaw+180f,0f],
         CustomName=#jsonStr(text="Rack",color="#505050",bold=true),CustomNameVisible=true
     )
-)luck=0
+)@luck=0
+
+
+
+// ROYN mobs (swarm)
+/ NE Army
+group(
+    type=message, ID="$cIt's time that the Meneserians were humbled. And who better to do the humbling than us?$r";
+
+    type=entity, ID=minecraft:zombie, amount=7, posOffset=#circleOffset(2), NBTTag=(
+    HandItems=[
+        (id=minecraft:stone_axe, Count=1, tag=(display=(Name=#jsonStr(text="Halberd",italic=false)))),
+        ()
+    ],
+    ArmorItems=[
+        (id=minecraft:leather_boots, Count=1, tag=(display=(color=5263440))),
+        (id=minecraft:leather_leggings, Count=1, tag=(display=(color=8927538))),
+        (id=minecraft:leather_chestplate, Count=1, tag=(display=(color=7895160))),
+        (id=minecraft:leather_helmet, Count=1, tag=(display=(color=5263440)))
+    ],
+    CustomName=#jsonStr(text="Undead Soldier",color="#883932",bold=true),CustomNameVisible=true
+    );
+
+    type=entity, ID=minecraft:zombie, amount=4, posOffset=#circleOffset(2), NBTTag=(
+    HandItems=[
+        (id=minecraft:torch, Count=1, tag=(
+            display=(Name=#jsonStr(text="Halberd",italic=false)),
+            Enchantments=[
+                (id="minecraft:sharpness", lvl=5),
+                (id="minecraft:knockback", lvl=5),
+                (id="minecraft:fire_aspect", lvl=5)
+            ]
+            )
+        ),
+        (id=minecraft:torch, Count=1, tag=(
+            display=(Name=#jsonStr(text="Halberd",italic=false)),
+            Enchantments=[
+                (id="minecraft:sharpness", lvl=5),
+                (id="minecraft:knockback", lvl=5),
+                (id="minecraft:fire_aspect", lvl=5)
+            ]
+            )
+        )
+    ],
+    ArmorItems=[
+        (id=minecraft:leather_boots, Count=1, tag=(display=(color=5263440))),
+        (id=minecraft:leather_leggings, Count=1, tag=(display=(color=8927538))),
+        (id=minecraft:leather_chestplate, Count=1, tag=(display=(color=7895160))),
+        (id=minecraft:wither_skeleton_skull, Count=1)
+    ],
+    ArmorDropChances=[0.085f,0.085f,0.085f,0.000f],
+    CustomName=#jsonStr(text="Undead Torchman",color="#883932",bold=true),CustomNameVisible=true
+    );
+
+    type=entity, ID=minecraft:zombie, NBTTag=(
+    HandItems=[
+        (id=minecraft:golden_axe, Count=1, tag=(
+            display=(Name=#jsonStr(text="Commander's Halberd",italic=false, color=gold)),
+            Enchantments=[
+                (id="minecraft:sharpness", lvl=7),
+                (id="minecraft:knockback", lvl=7)
+            ],
+            AttributeModifiers=[
+                [AttributeName="generic.max_health",Name="generic.max_health",Amount:20,Operation=0,UUID:[-1164918231,-356036984,-1540969568,180530483]],
+                [AttributeName="generic.attack_speed",Name="generic.attack_speed",Amount:1.5,Operation=2,UUID:[-1181358814,741493910,-1783910299,1349735624]],
+                [AttributeName="generic.knockback_resistance",Name="generic.knockback_resistance",Amount:1,Operation=0,UUID:[1969333367,-1601683167,-1736724930,-855580200]]
+            ]
+            )
+        ),()
+    ],
+    ArmorItems=[
+        (id=minecraft:leather_boots, Count=1, tag=(display=(color=8927538))),
+        (id=minecraft:leather_leggings, Count=1, tag=(display=(color=12570226))),
+        (id=minecraft:leather_chestplate, Count=1, tag=(display=(color=5263440))),
+        (id=minecraft:leather_helmet, Count=1, tag=(display=(color=8927538)))
+    ],
+    CustomName=#jsonStr(text="Undead Commander",color="#bfce72",bold=true),CustomNameVisible=true
+    )
+)@luck=-1@chance=999
